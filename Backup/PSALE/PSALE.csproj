@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2F03CC8C-E3BB-4DF7-8F24-74FFFC524B35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PSALE</RootNamespace>
+    <AssemblyName>PSALE</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>icones_02242.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevComponents.DotNetBar.Design, Version=9.5.0.0, Culture=neutral, PublicKeyToken=3caa4ad0ba35cf8d, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.0, Culture=neutral, PublicKeyToken=d159a0cb0c2a1170, processorArchitecture=MSIL" />
+    <Reference Include="FarsiLibrary.Resources, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Software\FarsiLibraryDll\FarsiLibrary2.5\FarsiLibrary-NightlyBuild-09-June-2009\FarsiLibrary\Bin\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Software\FarsiLibraryDll\FarsiLibrary2.5\FarsiLibrary-NightlyBuild-09-June-2009\FarsiLibrary\Bin\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Software\FarsiLibraryDll\FarsiLibrary2.5\FarsiLibrary-NightlyBuild-09-June-2009\FarsiLibrary\Bin\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Common.v2, Version=2.0.1123.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.Schedule.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf" />
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.102.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="PACNT, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>\\userpc\perp-new package\Main\PACNT\PACNT\bin\Debug\PACNT.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buy\DataSet_Buy.cs">
+      <DependentUpon>DataSet_Buy.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Buy\DataSet_Buy.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Buy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_001_SabteDarkhastKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_001_SabteDarkhastKharid.Designer.cs">
+      <DependentUpon>Frm_001_SabteDarkhastKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_002_MoshahedeTaeed_DarkhastKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_002_MoshahedeTaeed_DarkhastKharid.Designer.cs">
+      <DependentUpon>Frm_002_MoshahedeTaeed_DarkhastKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_003_FaktorKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_003_FaktorKharid.designer.cs">
+      <DependentUpon>Frm_003_FaktorKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_004_ResidDialogFaktorKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_004_ResidDialogFaktorKharid.designer.cs">
+      <DependentUpon>Frm_004_ResidDialogFaktorKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_005_SodoorSanadDialogFaktorKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_005_SodoorSanadDialogFaktorKharid.designer.cs">
+      <DependentUpon>Frm_005_SodoorSanadDialogFaktorKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_006_FaktorKharidMarjooi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_006_FaktorKharidMarjooi.designer.cs">
+      <DependentUpon>Frm_006_FaktorKharidMarjooi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_007_HavaleDialogMarjooiKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_007_HavaleDialogMarjooiKharid.designer.cs">
+      <DependentUpon>Frm_007_HavaleDialogMarjooiKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Frm_008_SodoorSanadMarjooiKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Frm_008_SodoorSanadMarjooiKharid.designer.cs">
+      <DependentUpon>Frm_008_SodoorSanadMarjooiKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_005_KharidMahMeghdari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_005_KharidMahMeghdari.designer.cs">
+      <DependentUpon>Frm_005_KharidMahMeghdari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\DataSet_Buy_Reports.cs">
+      <DependentUpon>DataSet_Buy_Reports.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\DataSet_Buy_Reports.Designer.cs">
+      <DependentUpon>DataSet_Buy_Reports.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_001_DaftarKharid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_001_DaftarKharid.designer.cs">
+      <DependentUpon>Frm_001_DaftarKharid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_002_AmarForooshandegan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_002_AmarForooshandegan.designer.cs">
+      <DependentUpon>Frm_002_AmarForooshandegan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_003_AmarKharidKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_003_AmarKharidKala.designer.cs">
+      <DependentUpon>Frm_003_AmarKharidKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_004_KharidMah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_004_KharidMah.designer.cs">
+      <DependentUpon>Frm_004_KharidMah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_006_AmarForooshandeganMarjooi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_006_AmarForooshandeganMarjooi.designer.cs">
+      <DependentUpon>Frm_006_AmarForooshandeganMarjooi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_007_AmarKharidKalaMarjooi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy\Reports\Frm_007_AmarKharidKalaMarjooi.designer.cs">
+      <DependentUpon>Frm_007_AmarKharidKalaMarjooi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\CheckCredits.cs" />
+    <Compile Include="Classes\Class_ChangeConnectionString.cs" />
+    <Compile Include="Classes\Class_BasicOperation.cs" />
+    <Compile Include="Classes\Class_UserScope.cs" />
+    <Compile Include="Classes\db.cs" />
+    <Compile Include="Classes\DeleteRelatedInfo.cs" />
+    <Compile Include="Classes\InputBox.cs" />
+    <Compile Include="Classes\Anbare.cs" />
+    <Compile Include="EtelaatePaye\DataSet_EtelaatPaye.cs">
+      <DependentUpon>DataSet_EtelaatPaye.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\DataSet_EtelaatPaye.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_EtelaatPaye.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\Frm_001_Moarefi_Ostan_Shahr.cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\Frm_001_Moarefi_Ostan_Shahr.cs.Designer.cs">
+      <DependentUpon>Frm_001_Moarefi_Ostan_Shahr.cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\Frm_002_TakhfifEzafeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\Frm_002_TakhfifEzafeSale.designer.cs">
+      <DependentUpon>Frm_002_TakhfifEzafeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_Ashkhas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_Ashkhas.designer.cs">
+      <DependentUpon>frm_Ashkhas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_anvae_foroosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_anvae_foroosh.Designer.cs">
+      <DependentUpon>frm_anvae_foroosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_takmili_kala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_takmili_kala.Designer.cs">
+      <DependentUpon>frm_takmili_kala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_takmili_moshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtelaatePaye\frm_takmili_moshtari.Designer.cs">
+      <DependentUpon>frm_takmili_moshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\DataSet_Foroosh.cs">
+      <DependentUpon>DataSet_Foroosh.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="foroosh\DataSet_Foroosh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Foroosh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Frm_001_MoshahadeSefareshat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Frm_001_MoshahadeSefareshat.designer.cs">
+      <DependentUpon>Frm_001_MoshahadeSefareshat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\DatatSet_Sefareshat.cs">
+      <DependentUpon>DatatSet_Sefareshat.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\DatatSet_Sefareshat.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatatSet_Sefareshat.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_001_GardeshMahsoolBaHarMoshtari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_001_GardeshMahsoolBaHarMoshtari.Designer.cs">
+      <DependentUpon>Frm_001_GardeshMahsoolBaHarMoshtari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_002_GardeshMoshtariBaHarMahsool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_002_GardeshMoshtariBaHarMahsool.designer.cs">
+      <DependentUpon>Frm_002_GardeshMoshtariBaHarMahsool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_003_GardeshMahsoolDarHarOstan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_003_GardeshMahsoolDarHarOstan.designer.cs">
+      <DependentUpon>Frm_003_GardeshMahsoolDarHarOstan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_004_GardeshOstanBaHarMahsool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_004_GardeshOstanBaHarMahsool.designer.cs">
+      <DependentUpon>Frm_004_GardeshOstanBaHarMahsool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_005_ListNahayGheymat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_005_ListNahayGheymat.designer.cs">
+      <DependentUpon>Frm_005_ListNahayGheymat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_006_GozareshTedadi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\Reports\Frm_006_GozareshTedadi.designer.cs">
+      <DependentUpon>Frm_006_GozareshTedadi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\DataSet_Sale.cs">
+      <DependentUpon>DataSet_Sale.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale\DataSet_Sale.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Sale.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_001_PishFaktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_001_PishFaktor.Designer.cs">
+      <DependentUpon>Frm_001_PishFaktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\frm_moshahede_sefareshat_foroosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\frm_moshahede_sefareshat_foroosh.Designer.cs">
+      <DependentUpon>frm_moshahede_sefareshat_foroosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\frm_moshahede_sefareshat_mali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\frm_moshahede_sefareshat_mali.designer.cs">
+      <DependentUpon>frm_moshahede_sefareshat_mali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="foroosh\frm_Sabt_sefareshat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="foroosh\frm_Sabt_sefareshat.Designer.cs">
+      <DependentUpon>frm_Sabt_sefareshat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Buy\Frm_001_SabteDarkhastKharid.resx">
+      <DependentUpon>Frm_001_SabteDarkhastKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_002_MoshahedeTaeed_DarkhastKharid.resx">
+      <DependentUpon>Frm_002_MoshahedeTaeed_DarkhastKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_003_FaktorKharid.resx">
+      <DependentUpon>Frm_003_FaktorKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_004_ResidDialogFaktorKharid.resx">
+      <DependentUpon>Frm_004_ResidDialogFaktorKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_005_SodoorSanadDialogFaktorKharid.resx">
+      <DependentUpon>Frm_005_SodoorSanadDialogFaktorKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_006_FaktorKharidMarjooi.resx">
+      <DependentUpon>Frm_006_FaktorKharidMarjooi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_007_HavaleDialogMarjooiKharid.resx">
+      <DependentUpon>Frm_007_HavaleDialogMarjooiKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Frm_008_SodoorSanadMarjooiKharid.resx">
+      <DependentUpon>Frm_008_SodoorSanadMarjooiKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_005_KharidMahMeghdari.resx">
+      <DependentUpon>Frm_005_KharidMahMeghdari.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_001_DaftarKharid.resx">
+      <DependentUpon>Frm_001_DaftarKharid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_002_AmarForooshandegan.resx">
+      <DependentUpon>Frm_002_AmarForooshandegan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_003_AmarKharidKala.resx">
+      <DependentUpon>Frm_003_AmarKharidKala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_004_KharidMah.resx">
+      <DependentUpon>Frm_004_KharidMah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_006_AmarForooshandeganMarjooi.resx">
+      <DependentUpon>Frm_006_AmarForooshandeganMarjooi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Frm_007_AmarKharidKalaMarjooi.resx">
+      <DependentUpon>Frm_007_AmarKharidKalaMarjooi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\Report1.rdlc" />
+    <EmbeddedResource Include="EtelaatePaye\Frm_001_Moarefi_Ostan_Shahr.cs.resx">
+      <DependentUpon>Frm_001_Moarefi_Ostan_Shahr.cs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtelaatePaye\Frm_002_TakhfifEzafeSale.resx">
+      <DependentUpon>Frm_002_TakhfifEzafeSale.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtelaatePaye\frm_Ashkhas.resx">
+      <DependentUpon>frm_Ashkhas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtelaatePaye\frm_anvae_foroosh.resx">
+      <DependentUpon>frm_anvae_foroosh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtelaatePaye\frm_takmili_kala.resx">
+      <DependentUpon>frm_takmili_kala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtelaatePaye\frm_takmili_moshtari.resx">
+      <DependentUpon>frm_takmili_moshtari.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Frm_001_MoshahadeSefareshat.resx">
+      <DependentUpon>Frm_001_MoshahadeSefareshat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy\Reports\RPT_001_ChartBuyMahane.rdlc" />
+    <EmbeddedResource Include="foroosh\Reports\Frm_001_GardeshMahsoolBaHarMoshtari.resx">
+      <DependentUpon>Frm_001_GardeshMahsoolBaHarMoshtari.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Reports\Frm_002_GardeshMoshtariBaHarMahsool.resx">
+      <DependentUpon>Frm_002_GardeshMoshtariBaHarMahsool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Reports\Frm_003_GardeshMahsoolDarHarOstan.resx">
+      <DependentUpon>Frm_003_GardeshMahsoolDarHarOstan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Reports\Frm_004_GardeshOstanBaHarMahsool.resx">
+      <DependentUpon>Frm_004_GardeshOstanBaHarMahsool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Reports\Frm_005_ListNahayGheymat.resx">
+      <DependentUpon>Frm_005_ListNahayGheymat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\Reports\Frm_006_GozareshTedadi.resx">
+      <DependentUpon>Frm_006_GozareshTedadi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_006_AmarMoshtariyanMarjooi.resx">
+      <DependentUpon>Frm_006_AmarMoshtariyanMarjooi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_007_AmarMarjooiKala.resx">
+      <DependentUpon>Frm_007_AmarMarjooiKala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\RPT_002_ChartForooshMahaneMeghdari.rdlc" />
+    <EmbeddedResource Include="Sale\Reports\Frm_005_ForooshMahMeghdari.resx">
+      <DependentUpon>Frm_005_ForooshMahMeghdari.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\RPT_001_ChartForooshMahane.rdlc" />
+    <EmbeddedResource Include="Sale\Frm_001_PishFaktor.resx">
+      <DependentUpon>Frm_001_PishFaktor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\frm_moshahede_sefareshat_foroosh.resx">
+      <DependentUpon>frm_moshahede_sefareshat_foroosh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\frm_moshahede_sefareshat_mali.resx">
+      <DependentUpon>frm_moshahede_sefareshat_mali.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foroosh\frm_Sabt_sefareshat.resx">
+      <DependentUpon>frm_Sabt_sefareshat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_002_Faktor.resx">
+      <DependentUpon>Frm_002_Faktor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_003_AmarForooshKala.resx">
+      <DependentUpon>Frm_003_AmarForooshKala.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_003_HavaleDialog.resx">
+      <DependentUpon>Frm_003_HavaleDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_004_SodoorSanadDialog.resx">
+      <DependentUpon>Frm_004_SodoorSanadDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_005_FaktorForooshMarjooi.resx">
+      <DependentUpon>Frm_005_FaktorForooshMarjooi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_006_ResidDialog.resx">
+      <DependentUpon>Frm_006_ResidDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Frm_007_SodoorSanadMarjooiDialog.resx">
+      <DependentUpon>Frm_007_SodoorSanadMarjooiDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_001_DaftarForoosh.resx">
+      <DependentUpon>Frm_001_DaftarForoosh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_002_AmarMoshtariyan.resx">
+      <DependentUpon>Frm_002_AmarMoshtariyan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sale\Reports\Frm_004_ForooshMah.resx">
+      <DependentUpon>Frm_004_ForooshMah.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sale\Frm_002_Faktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_002_Faktor.designer.cs">
+      <DependentUpon>Frm_002_Faktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_003_AmarForooshKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_003_AmarForooshKala.designer.cs">
+      <DependentUpon>Frm_003_AmarForooshKala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_003_HavaleDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_003_HavaleDialog.Designer.cs">
+      <DependentUpon>Frm_003_HavaleDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_004_SodoorSanadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_004_SodoorSanadDialog.Designer.cs">
+      <DependentUpon>Frm_004_SodoorSanadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_005_FaktorForooshMarjooi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_005_FaktorForooshMarjooi.designer.cs">
+      <DependentUpon>Frm_005_FaktorForooshMarjooi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_006_ResidDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_006_ResidDialog.designer.cs">
+      <DependentUpon>Frm_006_ResidDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Frm_007_SodoorSanadMarjooiDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Frm_007_SodoorSanadMarjooiDialog.designer.cs">
+      <DependentUpon>Frm_007_SodoorSanadMarjooiDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\DataSet_Reports.cs">
+      <DependentUpon>DataSet_Reports.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\DataSet_Reports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_Reports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_001_DaftarForoosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_001_DaftarForoosh.Designer.cs">
+      <DependentUpon>Frm_001_DaftarForoosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_002_AmarMoshtariyan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_002_AmarMoshtariyan.designer.cs">
+      <DependentUpon>Frm_002_AmarMoshtariyan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_004_ForooshMah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_004_ForooshMah.Designer.cs">
+      <DependentUpon>Frm_004_ForooshMah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_005_ForooshMahMeghdari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_005_ForooshMahMeghdari.designer.cs">
+      <DependentUpon>Frm_005_ForooshMahMeghdari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_006_AmarMoshtariyanMarjooi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_006_AmarMoshtariyanMarjooi.designer.cs">
+      <DependentUpon>Frm_006_AmarMoshtariyanMarjooi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_007_AmarMarjooiKala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sale\Reports\Frm_007_AmarMarjooiKala.designer.cs">
+      <DependentUpon>Frm_007_AmarMarjooiKala.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Buy\DataSet_Buy.xsc">
+      <DependentUpon>DataSet_Buy.xsd</DependentUpon>
+    </None>
+    <None Include="Buy\DataSet_Buy.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Buy.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Buy\DataSet_Buy.xss">
+      <DependentUpon>DataSet_Buy.xsd</DependentUpon>
+    </None>
+    <None Include="Buy\Reports\DataSet_Buy_Reports.xsc">
+      <DependentUpon>DataSet_Buy_Reports.xsd</DependentUpon>
+    </None>
+    <None Include="Buy\Reports\DataSet_Buy_Reports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Buy_Reports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Buy\Reports\DataSet_Buy_Reports.xss">
+      <DependentUpon>DataSet_Buy_Reports.xsd</DependentUpon>
+    </None>
+    <None Include="EtelaatePaye\DataSet_EtelaatPaye.xsc">
+      <DependentUpon>DataSet_EtelaatPaye.xsd</DependentUpon>
+    </None>
+    <None Include="EtelaatePaye\DataSet_EtelaatPaye.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_EtelaatPaye.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="EtelaatePaye\DataSet_EtelaatPaye.xss">
+      <DependentUpon>DataSet_EtelaatPaye.xsd</DependentUpon>
+    </None>
+    <None Include="foroosh\DataSet_Foroosh.xsc">
+      <DependentUpon>DataSet_Foroosh.xsd</DependentUpon>
+    </None>
+    <None Include="foroosh\DataSet_Foroosh.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Foroosh.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="foroosh\DataSet_Foroosh.xss">
+      <DependentUpon>DataSet_Foroosh.xsd</DependentUpon>
+    </None>
+    <None Include="foroosh\Reports\DatatSet_Sefareshat.xsc">
+      <DependentUpon>DatatSet_Sefareshat.xsd</DependentUpon>
+    </None>
+    <None Include="foroosh\Reports\DatatSet_Sefareshat.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatatSet_Sefareshat.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="foroosh\Reports\DatatSet_Sefareshat.xss">
+      <DependentUpon>DatatSet_Sefareshat.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\me_bg.png" />
+    <None Include="Sale\DataSet_Sale.xsc">
+      <DependentUpon>DataSet_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\DataSet_Sale.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Sale.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sale\DataSet_Sale.xss">
+      <DependentUpon>DataSet_Sale.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\Reports\DataSet_Reports.xsc">
+      <DependentUpon>DataSet_Reports.xsd</DependentUpon>
+    </None>
+    <None Include="Sale\Reports\DataSet_Reports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_Reports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Sale\Reports\DataSet_Reports.xss">
+      <DependentUpon>DataSet_Reports.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icones_02242.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

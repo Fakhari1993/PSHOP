@@ -1,0 +1,471 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PSHOP.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ViewSaleFactors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1394/01/01-1394/01/01</Value>
+    </Setting>
+    <Setting Name="ViewOrders" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ViewBuyFactors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="SaleDocument" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="BuyDocument" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ViewReturnSale" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ViewReturnBuy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ViewServiceFactors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ShowCustomerBill" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AwardCompute" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Box</Value>
+    </Setting>
+    <Setting Name="SalePriceCompute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">SteelBlue</Value>
+    </Setting>
+    <Setting Name="SaleFactorStyle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="BuyFactorStyle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ReturnBuyFactorStyle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="PrefactorStyle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ReturnSaleFactor" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="OrderStyle" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SaleDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MAIN" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PERP_MAIN;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PERP_MAIN;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="PrefactorDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowPriceAlert" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ShowCalculateGiftDuringSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DontShowLogo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RegisterReturnSaleFactorWithGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RegisterBuyFactorWithGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RegisterReturnBuyFactorWithGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RegisterSaleFactorWithGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AggregationSaleDoc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LegalFactorPrintLayout" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ServiceFactorPrintLayout" Type="System.Int16" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PSALE_com_mehrafraz_www_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.mehrafraz.com/webservice/service.asmx</Value>
+    </Setting>
+    <Setting Name="SaveACCRemain" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ShowChangePriceInSale" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyFactorPriceCompute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ReturnSalePriceCompute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ReturnBuyFactorPriceCompute" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BalanceNum" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="Ware" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="Masool" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SaleValue" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SaleAmount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleDesc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleEtebar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleNetPrice" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleTotalAmount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleSumDiscount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleSumExtra" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleCustomer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleWare" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleFunc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyValue" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyAmount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyDesc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyEtebar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyNetPrice" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyTotalAmount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuySumDiscount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuySumExtra" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyCustomer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyWare" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyFunc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleNum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SaleDate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BuyNum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BuyDate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BuyCondition" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleCondition" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="RegisterSaleFactorNoteGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="whtoutgoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleType" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RegisterBuyFactorNoteGoods" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="chksanadPerson" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="printorder" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Function" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Project" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="chkInclude" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="chkseprate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleReport_Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="SaleReport_Goods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ReturnSaleReport_Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ReturnSaleReport_Good" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ExtraReduction" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="DiscountReport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="CustomerGoods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="CompReport_Goods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="CompReport_Factors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="Visitors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="Visitors_Customers" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="Faktor_Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ReturnFactors_Visitors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="BuyReport_Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="BuyReport_Goods" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="CompReport_Factor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="CompReport_Goods1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ReturnBuyReport_Customer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ExtraReduction1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="MarginReport" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="GoodCustomerFactor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ReturnBuyReport_Good" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="baha" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GoodReportByVisitors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ShowExportSanad" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ExtraMethod" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GoodReportByGroup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ProfitReportByGoodGroup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="ProfitReportByVisitors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="chk_Net" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyBaha" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="chk_ByuNet" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyAggregationSaleDoc" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="tax" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="taxes" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="buytax" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="buytaxes" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ViewSettelSaleFactors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1393/01/01-1393/12/29</Value>
+    </Setting>
+    <Setting Name="giftOrder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PCBed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PCBes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SalePCBed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SalePCBes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SaleGoodACCNum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BuyGoodACCNum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BASE" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PBASE_13;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PBASE_13;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="ACNT" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PACNT_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PACNT_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="WHRS" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PWHRS_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PWHRS_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="BANK" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PBANK_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PBANK_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="SALE" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=P-RDP\PERP2017;Initial Catalog=PSALE_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=P-RDP\PERP2017;Initial Catalog=PSALE_13_1399;Persist Security Info=True;User ID=sa;Password=Pars@63</Value>
+    </Setting>
+    <Setting Name="ShowSaleFactorSentence" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BackupPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\</Value>
+    </Setting>
+    <Setting Name="TaeedSefareshat" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowMojodi" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FactorPrice" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="barcodeprint" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="Statuse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="BankId" Type="System.String" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="Saler" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TypeSale" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BankPose" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TypSeachDoc" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BankName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Hesab_Bank" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="BayerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Returnfunction" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,35 @@
+﻿
+
+IF NOT EXISTS (
+       SELECT *
+       FROM   [Table_020_ProcessInfo]
+       WHERE  Column00 = '6'
+              AND Column01 = '347'
+   )
+BEGIN
+    INSERT INTO [dbo].[Table_020_ProcessInfo]
+    VALUES
+      (
+        6,
+        347,
+        N'فروشگاهي - معرفي فروشگاه ها',
+        NULL
+      )
+END
+
+IF NOT EXISTS (
+       SELECT *
+       FROM   [Table_020_ProcessInfo]
+       WHERE  Column00 = '6'
+              AND Column01 = '348'
+   )
+BEGIN
+    INSERT INTO [dbo].[Table_020_ProcessInfo]
+    VALUES
+      (
+        6,
+        348,
+        N'فروشگاهي - حذف فروشگاه',
+        NULL
+      )
+END

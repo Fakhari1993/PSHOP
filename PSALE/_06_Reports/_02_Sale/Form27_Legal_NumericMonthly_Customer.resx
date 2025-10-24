@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="dataSet_Report.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>593, 17</value>
+  </metadata>
+  <metadata name="bindingNavigator1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bindingNavigator1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bindingNavigator1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cmb_ExportToExcel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="cmb_ExportToExcel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIySURBVDhPjZPtS5NRGMatP6JPCUFZJmKgayqumiiSJS2j
+        FkRKRvMlydSoHEst0KLFEnlcD21hlEudkSMGIUSNAsEgUfwSfetDbOyNtdf2VlfPudvOrKx14ILDc7h/
+        57rP/VwFBbm1VdpWSJLn0TbpfPO6Or6tiMViXxwOx7d0Oo2NFI/HIQjCuFSxIUTOiiORCKLRKFcwGEQg
+        EIDb7Saoy+WC0WjMQXoXVMiq58URXLA3ofv5YXTNH0L73EGcm2lA21Q9PB4PASSXYJeIovgTworzrdNm
+        Jbxe7x9t0Vu1mOrQee8krtu6MGBtxbClHweGiqC6U4mj+mrsu1YEtaAAa8Xn85ETp9NJMAIwq1OO+7Av
+        z2LeqcezVTNuzl2F1qpBi9CID5/XoNJX0ZuEQiF6D7/fnwOwHtm69XQAj1+LGF+5hLsLg1BqS7D26T2d
+        Nd6QgU2A9R8OhwnEHbQ+rKNblEO7cey2AralJxhZ7MeV2XboHnXiazKGeu0eJJNJJBIJgjBxwImJGpT1
+        bYHaoESzoQa1umJMvhIw9m4EOlsvhmcuYn9fKVKpFAGYmBsOaDZUwfxyDNbFSUy/NWHp4xtM2EfRbToF
+        zQM1OsTjqD5fTA6YWPEvgKZReb4pYq9mJwdkQdxBw2A59Vh7uYysKnpK6MbKjl1UKDu7A+VntlML68UB
+        mSRsYjO1WCzf/5aD37+z3z4TOh4mmTSe6L/ClIVkMhPOpJcDCqWd7D/inI07i37hD61zfgQn2V0RAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="cmb_ExportToExcel.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="cmb_ExportToExcel.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="cmb_ExportToExcel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 22</value>
+  </data>
+  <data name="cmb_ExportToExcel.Text" xml:space="preserve">
+    <value>ارسال به Excel</value>
+  </data>
+  <data name="cmb_ExportToExcel.ToolTipText" xml:space="preserve">
+    <value>Ctrl+E</value>
+  </data>
+  <data name="toolStripSeparator8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="cmb_Print.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="cmb_Print.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="cmb_Print.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="cmb_Print.Text" xml:space="preserve">
+    <value>چاپ</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="toolStripLabel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="toolStripLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="toolStripLabel1.Text" xml:space="preserve">
+    <value>انتخاب ستونها:</value>
+  </data>
+  <data name="bindingNavigator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bindingNavigator1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 25</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bindingNavigator1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigator1.Text" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Name" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingNavigator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mnu_Excel_Table.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="mnu_Excel_Table.Text" xml:space="preserve">
+    <value>ارسال جدول به Excel</value>
+  </data>
+  <data name="mnu_Send_Chart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="mnu_Send_Chart.Text" xml:space="preserve">
+    <value>ارسال نمودار به Excel</value>
+  </data>
+  <data name="mnu_PrintThis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="mnu_PrintThis.Text" xml:space="preserve">
+    <value>چاپ مشتری جاری</value>
+  </data>
+  <data name="mnu_PrintAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="mnu_PrintAll.Text" xml:space="preserve">
+    <value>چاپ جمع مشتریان</value>
+  </data>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>171, 17</value>
+  </metadata>
+  <data name="saveFileDialog1.Filter" xml:space="preserve">
+    <value>"Excel files|*.xls;*.xlsx"</value>
+  </data>
+  <data name="saveFileDialog1.Title" xml:space="preserve">
+    <value>مسیر ذخیره سازی فایل</value>
+  </data>
+  <metadata name="gridEXExporter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>307, 17</value>
+  </metadata>
+  <metadata name="uiPanelManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>446, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>74</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 452</value>
+  </data>
+  <data name="chk_Joz.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chk_Joz.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chk_Joz.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chk_Joz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>513, 4</value>
+  </data>
+  <data name="chk_Joz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="chk_Joz.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="chk_Joz.Text" xml:space="preserve">
+    <value>جزء</value>
+  </data>
+  <data name="&gt;&gt;chk_Joz.Name" xml:space="preserve">
+    <value>chk_Joz</value>
+  </data>
+  <data name="&gt;&gt;chk_Joz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_Joz.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_Joz.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chk_Pack.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chk_Pack.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chk_Pack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chk_Pack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>567, 4</value>
+  </data>
+  <data name="chk_Pack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="chk_Pack.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="chk_Pack.Text" xml:space="preserve">
+    <value>بسته</value>
+  </data>
+  <data name="&gt;&gt;chk_Pack.Name" xml:space="preserve">
+    <value>chk_Pack</value>
+  </data>
+  <data name="&gt;&gt;chk_Pack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_Pack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_Pack.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chk_Box.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chk_Box.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chk_Box.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chk_Box.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 4</value>
+  </data>
+  <data name="chk_Box.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="chk_Box.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="chk_Box.Text" xml:space="preserve">
+    <value>کارتن</value>
+  </data>
+  <data name="&gt;&gt;chk_Box.Name" xml:space="preserve">
+    <value>chk_Box</value>
+  </data>
+  <data name="&gt;&gt;chk_Box.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_Box.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_Box.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chk_Kol.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="chk_Kol.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chk_Kol.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 4</value>
+  </data>
+  <data name="chk_Kol.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 17</value>
+  </data>
+  <data name="chk_Kol.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="chk_Kol.Text" xml:space="preserve">
+    <value>کل</value>
+  </data>
+  <data name="&gt;&gt;chk_Kol.Name" xml:space="preserve">
+    <value>chk_Kol</value>
+  </data>
+  <data name="&gt;&gt;chk_Kol.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chk_Kol.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chk_Kol.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gridEX_Goods.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridEX_Goods.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="gridEX_Goods_Layout_0.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;Tafsili&lt;/Key&gt;&lt;Caption&gt;Table_010_KolInfo&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="GoodID"&gt;&lt;Caption&gt;GoodID&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;GoodID&lt;/DataMember&gt;&lt;Key&gt;GoodID&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="GoodCode"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;کد کالا&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;GoodID&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;FilterEditType&gt;TextBox&lt;/FilterEditType&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;80&lt;/Width&gt;&lt;DropDownIndex&gt;0&lt;/DropDownIndex&gt;&lt;/Column1&gt;&lt;Column2 ID="GoodName"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;نام کالا&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;GoodID&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;FilterEditType&gt;TextBox&lt;/FilterEditType&gt;&lt;Key&gt;GoodName&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;170&lt;/Width&gt;&lt;FilterRowComparison&gt;Contains&lt;/FilterRowComparison&gt;&lt;DropDownIndex&gt;1&lt;/DropDownIndex&gt;&lt;/Column2&gt;&lt;Column3 ID="Far"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;فروردین-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Far&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Far&lt;/Key&gt;&lt;Position&gt;3&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column3&gt;&lt;Column4 ID="FarBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;فروردین-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;FarBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;FarBox&lt;/Key&gt;&lt;Position&gt;4&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column4&gt;&lt;Column5 ID="FarPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;فروردین-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;FarPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;FarPack&lt;/Key&gt;&lt;Position&gt;5&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column5&gt;&lt;Column6 ID="FarDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;فروردین-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;FarDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;FarDetail&lt;/Key&gt;&lt;Position&gt;6&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column6&gt;&lt;Column7 ID="Ord"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اردیبهشت-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Ord&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Ord&lt;/Key&gt;&lt;Position&gt;7&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column7&gt;&lt;Column8 ID="OrdBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اردیبهشت-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;OrdBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;OrdBox&lt;/Key&gt;&lt;Position&gt;8&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column8&gt;&lt;Column9 ID="OrdPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اردیبهشت-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;OrdPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;OrdPack&lt;/Key&gt;&lt;Position&gt;9&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column9&gt;&lt;Column10 ID="OrdDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اردیبهشت-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;OrdDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;OrdDetail&lt;/Key&gt;&lt;Position&gt;10&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column10&gt;&lt;Column11 ID="Khordad"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;خرداد-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Khordad&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Khordad&lt;/Key&gt;&lt;Position&gt;11&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column11&gt;&lt;Column12 ID="KhordadBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;خرداد-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;KhordadBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;KhordadBox&lt;/Key&gt;&lt;Position&gt;12&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column12&gt;&lt;Column13 ID="KhordadPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;خرداد-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;KhordadPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;KhordadPack&lt;/Key&gt;&lt;Position&gt;13&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column13&gt;&lt;Column14 ID="KhordadDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;خرداد-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;KhordadDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;KhordadDetail&lt;/Key&gt;&lt;Position&gt;14&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column14&gt;&lt;Column15 ID="Tir"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تیر-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Tir&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Tir&lt;/Key&gt;&lt;Position&gt;15&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column15&gt;&lt;Column16 ID="TirBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تیر-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;TirBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TirBox&lt;/Key&gt;&lt;Position&gt;16&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column16&gt;&lt;Column17 ID="TirPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تیر-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;TirPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TirPack&lt;/Key&gt;&lt;Position&gt;17&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column17&gt;&lt;Column18 ID="TirDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;تیر-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;TirDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;TirDetail&lt;/Key&gt;&lt;Position&gt;18&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column18&gt;&lt;Column19 ID="Mordad"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مرداد-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Mordad&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Mordad&lt;/Key&gt;&lt;Position&gt;19&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column19&gt;&lt;Column20 ID="MordadBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مرداد-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MordadBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MordadBox&lt;/Key&gt;&lt;Position&gt;20&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column20&gt;&lt;Column21 ID="MordadPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مرداد-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MordadPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MordadPack&lt;/Key&gt;&lt;Position&gt;21&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column21&gt;&lt;Column22 ID="MordadDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مرداد-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MordadDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MordadDetail&lt;/Key&gt;&lt;Position&gt;22&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column22&gt;&lt;Column23 ID="Shahr"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;شهریور-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Shahr&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;Shahr&lt;/Key&gt;&lt;Position&gt;23&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column23&gt;&lt;Column24 ID="ShahrBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;شهریور-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;ShahrBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;ShahrBox&lt;/Key&gt;&lt;Position&gt;24&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column24&gt;&lt;Column25 ID="ShahrPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;شهریور-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;ShahrPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;ShahrPack&lt;/Key&gt;&lt;Position&gt;25&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column25&gt;&lt;Column26 ID="ShahrDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;شهریور-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;ShahrDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;ShahrDetail&lt;/Key&gt;&lt;Position&gt;26&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column26&gt;&lt;Column27 ID="Mehr"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مهر-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Mehr&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Mehr&lt;/Key&gt;&lt;Position&gt;27&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column27&gt;&lt;Column28 ID="MehrBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مهر-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MehrBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MehrBox&lt;/Key&gt;&lt;Position&gt;28&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column28&gt;&lt;Column29 ID="MehrPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مهر-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MehrPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MehrPack&lt;/Key&gt;&lt;Position&gt;29&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column29&gt;&lt;Column30 ID="MehrDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;مهر-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;MehrDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;MehrDetail&lt;/Key&gt;&lt;Position&gt;30&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column30&gt;&lt;Column31 ID="Aban"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آبان-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Aban&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Aban&lt;/Key&gt;&lt;Position&gt;31&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column31&gt;&lt;Column32 ID="AbanBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آبان-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AbanBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AbanBox&lt;/Key&gt;&lt;Position&gt;32&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column32&gt;&lt;Column33 ID="AbanPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آبان-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AbanPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AbanPack&lt;/Key&gt;&lt;Position&gt;33&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column33&gt;&lt;Column34 ID="AbanDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آبان-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AbanDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AbanDetail&lt;/Key&gt;&lt;Position&gt;34&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column34&gt;&lt;Column35 ID="Azar"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آذر-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Azar&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Azar&lt;/Key&gt;&lt;Position&gt;35&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column35&gt;&lt;Column36 ID="AzarBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آذر-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AzarBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AzarBox&lt;/Key&gt;&lt;Position&gt;36&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column36&gt;&lt;Column37 ID="AzarPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آذر-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AzarPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AzarPack&lt;/Key&gt;&lt;Position&gt;37&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column37&gt;&lt;Column38 ID="AzarDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;آذر-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;AzarDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;AzarDetail&lt;/Key&gt;&lt;Position&gt;38&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column38&gt;&lt;Column39 ID="Dey"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;دی-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Dey&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Dey&lt;/Key&gt;&lt;Position&gt;39&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column39&gt;&lt;Column40 ID="DeyBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;دی-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;DeyBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;DeyBox&lt;/Key&gt;&lt;Position&gt;40&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column40&gt;&lt;Column41 ID="DeyPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;دی-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;DeyPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;DeyPack&lt;/Key&gt;&lt;Position&gt;41&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column41&gt;&lt;Column42 ID="DeyDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;دی-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;DeyDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;DeyDetail&lt;/Key&gt;&lt;Position&gt;42&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column42&gt;&lt;Column43 ID="Bahman"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;بهمن-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Bahman&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Bahman&lt;/Key&gt;&lt;Position&gt;43&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column43&gt;&lt;Column44 ID="BahmanBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;بهمن-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;BahmanBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;BahmanBox&lt;/Key&gt;&lt;Position&gt;44&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column44&gt;&lt;Column45 ID="BahmanPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;بهمن-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;BahmanPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;BahmanPack&lt;/Key&gt;&lt;Position&gt;45&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column45&gt;&lt;Column46 ID="BahmanDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;بهمن-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;BahmanDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;BahmanDetail&lt;/Key&gt;&lt;Position&gt;46&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column46&gt;&lt;Column47 ID="Esf"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اسفند-کل&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;Esf&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;InputMask&gt;General&lt;/InputMask&gt;&lt;Key&gt;Esf&lt;/Key&gt;&lt;Position&gt;47&lt;/Position&gt;&lt;SelectableCells&gt;FilterRowCells&lt;/SelectableCells&gt;&lt;Width&gt;110&lt;/Width&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column47&gt;&lt;Column48 ID="EsfBox"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اسفند-کارتن&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;EsfBox&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;EsfBox&lt;/Key&gt;&lt;Position&gt;48&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column48&gt;&lt;Column49 ID="EsfPack"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اسفند-بسته&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;EsfPack&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;EsfPack&lt;/Key&gt;&lt;Position&gt;49&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column49&gt;&lt;Column50 ID="EsfDetail"&gt;&lt;AggregateFunction&gt;Sum&lt;/AggregateFunction&gt;&lt;Caption&gt;اسفند-جزء&lt;/Caption&gt;&lt;DataTypeCode&gt;Double&lt;/DataTypeCode&gt;&lt;DataMember&gt;EsfDetail&lt;/DataMember&gt;&lt;FormatString&gt;#,##0.###&lt;/FormatString&gt;&lt;Key&gt;EsfDetail&lt;/Key&gt;&lt;Position&gt;50&lt;/Position&gt;&lt;TotalFormatString&gt;#,##0.###&lt;/TotalFormatString&gt;&lt;CellStyle&gt;&lt;Font&gt;B Yekan, 9pt&lt;/Font&gt;&lt;/CellStyle&gt;&lt;/Column50&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;ColumnHeaders&gt;True&lt;/ColumnHeaders&gt;&lt;ColumnSetHeaders&gt;True&lt;/ColumnSetHeaders&gt;&lt;ColumnSetRowCount&gt;1&lt;/ColumnSetRowCount&gt;&lt;FormatConditions Collection="true" ElementName="Condition"&gt;&lt;Condition0 ID="FormatCondition1"&gt;&lt;ColIndex&gt;3&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;3&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition1&lt;/Key&gt;&lt;/Condition0&gt;&lt;Condition1 ID="FormatCondition2"&gt;&lt;ColIndex&gt;7&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;7&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition2&lt;/Key&gt;&lt;/Condition1&gt;&lt;Condition2 ID="FormatCondition3"&gt;&lt;ColIndex&gt;11&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;11&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition3&lt;/Key&gt;&lt;/Condition2&gt;&lt;Condition3 ID="FormatCondition4"&gt;&lt;ColIndex&gt;15&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;15&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition4&lt;/Key&gt;&lt;/Condition3&gt;&lt;Condition4 ID="FormatCondition5"&gt;&lt;ColIndex&gt;19&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;19&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition5&lt;/Key&gt;&lt;/Condition4&gt;&lt;Condition5 ID="FormatCondition6"&gt;&lt;ColIndex&gt;23&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;23&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition6&lt;/Key&gt;&lt;/Condition5&gt;&lt;Condition6 ID="FormatCondition7"&gt;&lt;ColIndex&gt;27&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;27&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition7&lt;/Key&gt;&lt;/Condition6&gt;&lt;Condition7 ID="FormatCondition8"&gt;&lt;ColIndex&gt;31&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;31&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition8&lt;/Key&gt;&lt;/Condition7&gt;&lt;Condition8 ID="FormatCondition9"&gt;&lt;ColIndex&gt;35&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;35&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition9&lt;/Key&gt;&lt;/Condition8&gt;&lt;Condition9 ID="FormatCondition10"&gt;&lt;ColIndex&gt;39&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;39&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition10&lt;/Key&gt;&lt;/Condition9&gt;&lt;Condition10 ID="FormatCondition11"&gt;&lt;ColIndex&gt;43&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;43&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition11&lt;/Key&gt;&lt;/Condition10&gt;&lt;Condition11 ID="FormatCondition12"&gt;&lt;ColIndex&gt;47&lt;/ColIndex&gt;&lt;ConditionOperator&gt;LessThan&lt;/ConditionOperator&gt;&lt;FormatStyle&gt;&lt;ForeColor&gt;Red&lt;/ForeColor&gt;&lt;/FormatStyle&gt;&lt;TargetColIndex&gt;47&lt;/TargetColIndex&gt;&lt;Value1&gt;0&lt;/Value1&gt;&lt;Key&gt;FormatCondition12&lt;/Key&gt;&lt;/Condition11&gt;&lt;/FormatConditions&gt;&lt;GroupCondition /&gt;&lt;RowFormatStyle&gt;&lt;ForeColor&gt;Black&lt;/ForeColor&gt;&lt;/RowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;Font&gt;B Traffic, 8.25pt, style=Bold&lt;/Font&gt;&lt;TextAlignment&gt;Center&lt;/TextAlignment&gt;&lt;/HeaderFormatStyle&gt;&lt;SelfReferencingSettings ID="SelfReferencingSettings"&gt;&lt;HierarchicalGroupMode&gt;AllRows&lt;/HierarchicalGroupMode&gt;&lt;/SelfReferencingSettings&gt;&lt;/RootTable&gt;&lt;DropDowns Collection="true" ElementName="DropDown"&gt;&lt;DropDown0 ID="GoodCode"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column01"&gt;&lt;Caption&gt;Column01&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;GoodCode&lt;/Key&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/DropDown0&gt;&lt;DropDown1 ID="GoodName"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column02"&gt;&lt;Caption&gt;Column02&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;GoodName&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/DropDown1&gt;&lt;/DropDowns&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;AlternatingRowFormatStyle&gt;&lt;ForeColor&gt;Black&lt;/ForeColor&gt;&lt;PredefinedStyle&gt;AlternatingRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/AlternatingRowFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;FilterRowFormatStyle&gt;&lt;BackColor&gt;LavenderBlush&lt;/BackColor&gt;&lt;BackColorGradient&gt;230, 220, 253&lt;/BackColorGradient&gt;&lt;PredefinedStyle&gt;FilterRowFormatStyle&lt;/PredefinedStyle&gt;&lt;BackgroundGradientMode&gt;Vertical&lt;/BackgroundGradientMode&gt;&lt;/FilterRowFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;TotalRowFormatStyle&gt;&lt;BackColor&gt;Azure&lt;/BackColor&gt;&lt;PredefinedStyle&gt;TotalRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/TotalRowFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;GridLineStyle&gt;Solid&lt;/GridLineStyle&gt;&lt;Font&gt;Tahoma, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;OfficeColorScheme&gt;Custom&lt;/OfficeColorScheme&gt;&lt;OfficeCustomColor&gt;SteelBlue&lt;/OfficeCustomColor&gt;&lt;AllowColumnDrag&gt;False&lt;/AllowColumnDrag&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ColumnHeaders&gt;False&lt;/ColumnHeaders&gt;&lt;FilterMode&gt;Automatic&lt;/FilterMode&gt;&lt;GridLines&gt;Vertical&lt;/GridLines&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;GroupIndent&gt;9&lt;/GroupIndent&gt;&lt;HideColumnsWhenGrouped&gt;True&lt;/HideColumnsWhenGrouped&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Hierarchical&gt;True&lt;/Hierarchical&gt;&lt;Indent&gt;13&lt;/Indent&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;TotalRow&gt;True&lt;/TotalRow&gt;&lt;RecordNavigator&gt;True&lt;/RecordNavigator&gt;&lt;EnterKeyBehavior&gt;NextCell&lt;/EnterKeyBehavior&gt;&lt;BuiltInTexts ID="LocalizableStrings" Collection="true"&gt;&lt;RecordNavigator&gt;ردیف: | از&lt;/RecordNavigator&gt;&lt;FilterRowInfoText&gt;جستجو Ctrl+F&lt;/FilterRowInfoText&gt;&lt;FilterRowConditionEqual&gt;مساوی&lt;/FilterRowConditionEqual&gt;&lt;FilterRowConditionNotEqual&gt;نامساوی&lt;/FilterRowConditionNotEqual&gt;&lt;FilterRowConditionGreaterThan&gt;بزگتر&lt;/FilterRowConditionGreaterThan&gt;&lt;FilterRowConditionGreaterThanOrEqual&gt;بزرگتر مساوی&lt;/FilterRowConditionGreaterThanOrEqual&gt;&lt;FilterRowConditionLessThan&gt;کوچکتر&lt;/FilterRowConditionLessThan&gt;&lt;FilterRowConditionLessThanOrEqual&gt;کوچکتر مساوی&lt;/FilterRowConditionLessThanOrEqual&gt;&lt;FilterRowConditionContains&gt;شامل باشد&lt;/FilterRowConditionContains&gt;&lt;FilterRowConditionNotContains&gt;شامل نباشد&lt;/FilterRowConditionNotContains&gt;&lt;FilterRowConditionEndsWith&gt;خاتمه با&lt;/FilterRowConditionEndsWith&gt;&lt;FilterRowConditionBeginsWith&gt;شروع با&lt;/FilterRowConditionBeginsWith&gt;&lt;FilterRowConditionIsEmpty&gt;خالی باشد&lt;/FilterRowConditionIsEmpty&gt;&lt;FilterRowConditionNotIsEmpty&gt;خالی نباشد&lt;/FilterRowConditionNotIsEmpty&gt;&lt;FilterRowConditionClear&gt;حذف فیلتر&lt;/FilterRowConditionClear&gt;&lt;/BuiltInTexts&gt;&lt;TotalRowPosition&gt;BottomFixed&lt;/TotalRowPosition&gt;&lt;FilterRowButtonStyle&gt;ConditionOperatorDropDown&lt;/FilterRowButtonStyle&gt;&lt;FilterRowUpdateMode&gt;WhenValueChanges&lt;/FilterRowUpdateMode&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="gridEX_Goods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 28</value>
+  </data>
+  <data name="gridEX_Goods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 397</value>
+  </data>
+  <data name="gridEX_Goods.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;gridEX_Goods.Name" xml:space="preserve">
+    <value>gridEX_Goods</value>
+  </data>
+  <data name="&gt;&gt;gridEX_Goods.Type" xml:space="preserve">
+    <value>Janus.Windows.GridEX.GridEX, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;gridEX_Goods.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gridEX_Goods.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Name" xml:space="preserve">
+    <value>gridEX1</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Type" xml:space="preserve">
+    <value>Janus.Windows.GridEX.GridEX, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Parent" xml:space="preserve">
+    <value>uiPanel1Container</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiPanel1Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 23</value>
+  </data>
+  <data name="uiPanel1Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 373</value>
+  </data>
+  <data name="uiPanel1Container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1Container.Name" xml:space="preserve">
+    <value>uiPanel1Container</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1Container.Type" xml:space="preserve">
+    <value>Janus.Windows.UI.Dock.UIPanelInnerContainer, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1Container.Parent" xml:space="preserve">
+    <value>uiPanel1</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1Container.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>534, 28</value>
+  </data>
+  <data name="uiPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 397</value>
+  </data>
+  <data name="uiPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="uiPanel1.Text" xml:space="preserve">
+    <value>مشتریان</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1.Name" xml:space="preserve">
+    <value>uiPanel1</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1.Type" xml:space="preserve">
+    <value>Janus.Windows.UI.Dock.UIPanel, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;uiPanel1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>آمار ماهیانه فروش تعدادی کالا بر اساس مشتریان- فاکتورهای قانونی</value>
+  </data>
+  <data name="&gt;&gt;dataSet_Report.Name" xml:space="preserve">
+    <value>dataSet_Report</value>
+  </data>
+  <data name="&gt;&gt;dataSet_Report.Type" xml:space="preserve">
+    <value>PSHOP._06_Reports.DataSet_Report, _06_Reports.DataSet_Report.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cmb_ExportToExcel.Name" xml:space="preserve">
+    <value>cmb_ExportToExcel</value>
+  </data>
+  <data name="&gt;&gt;cmb_ExportToExcel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripDropDownButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnu_Excel_Table.Name" xml:space="preserve">
+    <value>mnu_Excel_Table</value>
+  </data>
+  <data name="&gt;&gt;mnu_Excel_Table.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnu_Send_Chart.Name" xml:space="preserve">
+    <value>mnu_Send_Chart</value>
+  </data>
+  <data name="&gt;&gt;mnu_Send_Chart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator8.Name" xml:space="preserve">
+    <value>toolStripSeparator8</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmb_Print.Name" xml:space="preserve">
+    <value>cmb_Print</value>
+  </data>
+  <data name="&gt;&gt;cmb_Print.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnu_PrintThis.Name" xml:space="preserve">
+    <value>mnu_PrintThis</value>
+  </data>
+  <data name="&gt;&gt;mnu_PrintThis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mnu_PrintAll.Name" xml:space="preserve">
+    <value>mnu_PrintAll</value>
+  </data>
+  <data name="&gt;&gt;mnu_PrintAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripLabel1.Name" xml:space="preserve">
+    <value>toolStripLabel1</value>
+  </data>
+  <data name="&gt;&gt;toolStripLabel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
+    <value>saveFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gridEXExporter1.Name" xml:space="preserve">
+    <value>gridEXExporter1</value>
+  </data>
+  <data name="&gt;&gt;gridEXExporter1.Type" xml:space="preserve">
+    <value>Janus.Windows.GridEX.Export.GridEXExporter, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;uiPanelManager1.Name" xml:space="preserve">
+    <value>uiPanelManager1</value>
+  </data>
+  <data name="&gt;&gt;uiPanelManager1.Type" xml:space="preserve">
+    <value>Janus.Windows.UI.Dock.UIPanelManager, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form27_Legal_NumericMonthly_Customer</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="uiPanel0.AutoHide" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
+    <value>crystalReportViewer1</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
+    <value>uiPanel0Container</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiPanel0Container.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 27</value>
+  </data>
+  <data name="uiPanel0Container.Size" type="System.Drawing.Size, System.Drawing">
+    <value>786, 327</value>
+  </data>
+  <data name="uiPanel0Container.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0Container.Name" xml:space="preserve">
+    <value>uiPanel0Container</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0Container.Type" xml:space="preserve">
+    <value>Janus.Windows.UI.Dock.UIPanelInnerContainer, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0Container.Parent" xml:space="preserve">
+    <value>uiPanel0</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0Container.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="uiPanel0.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 94</value>
+  </data>
+  <data name="uiPanel0.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 355</value>
+  </data>
+  <data name="uiPanel0.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="uiPanel0.Text" xml:space="preserve">
+    <value>جهت نمایش نمودار کالا، روی سطر مربوط دوبار کلیک کنید</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0.Name" xml:space="preserve">
+    <value>uiPanel0</value>
+  </data>
+  <data name="&gt;&gt;uiPanel0.Type" xml:space="preserve">
+    <value>Janus.Windows.UI.Dock.UIPanel, Janus.Windows.UI.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="crystalReportViewer1.DisplayToolbar" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="crystalReportViewer1.EnableDrillDown" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="crystalReportViewer1.ShowCloseButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowGotoPageButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowGroupTreeButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowPageNavigateButtons" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowParameterPanelButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowRefreshButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.ShowTextSearchButton" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="crystalReportViewer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>786, 327</value>
+  </data>
+  <data name="crystalReportViewer1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <assembly alias="CrystalDecisions.Windows.Forms" name="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+  <data name="crystalReportViewer1.ToolPanelView" type="CrystalDecisions.Windows.Forms.ToolPanelViewType, CrystalDecisions.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Name" xml:space="preserve">
+    <value>crystalReportViewer1</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.Parent" xml:space="preserve">
+    <value>uiPanel0Container</value>
+  </data>
+  <data name="&gt;&gt;crystalReportViewer1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gridEX1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gridEX1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="gridEX1_Layout_0.LayoutString" xml:space="preserve">
+    <value>&lt;GridEXLayoutData&gt;&lt;RootTable&gt;&lt;Key&gt;Rpt_Sale_MonthlyNumeric_Customer&lt;/Key&gt;&lt;Caption&gt;Rpt_Sale_MonthlyNumeric_Customer&lt;/Caption&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="CustomerId"&gt;&lt;Caption&gt;Customer Id&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;TypeNameEmptyStringValue&gt;NULL&lt;/TypeNameEmptyStringValue&gt;&lt;EmptyStringValue /&gt;&lt;DataMember&gt;CustomerId&lt;/DataMember&gt;&lt;Key&gt;CustomerId&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;Visible&gt;False&lt;/Visible&gt;&lt;/Column0&gt;&lt;Column1 ID="CustomerCode"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;کد مشتری&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;CustomerId&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;FilterEditType&gt;TextBox&lt;/FilterEditType&gt;&lt;Key&gt;CustomerCode&lt;/Key&gt;&lt;Position&gt;1&lt;/Position&gt;&lt;Width&gt;68&lt;/Width&gt;&lt;DropDownIndex&gt;0&lt;/DropDownIndex&gt;&lt;/Column1&gt;&lt;Column2 ID="CustomerName"&gt;&lt;CompareTarget&gt;Text&lt;/CompareTarget&gt;&lt;Caption&gt;نام مشتری&lt;/Caption&gt;&lt;DataTypeCode&gt;Int32&lt;/DataTypeCode&gt;&lt;DataMember&gt;CustomerId&lt;/DataMember&gt;&lt;DefaultGroupInterval&gt;Text&lt;/DefaultGroupInterval&gt;&lt;EditType&gt;MultiColumnCombo&lt;/EditType&gt;&lt;FilterEditType&gt;TextBox&lt;/FilterEditType&gt;&lt;Key&gt;CustomerName&lt;/Key&gt;&lt;Position&gt;2&lt;/Position&gt;&lt;Width&gt;165&lt;/Width&gt;&lt;DropDownIndex&gt;1&lt;/DropDownIndex&gt;&lt;/Column2&gt;&lt;/Columns&gt;&lt;SortKeys Collection="true" ElementName="SortKey"&gt;&lt;SortKey0 ID="SortKey0"&gt;&lt;ColIndex&gt;2&lt;/ColIndex&gt;&lt;/SortKey0&gt;&lt;/SortKeys&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;DropDowns Collection="true" ElementName="DropDown"&gt;&lt;DropDown0 ID="CustomerCode"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column01"&gt;&lt;Caption&gt;Column01&lt;/Caption&gt;&lt;DataMember&gt;Column01&lt;/DataMember&gt;&lt;Key&gt;Column01&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;CustomerCode&lt;/Key&gt;&lt;DisplayMember&gt;Column01&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/DropDown0&gt;&lt;DropDown1 ID="CustomerName"&gt;&lt;RootTable&gt;&lt;Columns Collection="true" ElementName="Column"&gt;&lt;Column0 ID="Column02"&gt;&lt;Caption&gt;Column02&lt;/Caption&gt;&lt;DataMember&gt;Column02&lt;/DataMember&gt;&lt;Key&gt;Column02&lt;/Key&gt;&lt;Position&gt;0&lt;/Position&gt;&lt;/Column0&gt;&lt;/Columns&gt;&lt;GroupCondition /&gt;&lt;/RootTable&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;VisualStyle&gt;Standard&lt;/VisualStyle&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;ExpandableGroups&gt;False&lt;/ExpandableGroups&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;HideSelection&gt;Highlight&lt;/HideSelection&gt;&lt;Key&gt;CustomerName&lt;/Key&gt;&lt;DisplayMember&gt;Column02&lt;/DisplayMember&gt;&lt;ValueMember&gt;ColumnId&lt;/ValueMember&gt;&lt;/DropDown1&gt;&lt;/DropDowns&gt;&lt;RowWithErrorsFormatStyle&gt;&lt;PredefinedStyle&gt;RowWithErrorsFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowWithErrorsFormatStyle&gt;&lt;LinkFormatStyle&gt;&lt;PredefinedStyle&gt;LinkFormatStyle&lt;/PredefinedStyle&gt;&lt;/LinkFormatStyle&gt;&lt;CardCaptionFormatStyle&gt;&lt;PredefinedStyle&gt;CardCaptionFormatStyle&lt;/PredefinedStyle&gt;&lt;/CardCaptionFormatStyle&gt;&lt;FilterRowFormatStyle&gt;&lt;BackColor&gt;LavenderBlush&lt;/BackColor&gt;&lt;BackColorGradient&gt;Lavender&lt;/BackColorGradient&gt;&lt;PredefinedStyle&gt;FilterRowFormatStyle&lt;/PredefinedStyle&gt;&lt;BackgroundGradientMode&gt;Vertical&lt;/BackgroundGradientMode&gt;&lt;/FilterRowFormatStyle&gt;&lt;GroupByBoxFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxFormatStyle&gt;&lt;GroupByBoxInfoFormatStyle&gt;&lt;PredefinedStyle&gt;GroupByBoxInfoFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupByBoxInfoFormatStyle&gt;&lt;GroupRowFormatStyle&gt;&lt;PredefinedStyle&gt;GroupRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/GroupRowFormatStyle&gt;&lt;HeaderFormatStyle&gt;&lt;PredefinedStyle&gt;HeaderFormatStyle&lt;/PredefinedStyle&gt;&lt;/HeaderFormatStyle&gt;&lt;PreviewRowFormatStyle&gt;&lt;PredefinedStyle&gt;PreviewRowFormatStyle&lt;/PredefinedStyle&gt;&lt;/PreviewRowFormatStyle&gt;&lt;RowFormatStyle&gt;&lt;PredefinedStyle&gt;RowFormatStyle&lt;/PredefinedStyle&gt;&lt;/RowFormatStyle&gt;&lt;SelectedFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedFormatStyle&gt;&lt;SelectedInactiveFormatStyle&gt;&lt;PredefinedStyle&gt;SelectedInactiveFormatStyle&lt;/PredefinedStyle&gt;&lt;/SelectedInactiveFormatStyle&gt;&lt;WatermarkImage /&gt;&lt;AlternatingColors&gt;True&lt;/AlternatingColors&gt;&lt;Font&gt;Tahoma, 8.25pt&lt;/Font&gt;&lt;VisualStyle&gt;VS2010&lt;/VisualStyle&gt;&lt;OfficeColorScheme&gt;Custom&lt;/OfficeColorScheme&gt;&lt;OfficeCustomColor&gt;SteelBlue&lt;/OfficeCustomColor&gt;&lt;AllowEdit&gt;False&lt;/AllowEdit&gt;&lt;FilterMode&gt;Automatic&lt;/FilterMode&gt;&lt;GroupByBoxVisible&gt;False&lt;/GroupByBoxVisible&gt;&lt;RowHeaders&gt;True&lt;/RowHeaders&gt;&lt;EnterKeyBehavior&gt;NextCell&lt;/EnterKeyBehavior&gt;&lt;BuiltInTexts ID="LocalizableStrings" Collection="true"&gt;&lt;FilterRowInfoText&gt;جستجو&lt;/FilterRowInfoText&gt;&lt;FilterRowConditionEqual&gt;مساوی&lt;/FilterRowConditionEqual&gt;&lt;FilterRowConditionNotEqual&gt;نامساوی&lt;/FilterRowConditionNotEqual&gt;&lt;FilterRowConditionGreaterThan&gt;بزرگتر&lt;/FilterRowConditionGreaterThan&gt;&lt;FilterRowConditionGreaterThanOrEqual&gt;بزرگتر مساوی&lt;/FilterRowConditionGreaterThanOrEqual&gt;&lt;FilterRowConditionLessThan&gt;کوچکتر &lt;/FilterRowConditionLessThan&gt;&lt;FilterRowConditionLessThanOrEqual&gt;کوچکتر مساوی&lt;/FilterRowConditionLessThanOrEqual&gt;&lt;FilterRowConditionContains&gt;شامل باشد&lt;/FilterRowConditionContains&gt;&lt;FilterRowConditionNotContains&gt;شامل نباشد&lt;/FilterRowConditionNotContains&gt;&lt;FilterRowConditionEndsWith&gt;خاتمه با&lt;/FilterRowConditionEndsWith&gt;&lt;FilterRowConditionBeginsWith&gt;شروع با&lt;/FilterRowConditionBeginsWith&gt;&lt;FilterRowConditionIsEmpty&gt;خالی باشد&lt;/FilterRowConditionIsEmpty&gt;&lt;FilterRowConditionNotIsEmpty&gt;خالی نباشد&lt;/FilterRowConditionNotIsEmpty&gt;&lt;FilterRowConditionClear&gt;حذف فیلتر&lt;/FilterRowConditionClear&gt;&lt;/BuiltInTexts&gt;&lt;FilterRowButtonStyle&gt;ConditionOperatorDropDown&lt;/FilterRowButtonStyle&gt;&lt;FilterRowUpdateMode&gt;WhenValueChanges&lt;/FilterRowUpdateMode&gt;&lt;/GridEXLayoutData&gt;</value>
+  </data>
+  <data name="gridEX1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gridEX1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 373</value>
+  </data>
+  <data name="gridEX1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Name" xml:space="preserve">
+    <value>gridEX1</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Type" xml:space="preserve">
+    <value>Janus.Windows.GridEX.GridEX, Janus.Windows.GridEX.v4, Version=4.0.32.0, Culture=neutral, PublicKeyToken=21d5517571b185bf</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.Parent" xml:space="preserve">
+    <value>uiPanel1Container</value>
+  </data>
+  <data name="&gt;&gt;gridEX1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+</root>

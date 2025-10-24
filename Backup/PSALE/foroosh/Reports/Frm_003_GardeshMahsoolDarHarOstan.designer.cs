@@ -1,0 +1,446 @@
+﻿namespace PSALE.foroosh.Reports
+{
+    partial class Frm_003_GardeshMahsoolDarHarOstan
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            Janus.Windows.GridEX.GridEXLayout gridEX2_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_003_GardeshMahsoolDarHarOstan));
+            Janus.Windows.GridEX.GridEXLayout column03TextBox_DesignTimeLayout = new Janus.Windows.GridEX.GridEXLayout();
+            Janus.Windows.Common.JanusColorScheme janusColorScheme1 = new Janus.Windows.Common.JanusColorScheme();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.gridEX2 = new Janus.Windows.GridEX.GridEX();
+            this.ostanBaHarMahsoolBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datatSet_Sefareshat = new PSALE.foroosh.Reports.DatatSet_Sefareshat();
+            this.uiGroupBox1 = new Janus.Windows.EditControls.UIGroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.column03TextBox = new Janus.Windows.GridEX.EditControls.MultiColumnCombo();
+            this.VisualStyleManager1 = new Janus.Windows.Common.VisualStyleManager(this.components);
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveLastItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem1 = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMoveNextItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveFirstItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem1 = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem1 = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.faDatePickerStrip1 = new FarsiLibrary.Win.Controls.FADatePickerStrip();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.faDatePickerStrip2 = new FarsiLibrary.Win.Controls.FADatePickerStrip();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.tableAdapterManager = new PSALE.foroosh.Reports.DatatSet_SefareshatTableAdapters.TableAdapterManager();
+            this.table_005_OrderHeaderTableAdapter1 = new PSALE.foroosh.DataSet_ForooshTableAdapters.Table_005_OrderHeaderTableAdapter();
+            this.ostanBaHarMahsoolTableAdapter = new PSALE.foroosh.Reports.DatatSet_SefareshatTableAdapters.OstanBaHarMahsoolTableAdapter();
+            this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ostanBaHarMahsoolBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datatSet_Sefareshat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiGroupBox1)).BeginInit();
+            this.uiGroupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.column03TextBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.gridEX2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.uiGroupBox1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(882, 435);
+            this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // gridEX2
+            // 
+            this.gridEX2.AllowEdit = Janus.Windows.GridEX.InheritableBoolean.False;
+            this.gridEX2.AlternatingColors = true;
+            this.gridEX2.CardWidth = 751;
+            this.gridEX2.ColumnAutoResize = true;
+            this.gridEX2.DataSource = this.ostanBaHarMahsoolBindingSource;
+            gridEX2_DesignTimeLayout.LayoutString = resources.GetString("gridEX2_DesignTimeLayout.LayoutString");
+            this.gridEX2.DesignTimeLayout = gridEX2_DesignTimeLayout;
+            this.gridEX2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridEX2.EnterKeyBehavior = Janus.Windows.GridEX.EnterKeyBehavior.NextCell;
+            this.gridEX2.FilterRowFormatStyle.BackColor = System.Drawing.Color.LavenderBlush;
+            this.gridEX2.FilterRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Horizontal;
+            this.gridEX2.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.gridEX2.GroupByBoxVisible = false;
+            this.gridEX2.Location = new System.Drawing.Point(3, 64);
+            this.gridEX2.Name = "gridEX2";
+            this.gridEX2.NewRowFormatStyle.BackColor = System.Drawing.Color.LightCyan;
+            this.gridEX2.NewRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
+            this.gridEX2.Office2007ColorScheme = Janus.Windows.GridEX.Office2007ColorScheme.Custom;
+            this.gridEX2.Office2007CustomColor = System.Drawing.Color.SteelBlue;
+            this.gridEX2.RowHeaders = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX2.Size = new System.Drawing.Size(876, 368);
+            this.gridEX2.TabIndex = 5;
+            this.gridEX2.TotalRow = Janus.Windows.GridEX.InheritableBoolean.True;
+            this.gridEX2.TotalRowFormatStyle.BackColor = System.Drawing.Color.LightCyan;
+            this.gridEX2.TotalRowFormatStyle.BackgroundGradientMode = Janus.Windows.GridEX.BackgroundGradientMode.Vertical;
+            this.gridEX2.VisualStyle = Janus.Windows.GridEX.VisualStyle.Office2007;
+            // 
+            // ostanBaHarMahsoolBindingSource
+            // 
+            this.ostanBaHarMahsoolBindingSource.DataMember = "OstanBaHarMahsool";
+            this.ostanBaHarMahsoolBindingSource.DataSource = this.datatSet_Sefareshat;
+            // 
+            // datatSet_Sefareshat
+            // 
+            this.datatSet_Sefareshat.DataSetName = "DatatSet_Sefareshat";
+            this.datatSet_Sefareshat.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // uiGroupBox1
+            // 
+            this.uiGroupBox1.BackgroundStyle = Janus.Windows.EditControls.BackgroundStyle.TabPage;
+            this.uiGroupBox1.Controls.Add(this.label1);
+            this.uiGroupBox1.Controls.Add(this.column03TextBox);
+            this.uiGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiGroupBox1.Location = new System.Drawing.Point(3, 3);
+            this.uiGroupBox1.Name = "uiGroupBox1";
+            this.uiGroupBox1.Office2007ColorScheme = Janus.Windows.UI.Office2007ColorScheme.Custom;
+            this.uiGroupBox1.Size = new System.Drawing.Size(876, 55);
+            this.uiGroupBox1.TabIndex = 6;
+            this.uiGroupBox1.VisualStyleManager = this.VisualStyleManager1;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(825, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "استان :";
+            // 
+            // column03TextBox
+            // 
+            this.column03TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            column03TextBox_DesignTimeLayout.LayoutString = resources.GetString("column03TextBox_DesignTimeLayout.LayoutString");
+            this.column03TextBox.DesignTimeLayout = column03TextBox_DesignTimeLayout;
+            this.column03TextBox.DisplayMember = "Column01";
+            this.column03TextBox.Location = new System.Drawing.Point(521, 21);
+            this.column03TextBox.Name = "column03TextBox";
+            this.column03TextBox.SelectedIndex = -1;
+            this.column03TextBox.SelectedItem = null;
+            this.column03TextBox.SelectInDataSource = true;
+            this.column03TextBox.Size = new System.Drawing.Size(289, 21);
+            this.column03TextBox.TabIndex = 5;
+            this.column03TextBox.ValueMember = "Column00";
+            this.column03TextBox.VisualStyleManager = this.VisualStyleManager1;
+            this.column03TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.column03TextBox_KeyPress);
+            // 
+            // VisualStyleManager1
+            // 
+            janusColorScheme1.HighlightTextColor = System.Drawing.SystemColors.HighlightText;
+            janusColorScheme1.Name = "Scheme0";
+            janusColorScheme1.Office2007ColorScheme = Janus.Windows.Common.Office2007ColorScheme.Custom;
+            janusColorScheme1.Office2007CustomColor = System.Drawing.Color.SteelBlue;
+            janusColorScheme1.VisualStyle = Janus.Windows.Common.VisualStyle.Office2007;
+            this.VisualStyleManager1.ColorSchemes.Add(janusColorScheme1);
+            this.VisualStyleManager1.DefaultColorScheme = "Scheme0";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripButton1.Size = new System.Drawing.Size(46, 22);
+            this.toolStripButton1.Text = "چاپ";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveLastItem1
+            // 
+            this.bindingNavigatorMoveLastItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem1.Image")));
+            this.bindingNavigatorMoveLastItem1.Name = "bindingNavigatorMoveLastItem1";
+            this.bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem1.Text = "of {0}";
+            this.bindingNavigatorMoveLastItem1.Click += new System.EventHandler(this.bindingNavigatorMoveLastItem1_Click);
+            // 
+            // bindingNavigatorCountItem1
+            // 
+            this.bindingNavigatorCountItem1.Name = "bindingNavigatorCountItem1";
+            this.bindingNavigatorCountItem1.Size = new System.Drawing.Size(36, 22);
+            this.bindingNavigatorCountItem1.Text = "of {0}";
+            this.bindingNavigatorCountItem1.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorMoveNextItem1
+            // 
+            this.bindingNavigatorMoveNextItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem1.Image")));
+            this.bindingNavigatorMoveNextItem1.Name = "bindingNavigatorMoveNextItem1";
+            this.bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem1.Text = "Move next";
+            this.bindingNavigatorMoveNextItem1.Click += new System.EventHandler(this.bindingNavigatorMoveNextItem1_Click);
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = null;
+            this.bindingNavigator1.BackgroundImage = global::PSALE.Properties.Resources.me_bg;
+            this.bindingNavigator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bindingNavigator1.BindingSource = this.ostanBaHarMahsoolBindingSource;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem1;
+            this.bindingNavigator1.DeleteItem = null;
+            this.bindingNavigator1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorSeparator5,
+            this.bindingNavigatorMoveFirstItem1,
+            this.bindingNavigatorMovePreviousItem1,
+            this.bindingNavigatorSeparator3,
+            this.bindingNavigatorPositionItem1,
+            this.bindingNavigatorCountItem1,
+            this.bindingNavigatorSeparator4,
+            this.bindingNavigatorMoveNextItem1,
+            this.bindingNavigatorMoveLastItem1,
+            this.toolStripSeparator5,
+            this.toolStripButton1,
+            this.toolStripSeparator1,
+            this.toolStripLabel1,
+            this.faDatePickerStrip1,
+            this.toolStripSeparator2,
+            this.toolStripLabel2,
+            this.faDatePickerStrip2,
+            this.toolStripSeparator3,
+            this.toolStripButton2});
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator1.MoveFirstItem = null;
+            this.bindingNavigator1.MoveLastItem = null;
+            this.bindingNavigator1.MoveNextItem = null;
+            this.bindingNavigator1.MovePreviousItem = null;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem1;
+            this.bindingNavigator1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bindingNavigator1.Size = new System.Drawing.Size(882, 25);
+            this.bindingNavigator1.TabIndex = 5;
+            this.bindingNavigator1.TabStop = true;
+            this.bindingNavigator1.Text = "bindingNavigator2";
+            // 
+            // bindingNavigatorSeparator5
+            // 
+            this.bindingNavigatorSeparator5.Name = "bindingNavigatorSeparator5";
+            this.bindingNavigatorSeparator5.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveFirstItem1
+            // 
+            this.bindingNavigatorMoveFirstItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem1.Image")));
+            this.bindingNavigatorMoveFirstItem1.Name = "bindingNavigatorMoveFirstItem1";
+            this.bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem1.Text = "of {0}";
+            this.bindingNavigatorMoveFirstItem1.Click += new System.EventHandler(this.bindingNavigatorMoveFirstItem1_Click);
+            // 
+            // bindingNavigatorMovePreviousItem1
+            // 
+            this.bindingNavigatorMovePreviousItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem1.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem1.Image")));
+            this.bindingNavigatorMovePreviousItem1.Name = "bindingNavigatorMovePreviousItem1";
+            this.bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem1.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem1.Text = "Move previous";
+            this.bindingNavigatorMovePreviousItem1.Click += new System.EventHandler(this.bindingNavigatorMovePreviousItem1_Click);
+            // 
+            // bindingNavigatorSeparator3
+            // 
+            this.bindingNavigatorSeparator3.Name = "bindingNavigatorSeparator3";
+            this.bindingNavigatorSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem1
+            // 
+            this.bindingNavigatorPositionItem1.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem1.AutoSize = false;
+            this.bindingNavigatorPositionItem1.Name = "bindingNavigatorPositionItem1";
+            this.bindingNavigatorPositionItem1.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem1.Text = "0";
+            this.bindingNavigatorPositionItem1.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator4
+            // 
+            this.bindingNavigatorSeparator4.Name = "bindingNavigatorSeparator4";
+            this.bindingNavigatorSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel1.Text = "از تاریخ :";
+            // 
+            // faDatePickerStrip1
+            // 
+            this.faDatePickerStrip1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.faDatePickerStrip1.BackColor = System.Drawing.SystemColors.Window;
+            this.faDatePickerStrip1.Name = "faDatePickerStrip1";
+            this.faDatePickerStrip1.Size = new System.Drawing.Size(120, 22);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.toolStripLabel2.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel2.Text = "تا تاریخ :";
+            // 
+            // faDatePickerStrip2
+            // 
+            this.faDatePickerStrip2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.faDatePickerStrip2.BackColor = System.Drawing.SystemColors.Window;
+            this.faDatePickerStrip2.Name = "faDatePickerStrip2";
+            this.faDatePickerStrip2.Size = new System.Drawing.Size(120, 22);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(67, 22);
+            this.toolStripButton2.Text = "مشاهده";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = PSALE.foroosh.Reports.DatatSet_SefareshatTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // table_005_OrderHeaderTableAdapter1
+            // 
+            this.table_005_OrderHeaderTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ostanBaHarMahsoolTableAdapter
+            // 
+            this.ostanBaHarMahsoolTableAdapter.ClearBeforeFill = true;
+            // 
+            // Frm_003_GardeshMahsoolDarHarOstan
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(882, 460);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.bindingNavigator1);
+            this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name = "Frm_003_GardeshMahsoolDarHarOstan";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "گردش سفارش محصول با هر استان";
+            this.Load += new System.EventHandler(this.Frm_003_GardeshMahsoolDarHarOstan_Load);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridEX2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ostanBaHarMahsoolBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datatSet_Sefareshat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uiGroupBox1)).EndInit();
+            this.uiGroupBox1.ResumeLayout(false);
+            this.uiGroupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.column03TextBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem1;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem1;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator5;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator3;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem1;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator4;
+        private Janus.Windows.GridEX.GridEX gridEX2;
+        private DatatSet_Sefareshat datatSet_Sefareshat;
+        private PSALE.foroosh.Reports.DatatSet_SefareshatTableAdapters.TableAdapterManager tableAdapterManager;
+        private FarsiLibrary.Win.Controls.FADatePickerStrip faDatePickerStrip1;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private FarsiLibrary.Win.Controls.FADatePickerStrip faDatePickerStrip2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private Janus.Windows.EditControls.UIGroupBox uiGroupBox1;
+        private Janus.Windows.GridEX.EditControls.MultiColumnCombo column03TextBox;
+        private System.Windows.Forms.Label label1;
+        internal Janus.Windows.Common.VisualStyleManager VisualStyleManager1;
+        private PSALE.foroosh.DataSet_ForooshTableAdapters.Table_005_OrderHeaderTableAdapter table_005_OrderHeaderTableAdapter1;
+        private System.Windows.Forms.BindingSource ostanBaHarMahsoolBindingSource;
+        private PSALE.foroosh.Reports.DatatSet_SefareshatTableAdapters.OstanBaHarMahsoolTableAdapter ostanBaHarMahsoolTableAdapter;
+    }
+}

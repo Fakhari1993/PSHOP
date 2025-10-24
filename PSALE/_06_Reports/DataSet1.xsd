@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SALE" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SALE (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PSHOP.Properties.Settings.GlobalReference.Default.SALE" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Rpt_SaleTableTableAdapter" GeneratorDataComponentClassName="Rpt_SaleTableTableAdapter" Name="Rpt_SaleTable" UserDataComponentName="Rpt_SaleTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SALE (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        FactorTable.FactorID AS ID, FactorTable.DetailID, FactorTable.Serial, FactorTable.LegalNumber, FactorTable.Date, FactorTable.Responsible, FactorTable.CustomerID, 
+                         FactorTable.P2Name, FactorTable.P2NationalCode, FactorTable.P2ECode, FactorTable.Description2, FactorTable.P2SabtCode, FactorTable.P2Address, 
+                         FactorTable.P2Tel, FactorTable.P2Fax, FactorTable.P2PostalCode, FactorTable.P2Code, FactorTable.GoodCode, FactorTable.GoodName, FactorTable.Box, 
+                         FactorTable.BoxPrice, FactorTable.Pack, FactorTable.PackPrice, FactorTable.Number, FactorTable.TotalNumber, FactorTable.SinglePrice, FactorTable.TotalPrice, 
+                         FactorTable.DiscountPercent, FactorTable.DiscountPrice, FactorTable.TaxPrice, FactorTable.TotalWeight, FactorTable.TaxPercent, FactorTable.NetPrice, 
+                         ISNULL(FactorTable.Ezafat, 0) AS Ezafat, ISNULL(FactorTable.Kosoorat, 0) AS Kosoorat, PersonInfoTable.Column02, FactorTable.NetTotal, FactorTable.Cash, 
+                         FactorTable.Cart, FactorTable.Etebari, FactorTable.[Check], FactorTable.Bon, FactorTable.VolumeGroup, FactorTable.SpecialGroup, FactorTable.SpecialCustomer, 
+                         FactorTable.Description, FactorTable.CountUnitName, derivedtbl_1.Groups, '-' AS charPrice, 'SettleInfo' AS SettleInfo, FactorTable.FactorType, 
+                         FactorTable.NumberInBox, FactorTable.RowDes, FactorTable.Zarib, FactorTable.NumberInBox AS Expr1, FactorTable.NumberInPack, 
+                         CityTable.Column02 AS CityName, ProvinceTable.Column01 AS ProvinceName, FactorTable.PayCash, FactorTable.DraftNumber, FactorTable.DocId, 
+                         FactorTable.Project, FactorTable.BuyerName, FactorTable.SaleType, FactorTable.DocNum
+FROM            (SELECT        Column00, Column01, Column02, Column03, Column04, Column05, Column06
+                          FROM            PBASE_5.dbo.Table_060_ProvinceInfo) AS ProvinceTable INNER JOIN
+                             (SELECT        Column00, Column01, Column02, Column03, Column04, Column05, Column06, Column07, Column08
+                               FROM            PBASE_5.dbo.Table_065_CityInfo) AS CityTable ON ProvinceTable.Column00 = CityTable.Column00 RIGHT OUTER JOIN
+                             (SELECT        Table_010_SaleFactor.columnid AS FactorID, Table_010_SaleFactor.column01 AS Serial, Table_010_SaleFactor.Column37 AS LegalNumber, 
+                                                         Table_010_SaleFactor.column02 AS Date, ISNULL(Table_010_SaleFactor.Column65, '') AS BuyerName, ISNULL
+                                                             ((SELECT        column02
+                                                                 FROM            PBASE_5.dbo.Table_002_SalesTypes
+                                                                 WHERE        (columnid = Table_010_SaleFactor.Column36)), '') AS SaleType, Table_010_SaleFactor.column03 AS CustomerID, 
+                                                         PersonTable.Column02 AS P2Name, PersonTable.Column09 AS P2NationalCode, PersonTable.Column141 AS P2ECode, 
+                                                         PersonTable.Column142 AS P2SabtCode, PersonTable.Column01 AS P2Code, PersonTable.Column06 AS P2Address, PersonTable.Column07 AS P2Tel,
+                                                          PersonTable.Column08 AS P2Fax, PersonTable.Column13 AS P2PostalCode, GoodTable.column01 AS GoodCode, 
+                                                         Table_011_Child1_SaleFactor.column04 AS Box, Table_011_Child1_SaleFactor.column08 AS BoxPrice, 
+                                                         Table_011_Child1_SaleFactor.column05 AS Pack, Table_011_Child1_SaleFactor.column09 AS PackPrice, 
+                                                         Table_011_Child1_SaleFactor.column06 AS Number, Table_011_Child1_SaleFactor.column07 AS TotalNumber, 
+                                                         Table_011_Child1_SaleFactor.column10 AS SinglePrice, Table_011_Child1_SaleFactor.column11 AS TotalPrice, 
+                                                         Table_011_Child1_SaleFactor.column23 AS Description2, Table_011_Child1_SaleFactor.column16 AS DiscountPercent, 
+                                                         Table_011_Child1_SaleFactor.column17 AS DiscountPrice, Table_011_Child1_SaleFactor.column18 AS TaxPercent, 
+                                                         Table_011_Child1_SaleFactor.column19 AS TaxPrice, Table_011_Child1_SaleFactor.Column37 AS TotalWeight, 
+                                                         Table_011_Child1_SaleFactor.column20 AS NetPrice, GoodTable.column02 AS GoodName, OtherPrice.PlusPrice AS Ezafat, 
+                                                         OtherPrice.MinusPrice AS Kosoorat, Table_010_SaleFactor.column05 AS Responsible, Table_010_SaleFactor.Column28 AS NetTotal, 
+                                                         Table_010_SaleFactor.Column46 AS Cash, Table_010_SaleFactor.Column47 AS Cart, Table_010_SaleFactor.Column48 AS Etebari, 
+                                                         Table_010_SaleFactor.Column52 AS [Check], Table_010_SaleFactor.Column54 AS Bon, Table_010_SaleFactor.Column29 AS VolumeGroup, 
+                                                         Table_010_SaleFactor.Column30 AS SpecialGroup, Table_010_SaleFactor.Column31 AS SpecialCustomer, 
+                                                         Table_010_SaleFactor.column06 AS Description, CountUnitTable.Column01 AS CountUnitName, 
+                                                         CASE WHEN Table_010_SaleFactor.Column12 = 0 THEN '***فاکتور ریالی***' ELSE '***فاکتور ارزی***' END AS FactorType, 
+                                                         Table_011_Child1_SaleFactor.column23 AS RowDes, Table_011_Child1_SaleFactor.Column31 AS NumberInBox, 
+                                                         Table_011_Child1_SaleFactor.Column32 AS NumberInPack, Table_011_Child1_SaleFactor.Column33 AS Zarib, PersonTable.Column21 AS ProvinceId, 
+                                                         PersonTable.Column22 AS CityId, Table_010_SaleFactor.column21 AS PayCash,
+                                                             (SELECT        column01
+                                                               FROM            PWHRS_5_1399.dbo.Table_007_PwhrsDraft
+                                                               WHERE        (columnid = Table_010_SaleFactor.column09)) AS DraftNumber, Table_010_SaleFactor.column10 AS DocId,
+                                                             (SELECT        ISNULL(Column00, 0) AS Expr1
+                                                               FROM            PACNT_5_1399.dbo.Table_060_SanadHead
+                                                               WHERE        (ColumnId = Table_010_SaleFactor.column10)) AS DocNum, Project.Column02 AS Project, 
+                                                         Table_011_Child1_SaleFactor.columnid AS DetailID
+                               FROM            Table_010_SaleFactor INNER JOIN
+                                                         Table_011_Child1_SaleFactor ON Table_010_SaleFactor.columnid = Table_011_Child1_SaleFactor.column01 INNER JOIN
+                                                             (SELECT        ColumnId, Column00, Column01, Column02, Column03, Column04, Column05, Column06, Column07, Column08, Column09, Column10, 
+                                                                                         Column11, Column12, Column13, Column21, Column22, Column141, Column142
+                                                               FROM            PBASE_5.dbo.Table_045_PersonInfo) AS PersonTable ON Table_010_SaleFactor.column03 = PersonTable.ColumnId LEFT OUTER JOIN
+                                                             (SELECT        columnid, SUM(PlusPrice) AS PlusPrice, SUM(MinusPrice) AS MinusPrice
+                                                               FROM            (SELECT        Table_010_SaleFactor_2.columnid, SUM(Table_012_Child2_SaleFactor.column04) AS PlusPrice, 0 AS MinusPrice
+                                                                                         FROM            Table_012_Child2_SaleFactor INNER JOIN
+                                                                                                                   Table_010_SaleFactor AS Table_010_SaleFactor_2 ON 
+                                                                                                                   Table_012_Child2_SaleFactor.column01 = Table_010_SaleFactor_2.columnid
+                                                                                         WHERE        (Table_012_Child2_SaleFactor.column05 = 0)
+                                                                                         GROUP BY Table_010_SaleFactor_2.columnid, Table_012_Child2_SaleFactor.column05
+                                                                                         UNION ALL
+                                                                                         SELECT        Table_010_SaleFactor_1.columnid, 0 AS PlusPrice, SUM(Table_012_Child2_SaleFactor_1.column04) AS MinusPrice
+                                                                                         FROM            Table_012_Child2_SaleFactor AS Table_012_Child2_SaleFactor_1 INNER JOIN
+                                                                                                                  Table_010_SaleFactor AS Table_010_SaleFactor_1 ON 
+                                                                                                                  Table_012_Child2_SaleFactor_1.column01 = Table_010_SaleFactor_1.columnid
+                                                                                         WHERE        (Table_012_Child2_SaleFactor_1.column05 = 1)
+                                                                                         GROUP BY Table_010_SaleFactor_1.columnid, Table_012_Child2_SaleFactor_1.column05) AS OtherPrice_1
+                                                               GROUP BY columnid) AS OtherPrice ON Table_010_SaleFactor.columnid = OtherPrice.columnid LEFT OUTER JOIN
+                                                             (SELECT        columnid, column01, column02, column03, column04, column05, column06, column07, column08, column09, column10, column11, 
+                                                                                         column12, column13, column14, column15, column16, column17, column18, column19, column20, column21, column22, column23, 
+                                                                                         column24, column25, column26, column27, column28, column29, column30, column31
+                                                               FROM            PWHRS_5_1399.dbo.table_004_CommodityAndIngredients) AS GoodTable ON 
+                                                         Table_011_Child1_SaleFactor.column02 = GoodTable.columnid LEFT OUTER JOIN
+                                                             (SELECT        Column00, Column01
+                                                               FROM            PBASE_5.dbo.Table_070_CountUnitInfo) AS CountUnitTable ON 
+                                                         Table_011_Child1_SaleFactor.column03 = CountUnitTable.Column00 LEFT OUTER JOIN
+                                                             (SELECT        Column00, Column02
+                                                               FROM            PBASE_5.dbo.Table_035_ProjectInfo) AS Project ON Table_011_Child1_SaleFactor.column22 = Project.Column00) AS FactorTable ON 
+                         CityTable.Column01 = FactorTable.CityId LEFT OUTER JOIN
+                             (SELECT        PersonId, Groups
+                               FROM            PBASE_5.dbo.FN_01_PersonGroup() AS FN_01_PersonGroup_1) AS derivedtbl_1 ON 
+                         FactorTable.CustomerID = derivedtbl_1.PersonId LEFT OUTER JOIN
+                             (SELECT        ColumnId, Column01, Column02, Column21, Column22
+                               FROM            PBASE_5.dbo.Table_045_PersonInfo AS Table_045_PersonInfo_1) AS PersonInfoTable ON 
+                         FactorTable.Responsible = PersonInfoTable.ColumnId
+WHERE        (FactorTable.Serial = 3050)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="DetailID" DataSetColumn="DetailID" />
+              <Mapping SourceColumn="Serial" DataSetColumn="Serial" />
+              <Mapping SourceColumn="LegalNumber" DataSetColumn="LegalNumber" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="Responsible" DataSetColumn="Responsible" />
+              <Mapping SourceColumn="CustomerID" DataSetColumn="CustomerID" />
+              <Mapping SourceColumn="P2Name" DataSetColumn="P2Name" />
+              <Mapping SourceColumn="P2NationalCode" DataSetColumn="P2NationalCode" />
+              <Mapping SourceColumn="P2ECode" DataSetColumn="P2ECode" />
+              <Mapping SourceColumn="Description2" DataSetColumn="Description2" />
+              <Mapping SourceColumn="P2SabtCode" DataSetColumn="P2SabtCode" />
+              <Mapping SourceColumn="P2Address" DataSetColumn="P2Address" />
+              <Mapping SourceColumn="P2Tel" DataSetColumn="P2Tel" />
+              <Mapping SourceColumn="P2Fax" DataSetColumn="P2Fax" />
+              <Mapping SourceColumn="P2PostalCode" DataSetColumn="P2PostalCode" />
+              <Mapping SourceColumn="P2Code" DataSetColumn="P2Code" />
+              <Mapping SourceColumn="GoodCode" DataSetColumn="GoodCode" />
+              <Mapping SourceColumn="GoodName" DataSetColumn="GoodName" />
+              <Mapping SourceColumn="Box" DataSetColumn="Box" />
+              <Mapping SourceColumn="BoxPrice" DataSetColumn="BoxPrice" />
+              <Mapping SourceColumn="Pack" DataSetColumn="Pack" />
+              <Mapping SourceColumn="PackPrice" DataSetColumn="PackPrice" />
+              <Mapping SourceColumn="Number" DataSetColumn="Number" />
+              <Mapping SourceColumn="TotalNumber" DataSetColumn="TotalNumber" />
+              <Mapping SourceColumn="SinglePrice" DataSetColumn="SinglePrice" />
+              <Mapping SourceColumn="TotalPrice" DataSetColumn="TotalPrice" />
+              <Mapping SourceColumn="DiscountPercent" DataSetColumn="DiscountPercent" />
+              <Mapping SourceColumn="DiscountPrice" DataSetColumn="DiscountPrice" />
+              <Mapping SourceColumn="TaxPrice" DataSetColumn="TaxPrice" />
+              <Mapping SourceColumn="TotalWeight" DataSetColumn="TotalWeight" />
+              <Mapping SourceColumn="TaxPercent" DataSetColumn="TaxPercent" />
+              <Mapping SourceColumn="NetPrice" DataSetColumn="NetPrice" />
+              <Mapping SourceColumn="Ezafat" DataSetColumn="Ezafat" />
+              <Mapping SourceColumn="Kosoorat" DataSetColumn="Kosoorat" />
+              <Mapping SourceColumn="Column02" DataSetColumn="Column02" />
+              <Mapping SourceColumn="NetTotal" DataSetColumn="NetTotal" />
+              <Mapping SourceColumn="Cash" DataSetColumn="Cash" />
+              <Mapping SourceColumn="Cart" DataSetColumn="Cart" />
+              <Mapping SourceColumn="Etebari" DataSetColumn="Etebari" />
+              <Mapping SourceColumn="Check" DataSetColumn="Check" />
+              <Mapping SourceColumn="Bon" DataSetColumn="Bon" />
+              <Mapping SourceColumn="VolumeGroup" DataSetColumn="VolumeGroup" />
+              <Mapping SourceColumn="SpecialGroup" DataSetColumn="SpecialGroup" />
+              <Mapping SourceColumn="SpecialCustomer" DataSetColumn="SpecialCustomer" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="CountUnitName" DataSetColumn="CountUnitName" />
+              <Mapping SourceColumn="Groups" DataSetColumn="Groups" />
+              <Mapping SourceColumn="charPrice" DataSetColumn="charPrice" />
+              <Mapping SourceColumn="SettleInfo" DataSetColumn="SettleInfo" />
+              <Mapping SourceColumn="FactorType" DataSetColumn="FactorType" />
+              <Mapping SourceColumn="NumberInBox" DataSetColumn="NumberInBox" />
+              <Mapping SourceColumn="RowDes" DataSetColumn="RowDes" />
+              <Mapping SourceColumn="Zarib" DataSetColumn="Zarib" />
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="NumberInPack" DataSetColumn="NumberInPack" />
+              <Mapping SourceColumn="CityName" DataSetColumn="CityName" />
+              <Mapping SourceColumn="ProvinceName" DataSetColumn="ProvinceName" />
+              <Mapping SourceColumn="PayCash" DataSetColumn="PayCash" />
+              <Mapping SourceColumn="DraftNumber" DataSetColumn="DraftNumber" />
+              <Mapping SourceColumn="DocId" DataSetColumn="DocId" />
+              <Mapping SourceColumn="Project" DataSetColumn="Project" />
+              <Mapping SourceColumn="BuyerName" DataSetColumn="BuyerName" />
+              <Mapping SourceColumn="SaleType" DataSetColumn="SaleType" />
+              <Mapping SourceColumn="DocNum" DataSetColumn="DocNum" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Rpt_SaleTable" msprop:Generator_TableClassName="Rpt_SaleTableDataTable" msprop:Generator_TableVarName="tableRpt_SaleTable" msprop:Generator_TablePropName="Rpt_SaleTable" msprop:Generator_RowDeletingName="Rpt_SaleTableRowDeleting" msprop:Generator_RowChangingName="Rpt_SaleTableRowChanging" msprop:Generator_RowEvHandlerName="Rpt_SaleTableRowChangeEventHandler" msprop:Generator_RowDeletedName="Rpt_SaleTableRowDeleted" msprop:Generator_UserTableName="Rpt_SaleTable" msprop:Generator_RowChangedName="Rpt_SaleTableRowChanged" msprop:Generator_RowEvArgName="Rpt_SaleTableRowChangeEvent" msprop:Generator_RowClassName="Rpt_SaleTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="DetailID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnDetailID" msprop:Generator_ColumnPropNameInRow="DetailID" msprop:Generator_ColumnPropNameInTable="DetailIDColumn" msprop:Generator_UserColumnName="DetailID" type="xs:int" />
+              <xs:element name="Serial" msprop:Generator_ColumnVarNameInTable="columnSerial" msprop:Generator_ColumnPropNameInRow="Serial" msprop:Generator_ColumnPropNameInTable="SerialColumn" msprop:Generator_UserColumnName="Serial" type="xs:int" />
+              <xs:element name="LegalNumber" msprop:Generator_ColumnVarNameInTable="columnLegalNumber" msprop:Generator_ColumnPropNameInRow="LegalNumber" msprop:Generator_ColumnPropNameInTable="LegalNumberColumn" msprop:Generator_UserColumnName="LegalNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Responsible" msprop:Generator_ColumnVarNameInTable="columnResponsible" msprop:Generator_ColumnPropNameInRow="Responsible" msprop:Generator_ColumnPropNameInTable="ResponsibleColumn" msprop:Generator_UserColumnName="Responsible" type="xs:int" minOccurs="0" />
+              <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" type="xs:int" />
+              <xs:element name="P2Name" msprop:Generator_ColumnVarNameInTable="columnP2Name" msprop:Generator_ColumnPropNameInRow="P2Name" msprop:Generator_ColumnPropNameInTable="P2NameColumn" msprop:Generator_UserColumnName="P2Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2NationalCode" msprop:Generator_ColumnVarNameInTable="columnP2NationalCode" msprop:Generator_ColumnPropNameInRow="P2NationalCode" msprop:Generator_ColumnPropNameInTable="P2NationalCodeColumn" msprop:Generator_UserColumnName="P2NationalCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2ECode" msprop:Generator_ColumnVarNameInTable="columnP2ECode" msprop:Generator_ColumnPropNameInRow="P2ECode" msprop:Generator_ColumnPropNameInTable="P2ECodeColumn" msprop:Generator_UserColumnName="P2ECode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description2" msprop:Generator_ColumnVarNameInTable="columnDescription2" msprop:Generator_ColumnPropNameInRow="Description2" msprop:Generator_ColumnPropNameInTable="Description2Column" msprop:Generator_UserColumnName="Description2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2SabtCode" msprop:Generator_ColumnVarNameInTable="columnP2SabtCode" msprop:Generator_ColumnPropNameInRow="P2SabtCode" msprop:Generator_ColumnPropNameInTable="P2SabtCodeColumn" msprop:Generator_UserColumnName="P2SabtCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2Address" msprop:Generator_ColumnVarNameInTable="columnP2Address" msprop:Generator_ColumnPropNameInRow="P2Address" msprop:Generator_ColumnPropNameInTable="P2AddressColumn" msprop:Generator_UserColumnName="P2Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2Tel" msprop:Generator_ColumnVarNameInTable="columnP2Tel" msprop:Generator_ColumnPropNameInRow="P2Tel" msprop:Generator_ColumnPropNameInTable="P2TelColumn" msprop:Generator_UserColumnName="P2Tel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2Fax" msprop:Generator_ColumnVarNameInTable="columnP2Fax" msprop:Generator_ColumnPropNameInRow="P2Fax" msprop:Generator_ColumnPropNameInTable="P2FaxColumn" msprop:Generator_UserColumnName="P2Fax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2PostalCode" msprop:Generator_ColumnVarNameInTable="columnP2PostalCode" msprop:Generator_ColumnPropNameInRow="P2PostalCode" msprop:Generator_ColumnPropNameInTable="P2PostalCodeColumn" msprop:Generator_UserColumnName="P2PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="P2Code" msprop:Generator_ColumnVarNameInTable="columnP2Code" msprop:Generator_ColumnPropNameInRow="P2Code" msprop:Generator_ColumnPropNameInTable="P2CodeColumn" msprop:Generator_UserColumnName="P2Code" type="xs:int" />
+              <xs:element name="GoodCode" msprop:Generator_ColumnVarNameInTable="columnGoodCode" msprop:Generator_ColumnPropNameInRow="GoodCode" msprop:Generator_ColumnPropNameInTable="GoodCodeColumn" msprop:Generator_UserColumnName="GoodCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GoodName" msprop:Generator_ColumnVarNameInTable="columnGoodName" msprop:Generator_ColumnPropNameInRow="GoodName" msprop:Generator_ColumnPropNameInTable="GoodNameColumn" msprop:Generator_UserColumnName="GoodName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Box" msprop:Generator_ColumnVarNameInTable="columnBox" msprop:Generator_ColumnPropNameInRow="Box" msprop:Generator_ColumnPropNameInTable="BoxColumn" msprop:Generator_UserColumnName="Box" type="xs:decimal" />
+              <xs:element name="BoxPrice" msprop:Generator_ColumnVarNameInTable="columnBoxPrice" msprop:Generator_ColumnPropNameInRow="BoxPrice" msprop:Generator_ColumnPropNameInTable="BoxPriceColumn" msprop:Generator_UserColumnName="BoxPrice" type="xs:decimal" />
+              <xs:element name="Pack" msprop:Generator_ColumnVarNameInTable="columnPack" msprop:Generator_ColumnPropNameInRow="Pack" msprop:Generator_ColumnPropNameInTable="PackColumn" msprop:Generator_UserColumnName="Pack" type="xs:decimal" />
+              <xs:element name="PackPrice" msprop:Generator_ColumnVarNameInTable="columnPackPrice" msprop:Generator_ColumnPropNameInRow="PackPrice" msprop:Generator_ColumnPropNameInTable="PackPriceColumn" msprop:Generator_UserColumnName="PackPrice" type="xs:decimal" />
+              <xs:element name="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" msprop:Generator_UserColumnName="Number" type="xs:decimal" />
+              <xs:element name="TotalNumber" msprop:Generator_ColumnVarNameInTable="columnTotalNumber" msprop:Generator_ColumnPropNameInRow="TotalNumber" msprop:Generator_ColumnPropNameInTable="TotalNumberColumn" msprop:Generator_UserColumnName="TotalNumber" type="xs:decimal" />
+              <xs:element name="SinglePrice" msprop:Generator_ColumnVarNameInTable="columnSinglePrice" msprop:Generator_ColumnPropNameInRow="SinglePrice" msprop:Generator_ColumnPropNameInTable="SinglePriceColumn" msprop:Generator_UserColumnName="SinglePrice" type="xs:decimal" />
+              <xs:element name="TotalPrice" msprop:Generator_ColumnVarNameInTable="columnTotalPrice" msprop:Generator_ColumnPropNameInRow="TotalPrice" msprop:Generator_ColumnPropNameInTable="TotalPriceColumn" msprop:Generator_UserColumnName="TotalPrice" type="xs:decimal" />
+              <xs:element name="DiscountPercent" msprop:Generator_ColumnVarNameInTable="columnDiscountPercent" msprop:Generator_ColumnPropNameInRow="DiscountPercent" msprop:Generator_ColumnPropNameInTable="DiscountPercentColumn" msprop:Generator_UserColumnName="DiscountPercent" type="xs:decimal" />
+              <xs:element name="DiscountPrice" msprop:Generator_ColumnVarNameInTable="columnDiscountPrice" msprop:Generator_ColumnPropNameInRow="DiscountPrice" msprop:Generator_ColumnPropNameInTable="DiscountPriceColumn" msprop:Generator_UserColumnName="DiscountPrice" type="xs:decimal" />
+              <xs:element name="TaxPrice" msprop:Generator_ColumnVarNameInTable="columnTaxPrice" msprop:Generator_ColumnPropNameInRow="TaxPrice" msprop:Generator_ColumnPropNameInTable="TaxPriceColumn" msprop:Generator_UserColumnName="TaxPrice" type="xs:decimal" />
+              <xs:element name="TotalWeight" msprop:Generator_ColumnVarNameInTable="columnTotalWeight" msprop:Generator_ColumnPropNameInRow="TotalWeight" msprop:Generator_ColumnPropNameInTable="TotalWeightColumn" msprop:Generator_UserColumnName="TotalWeight" type="xs:decimal" />
+              <xs:element name="TaxPercent" msprop:Generator_ColumnVarNameInTable="columnTaxPercent" msprop:Generator_ColumnPropNameInRow="TaxPercent" msprop:Generator_ColumnPropNameInTable="TaxPercentColumn" msprop:Generator_UserColumnName="TaxPercent" type="xs:decimal" />
+              <xs:element name="NetPrice" msprop:Generator_ColumnVarNameInTable="columnNetPrice" msprop:Generator_ColumnPropNameInRow="NetPrice" msprop:Generator_ColumnPropNameInTable="NetPriceColumn" msprop:Generator_UserColumnName="NetPrice" type="xs:decimal" />
+              <xs:element name="Ezafat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEzafat" msprop:Generator_ColumnPropNameInRow="Ezafat" msprop:Generator_ColumnPropNameInTable="EzafatColumn" msprop:Generator_UserColumnName="Ezafat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Kosoorat" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKosoorat" msprop:Generator_ColumnPropNameInRow="Kosoorat" msprop:Generator_ColumnPropNameInTable="KosooratColumn" msprop:Generator_UserColumnName="Kosoorat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Column02" msprop:Generator_ColumnVarNameInTable="columnColumn02" msprop:Generator_ColumnPropNameInRow="Column02" msprop:Generator_ColumnPropNameInTable="Column02Column" msprop:Generator_UserColumnName="Column02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NetTotal" msprop:Generator_ColumnVarNameInTable="columnNetTotal" msprop:Generator_ColumnPropNameInRow="NetTotal" msprop:Generator_ColumnPropNameInTable="NetTotalColumn" msprop:Generator_UserColumnName="NetTotal" type="xs:decimal" />
+              <xs:element name="Cash" msprop:Generator_ColumnVarNameInTable="columnCash" msprop:Generator_ColumnPropNameInRow="Cash" msprop:Generator_ColumnPropNameInTable="CashColumn" msprop:Generator_UserColumnName="Cash" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Cart" msprop:Generator_ColumnVarNameInTable="columnCart" msprop:Generator_ColumnPropNameInRow="Cart" msprop:Generator_ColumnPropNameInTable="CartColumn" msprop:Generator_UserColumnName="Cart" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Etebari" msprop:Generator_ColumnVarNameInTable="columnEtebari" msprop:Generator_ColumnPropNameInRow="Etebari" msprop:Generator_ColumnPropNameInTable="EtebariColumn" msprop:Generator_UserColumnName="Etebari" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Check" msprop:Generator_ColumnVarNameInTable="columnCheck" msprop:Generator_ColumnPropNameInRow="Check" msprop:Generator_ColumnPropNameInTable="CheckColumn" msprop:Generator_UserColumnName="Check" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Bon" msprop:Generator_ColumnVarNameInTable="columnBon" msprop:Generator_ColumnPropNameInRow="Bon" msprop:Generator_ColumnPropNameInTable="BonColumn" msprop:Generator_UserColumnName="Bon" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VolumeGroup" msprop:Generator_ColumnVarNameInTable="columnVolumeGroup" msprop:Generator_ColumnPropNameInRow="VolumeGroup" msprop:Generator_ColumnPropNameInTable="VolumeGroupColumn" msprop:Generator_UserColumnName="VolumeGroup" type="xs:decimal" />
+              <xs:element name="SpecialGroup" msprop:Generator_ColumnVarNameInTable="columnSpecialGroup" msprop:Generator_ColumnPropNameInRow="SpecialGroup" msprop:Generator_ColumnPropNameInTable="SpecialGroupColumn" msprop:Generator_UserColumnName="SpecialGroup" type="xs:decimal" />
+              <xs:element name="SpecialCustomer" msprop:Generator_ColumnVarNameInTable="columnSpecialCustomer" msprop:Generator_ColumnPropNameInRow="SpecialCustomer" msprop:Generator_ColumnPropNameInTable="SpecialCustomerColumn" msprop:Generator_UserColumnName="SpecialCustomer" type="xs:decimal" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountUnitName" msprop:Generator_ColumnVarNameInTable="columnCountUnitName" msprop:Generator_ColumnPropNameInRow="CountUnitName" msprop:Generator_ColumnPropNameInTable="CountUnitNameColumn" msprop:Generator_UserColumnName="CountUnitName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Groups" msprop:Generator_ColumnVarNameInTable="columnGroups" msprop:Generator_ColumnPropNameInRow="Groups" msprop:Generator_ColumnPropNameInTable="GroupsColumn" msprop:Generator_UserColumnName="Groups" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="charPrice" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncharPrice" msprop:Generator_ColumnPropNameInRow="charPrice" msprop:Generator_ColumnPropNameInTable="charPriceColumn" msprop:Generator_UserColumnName="charPrice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SettleInfo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSettleInfo" msprop:Generator_ColumnPropNameInRow="SettleInfo" msprop:Generator_ColumnPropNameInTable="SettleInfoColumn" msprop:Generator_UserColumnName="SettleInfo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FactorType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFactorType" msprop:Generator_ColumnPropNameInRow="FactorType" msprop:Generator_ColumnPropNameInTable="FactorTypeColumn" msprop:Generator_UserColumnName="FactorType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="18" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NumberInBox" msprop:Generator_ColumnVarNameInTable="columnNumberInBox" msprop:Generator_ColumnPropNameInRow="NumberInBox" msprop:Generator_ColumnPropNameInTable="NumberInBoxColumn" msprop:Generator_UserColumnName="NumberInBox" type="xs:decimal" />
+              <xs:element name="RowDes" msprop:Generator_ColumnVarNameInTable="columnRowDes" msprop:Generator_ColumnPropNameInRow="RowDes" msprop:Generator_ColumnPropNameInTable="RowDesColumn" msprop:Generator_UserColumnName="RowDes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Zarib" msprop:Generator_ColumnVarNameInTable="columnZarib" msprop:Generator_ColumnPropNameInRow="Zarib" msprop:Generator_ColumnPropNameInTable="ZaribColumn" msprop:Generator_UserColumnName="Zarib" type="xs:decimal" />
+              <xs:element name="Expr1" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:decimal" />
+              <xs:element name="NumberInPack" msprop:Generator_ColumnVarNameInTable="columnNumberInPack" msprop:Generator_ColumnPropNameInRow="NumberInPack" msprop:Generator_ColumnPropNameInTable="NumberInPackColumn" msprop:Generator_UserColumnName="NumberInPack" type="xs:decimal" />
+              <xs:element name="CityName" msprop:Generator_ColumnVarNameInTable="columnCityName" msprop:Generator_ColumnPropNameInRow="CityName" msprop:Generator_ColumnPropNameInTable="CityNameColumn" msprop:Generator_UserColumnName="CityName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProvinceName" msprop:Generator_ColumnVarNameInTable="columnProvinceName" msprop:Generator_ColumnPropNameInRow="ProvinceName" msprop:Generator_ColumnPropNameInTable="ProvinceNameColumn" msprop:Generator_UserColumnName="ProvinceName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PayCash" msprop:Generator_ColumnVarNameInTable="columnPayCash" msprop:Generator_ColumnPropNameInRow="PayCash" msprop:Generator_ColumnPropNameInTable="PayCashColumn" msprop:Generator_UserColumnName="PayCash" type="xs:boolean" minOccurs="0" />
+              <xs:element name="DraftNumber" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDraftNumber" msprop:Generator_ColumnPropNameInRow="DraftNumber" msprop:Generator_ColumnPropNameInTable="DraftNumberColumn" msprop:Generator_UserColumnName="DraftNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="DocId" msprop:Generator_ColumnVarNameInTable="columnDocId" msprop:Generator_ColumnPropNameInRow="DocId" msprop:Generator_ColumnPropNameInTable="DocIdColumn" msprop:Generator_UserColumnName="DocId" type="xs:int" />
+              <xs:element name="Project" msprop:Generator_ColumnVarNameInTable="columnProject" msprop:Generator_ColumnPropNameInRow="Project" msprop:Generator_ColumnPropNameInTable="ProjectColumn" msprop:Generator_UserColumnName="Project" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BuyerName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBuyerName" msprop:Generator_ColumnPropNameInRow="BuyerName" msprop:Generator_ColumnPropNameInTable="BuyerNameColumn" msprop:Generator_UserColumnName="BuyerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SaleType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSaleType" msprop:Generator_ColumnPropNameInRow="SaleType" msprop:Generator_ColumnPropNameInTable="SaleTypeColumn" msprop:Generator_UserColumnName="SaleType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DocNum" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDocNum" msprop:Generator_ColumnPropNameInRow="DocNum" msprop:Generator_ColumnPropNameInTable="DocNumColumn" msprop:Generator_UserColumnName="DocNum" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

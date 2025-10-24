@@ -1,0 +1,113 @@
+﻿ 
+DECLARE @projectId SMALLINT
+DECLARE @wareID SMALLINT
+DECLARE @storeID INT
+
+
+IF NOT EXISTS (
+       SELECT *
+       FROM   Table_035_ProjectInfo AS tpi
+   )
+BEGIN
+    INSERT INTO Table_035_ProjectInfo
+      (
+        -- Column00 -- this column value is auto-generated
+        Column01,
+        Column02
+      )
+    VALUES
+      (
+        1,
+        N'پروژه پیش فرض'
+      )
+    SET @projectId = SCOPE_IDENTITY()
+END
+ELSE
+BEGIN
+    SET @projectId = (
+            SELECT TOP 1 tpi.Column00
+            FROM   Table_035_ProjectInfo AS tpi
+        )
+END
+
+
+IF NOT EXISTS (
+       SELECT *
+       FROM   PWHRS_NULL.dbo.Table_001_PWHRS AS tp
+   )
+BEGIN
+    INSERT INTO PWHRS_NULL.dbo.Table_001_PWHRS
+      (
+        -- columnid -- this column value is auto-generated
+        column01,
+        column02
+      )
+    VALUES
+      (
+        1,
+        N'انبار پیش فرض'
+      )
+    SET @wareID = SCOPE_IDENTITY()
+END
+ELSE
+BEGIN
+    SET @wareID = (
+            SELECT TOP 1 tp.columnid
+            FROM   PWHRS_NULL.dbo.Table_001_PWHRS AS tp
+        )
+END
+
+
+INSERT INTO [Table_295_StoreInfo]
+  (
+    [Column00],
+    [Column01],
+    [Column02],
+    [Column03],
+    [Column04],
+    [Column05],
+    [Column06],
+    [Column07],
+    [Column08],
+    [Column09],
+    [Column10],
+    [Column11],
+    [Column12],
+    [Column13],
+    [Column14],
+    [Column15]
+  )
+VALUES
+  (
+    1,
+    N'فروشگاه پیش فرض',
+    NULL,
+    NULL,
+    @wareID,
+    @projectId,
+    NULL,
+    NULL,
+    0,
+    NULL,
+    'Admin',
+    GETDATE(),
+    'Admin',
+    GETDATE(),
+    NULL,
+    NULL
+  )
+SET @storeID = SCOPE_IDENTITY()
+INSERT INTO Table_296_StoreUsers
+SELECT @storeID,
+       tui.Column00,
+       'Admin',
+       GETDATE(),
+       'Admin',
+       GETDATE()
+FROM   PERP_MAIN.dbo.Table_010_UserInfo AS tui
+WHERE  tui.Column06 = '1399'
+       AND tui.Column05 = 1
+  
+GO
+
+

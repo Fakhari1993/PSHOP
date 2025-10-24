@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PSALE_ConnectionString">
+      <rd:DataSourceID>b2abea0c-688c-4aab-9f4c-a31acf6d19fe</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=.;Initial Catalog=PSALE_XX_XXXX;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Kala">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Report_Parameter_0</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>cb11d782-2e33-48a6-828d-458a1ebc0fa0</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Buy_Reports_View_012_BuyReportByMahForChart">
+      <Fields>
+        <Field Name="code">
+          <DataField>code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="VALUE">
+          <DataField>VALUE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Mablagh">
+          <DataField>Mablagh</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PSALE_ConnectionString</DataSourceName>
+        <CommandText>SELECT        'فروردین' AS code, TedadMah1 AS VALUE, MablaghMah1 AS Mablagh
+FROM            View_012_BuyReportByMah
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'اردیبهشت' AS code, TedadMah2, MablaghMah2 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'خرداد' AS code, TedadMah3, MablaghMah3 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'تیر' AS code, TedadMah4, MablaghMah4 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'مرداد' AS code, TedadMah5, MablaghMah5 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'شهریور' AS code, TedadMah6, MablaghMah6 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'مهر' AS code, TedadMah7, MablaghMah7 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'آبان' AS code, TedadMah8, MablaghMah8 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'آذر' AS code, TedadMah9, MablaghMah9 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'دی' AS code, TedadMah10, MablaghMah10 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'بهمن' AS code, TedadMah11, MablaghMah11 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'اسفند' AS code, TedadMah12, MablaghMah12 AS Mablagh
+FROM            View_012_BuyReportByMah AS View_012_BuyReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet_Buy_Reports</rd:DataSetName>
+        <rd:TableName>View_012_BuyReportByMahForChart</rd:TableName>
+        <rd:TableAdapterName>View_012_BuyReportByMahForChartTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6.5in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.5in</Top>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75in</Left>
+        <Height>0.25in</Height>
+        <Value>=Parameters!Kala.Value</Value>
+      </Textbox>
+      <Textbox Name="Mablagh">
+        <rd:DefaultName>Mablagh</rd:DefaultName>
+        <Top>1in</Top>
+        <Width>1in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.75in</Left>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!Mablagh.Value)</Value>
+      </Textbox>
+      <Textbox Name="VALUE">
+        <rd:DefaultName>VALUE</rd:DefaultName>
+        <Top>0.25in</Top>
+        <Width>1in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.875in</Left>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!VALUE.Value)</Value>
+      </Textbox>
+      <Textbox Name="code">
+        <rd:DefaultName>code</rd:DefaultName>
+        <Top>1.25in</Top>
+        <Width>1in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.375in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!code.Value)</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="8">
+      <Table_040_RialAwards Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Table_040_RialAwards</Alias>
+        <Columns isList="true" count="12">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Decimal</value>
+          <value>column05,System.Decimal</value>
+          <value>column06,System.Int32</value>
+          <value>column07,System.Double</value>
+          <value>column08,System.String</value>
+          <value>column09,System.DateTime</value>
+          <value>column10,System.String</value>
+          <value>column11,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_040_RialAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_040_RialAwards</NameInSource>
+      </Table_040_RialAwards>
+      <Table_045_TotalQtyAwards Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Table_045_TotalQtyAwards</Alias>
+        <Columns isList="true" count="12">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Double</value>
+          <value>column05,System.Double</value>
+          <value>column06,System.Int32</value>
+          <value>column07,System.Double</value>
+          <value>column08,System.String</value>
+          <value>column09,System.DateTime</value>
+          <value>column10,System.String</value>
+          <value>column11,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_045_TotalQtyAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_045_TotalQtyAwards</NameInSource>
+      </Table_045_TotalQtyAwards>
+      <table_004_CommodityAndIngredients Ref="4" type="DataTableSource" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <Columns isList="true" count="32">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.String</value>
+          <value>column02,System.String</value>
+          <value>column03,System.Int16</value>
+          <value>column04,System.Int16</value>
+          <value>column05,System.String</value>
+          <value>column06,System.String</value>
+          <value>column07,System.Int16</value>
+          <value>column08,System.Double</value>
+          <value>column09,System.Double</value>
+          <value>column10,System.Double</value>
+          <value>column11,System.Double</value>
+          <value>column12,System.Double</value>
+          <value>column13,System.Int16</value>
+          <value>column14,System.Int32</value>
+          <value>column15,System.String</value>
+          <value>column16,System.Boolean</value>
+          <value>column17,System.Double</value>
+          <value>column18,System.Boolean</value>
+          <value>column19,System.Boolean</value>
+          <value>column20,System.Boolean</value>
+          <value>column21,System.String</value>
+          <value>column22,System.Double</value>
+          <value>column23,System.Double</value>
+          <value>column24,System.Double</value>
+          <value>column25,System.Decimal</value>
+          <value>column26,System.String</value>
+          <value>column27,System.Int32</value>
+          <value>column28,System.Boolean</value>
+          <value>column29,System.Boolean</value>
+          <value>column30,System.Double</value>
+          <value>column31,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>DataSet_05_Awards.table_004_CommodityAndIngredients</NameInSource>
+      </table_004_CommodityAndIngredients>
+      <Table_040_PersonGroups Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <Columns isList="true" count="30">
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.Boolean</value>
+          <value>Column04,System.Boolean</value>
+          <value>Column05,System.Boolean</value>
+          <value>Column06,System.Boolean</value>
+          <value>Column07,System.Boolean</value>
+          <value>Column08,System.Boolean</value>
+          <value>Column09,System.Boolean</value>
+          <value>Column10,System.Boolean</value>
+          <value>Column11,System.Boolean</value>
+          <value>Column12,System.Boolean</value>
+          <value>Column13,System.Boolean</value>
+          <value>Column14,System.Boolean</value>
+          <value>Column15,System.Boolean</value>
+          <value>Column16,System.Boolean</value>
+          <value>Column17,System.Boolean</value>
+          <value>Column18,System.Boolean</value>
+          <value>Column19,System.Boolean</value>
+          <value>Column20,System.Boolean</value>
+          <value>Column21,System.Boolean</value>
+          <value>Column22,System.Boolean</value>
+          <value>Column23,System.Boolean</value>
+          <value>Column24,System.Boolean</value>
+          <value>Column25,System.Boolean</value>
+          <value>Column26,System.Boolean</value>
+          <value>Column27,System.Boolean</value>
+          <value>Column28,System.Boolean</value>
+          <value>Column29,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>DataSet_05_Awards.Table_040_PersonGroups</NameInSource>
+      </Table_040_PersonGroups>
+      <Table_115_VehicleType Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Table_115_VehicleType</Alias>
+        <Columns isList="true" count="9">
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.Double</value>
+          <value>Column03,System.Double</value>
+          <value>Column04,System.Double</value>
+          <value>Column05,System.Double</value>
+          <value>Column06,System.Double</value>
+          <value>Column07,System.Double</value>
+          <value>Column08,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_115_VehicleType</Name>
+        <NameInSource>DataSet_05_Awards.Table_115_VehicleType</NameInSource>
+      </Table_115_VehicleType>
+      <Table_050_VehicleAwards Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Table_050_VehicleAwards</Alias>
+        <Columns isList="true" count="11">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Int16</value>
+          <value>column05,System.Int32</value>
+          <value>column06,System.Double</value>
+          <value>column07,System.String</value>
+          <value>column08,System.DateTime</value>
+          <value>column09,System.String</value>
+          <value>column10,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_050_VehicleAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_050_VehicleAwards</NameInSource>
+      </Table_050_VehicleAwards>
+      <DataTable1 Ref="8" type="DataTableSource" isKey="true">
+        <Alias>DataTable1</Alias>
+        <Columns isList="true" count="54">
+          <value>columnid,System.Int32</value>
+          <value>column01,کد_x0020_کالا,System.String</value>
+          <value>column02,نام_x0020_کالا,System.String</value>
+          <value>column03,گروه_x0020_اصلی,System.Int16</value>
+          <value>column04,گروه_x0020_فرعی,System.Int16</value>
+          <value>column05,System.String</value>
+          <value>column06,System.String</value>
+          <value>column07,System.Int16</value>
+          <value>column08,System.Double</value>
+          <value>column09,System.Double</value>
+          <value>column10,System.Double</value>
+          <value>column11,System.Double</value>
+          <value>column12,System.Double</value>
+          <value>column13,System.Int16</value>
+          <value>column14,System.Int32</value>
+          <value>column15,System.String</value>
+          <value>column16,System.Boolean</value>
+          <value>column17,System.Double</value>
+          <value>column18,System.Boolean</value>
+          <value>column19,System.Boolean</value>
+          <value>column20,System.Boolean</value>
+          <value>column21,محل_x0020_نگهداری,System.String</value>
+          <value>column22,System.Double</value>
+          <value>column23,System.Double</value>
+          <value>column24,System.Double</value>
+          <value>column25,System.Decimal</value>
+          <value>column26,System.String</value>
+          <value>column27,System.Int32</value>
+          <value>column28,System.Boolean</value>
+          <value>column29,System.Boolean</value>
+          <value>column30,System.Double</value>
+          <value>column31,System.Double</value>
+          <value>Column32,System.Boolean</value>
+          <value>Column33,System.String</value>
+          <value>Column34,قیمت_x0020_فروش_x0020_جز,System.Decimal</value>
+          <value>Column35,قیمت_x0020_خرید_x0020_,System.Decimal</value>
+          <value>Column36,قیمت_x0020_مصرف_x0020_کننده,System.Decimal</value>
+          <value>Column37,درصد_x0020_تخفیف_x0020_خطی,System.Decimal</value>
+          <value>Column38,درصد_x0020_اضافه_x0020_خطی,System.Decimal</value>
+          <value>Column39,قیمت_x0020_فروش_x0020_بسته,System.Decimal</value>
+          <value>Column40,قیمت_x0020_فروش_x0020_کارتن,System.Decimal</value>
+          <value>Column41,System.Int32</value>
+          <value>Column42,System.Int32</value>
+          <value>Column43,System.Int32</value>
+          <value>Column44,System.String</value>
+          <value>Column45,System.Byte[]</value>
+          <value>Column46,System.String</value>
+          <value>ware,انبار,System.String</value>
+          <value>Remain,موجودی_x0020_قابل_x0020_فروش,System.Decimal</value>
+          <value>RealRemain,موجودی_x0020_واقعی,System.Decimal</value>
+          <value>RemainBaste,مانده_x0020_بسته,System.Double</value>
+          <value>RemainKarton,مانده_x0020_کارتن,System.Double</value>
+          <value>MainGroup,System.String</value>
+          <value>SubGroup,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable1</Name>
+        <NameInSource>DataSet_05_Awards.DataTable1</NameInSource>
+      </DataTable1>
+      <Table_000_OrgInfo Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Table_000_OrgInfo</Alias>
+        <Columns isList="true" count="20">
+          <value>ColumnId,System.Int16</value>
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.String</value>
+          <value>Column04,System.String</value>
+          <value>Column05,System.String</value>
+          <value>Column06,System.String</value>
+          <value>Column07,System.String</value>
+          <value>Column08,System.String</value>
+          <value>Column09,System.String</value>
+          <value>Column10,System.String</value>
+          <value>Column11,System.String</value>
+          <value>Column12,System.String</value>
+          <value>Column13,System.String</value>
+          <value>Column14,System.String</value>
+          <value>Column15,System.Boolean</value>
+          <value>Column16,System.Boolean</value>
+          <value>Column17,System.Byte[]</value>
+          <value>Column18,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_000_OrgInfo</Name>
+        <NameInSource>DataSet_05_Awards.Table_000_OrgInfo</NameInSource>
+      </Table_000_OrgInfo>
+    </DataSources>
+    <Relations isList="true" count="7">
+      <table_004_CommodityAndIngredients Ref="10" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column06</value>
+        </ChildColumns>
+        <ChildSource isRef="3" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_045_TotalQtyAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </table_004_CommodityAndIngredients>
+      <table_004_CommodityAndIngredients Ref="11" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column06</value>
+        </ChildColumns>
+        <ChildSource isRef="2" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_040_RialAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </table_004_CommodityAndIngredients>
+      <table_004_CommodityAndIngredients Ref="12" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column05</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_050_VehicleAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="4" />
+      </table_004_CommodityAndIngredients>
+      <Table_040_PersonGroups Ref="13" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="7" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_050_VehicleAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="5" />
+      </Table_040_PersonGroups>
+      <Table_040_PersonGroups Ref="14" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="2" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_040_RialAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="5" />
+      </Table_040_PersonGroups>
+      <Table_040_PersonGroups Ref="15" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="3" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_045_TotalQtyAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="5" />
+      </Table_040_PersonGroups>
+      <Table_115_VehicleType Ref="16" type="DataRelation" isKey="true">
+        <Alias>Table_115_VehicleType</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column04</value>
+        </ChildColumns>
+        <ChildSource isRef="4" />
+        <Dictionary isRef="1" />
+        <Name>Table_115_VehicleType</Name>
+        <NameInSource>Table_115_VehicleType_table_004_CommodityAndIngredients</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="6" />
+      </Table_115_VehicleType>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>RunningTotal_x0020_Fields,,_RTotal0,System.Int32,Totals.Sum_x0028_Rpt_GoodReportByVisitors_x002C__x0020_Rpt_GoodReportByVisitors.GoodCode_x0029_,False,False</value>
+      <value>ParameterField,Param2,Param2,System.String,,False,False</value>
+      <value>ParameterField,Param1,Param1,System.String,,False,False</value>
+      <value>ParameterField,Param3,Param3,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="17" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="7">
+        <Section2 Ref="18" type="PageHeaderBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,0.4,19.72,3.71</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text1 Ref="19" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>5.2,0.43,8.34,1.07</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Zar,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="17" />
+              <Parent isRef="18" />
+              <Text>لیست کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Image1 Ref="20" type="Image" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>18.6,0,0.94,1.82</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DataColumn>Table_000_OrgInfo.Column17</DataColumn>
+              <Guid>b777774dec214a60842b4e4f5e60c2ea</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Name>Image1</Name>
+              <Page isRef="17" />
+              <Parent isRef="18" />
+              <Stretch>True</Stretch>
+              <UseParentStyles>True</UseParentStyles>
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+            <Text29 Ref="21" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>14.2,0,4.4,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,20.25,Bold,Point,False,178</Font>
+              <Guid>b0eca3c867584e039416ed79d10a6843</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="17" />
+              <Parent isRef="18" />
+              <Text>{Table_000_OrgInfo.Column01}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Section2</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+        </Section2>
+        <Box1 Ref="22" type="Shape" isKey="true">
+          <BorderColor>128, 128, 192</BorderColor>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>-17,-5.6,19.6,3.7</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Name>Box1</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+          <ShapeType Ref="23" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+        </Box1>
+        <GroupHeaderBand1 Ref="24" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.91,19.72,0.8</ClientRectangle>
+          <Components isList="true" count="2">
+            <Text30 Ref="25" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.2,0.09,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>8b217b44be914ac2b39ab4e685b44916</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="17" />
+              <Parent isRef="24" />
+              <Text>گروه اصلی:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text30>
+            <Text31 Ref="26" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0.09,3.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="17" />
+              <Parent isRef="24" />
+              <Text>{DataTable1.MainGroup}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+            </Text31>
+          </Components>
+          <Condition>{DataTable1.MainGroup}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+        </GroupHeaderBand1>
+        <GroupHeaderBand3 Ref="27" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.51,19.72,1.4</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text32 Ref="28" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>14.4,0.09,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>{DataTable1.SubGroup}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+            </Text32>
+            <Text33 Ref="29" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>17.6,0.09,1.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>گروه فرعی:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text33>
+            <Text35 Ref="30" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>6.6,0.89,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>قیمت فروش بسته</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text35>
+            <Text37 Ref="31" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>3.6,0.89,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>قیمت فروش کارتن</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text37>
+            <Text39 Ref="32" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0.6,0.89,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>قیمت فروش جز</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text39>
+            <Text6 Ref="33" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>15.6,0.89,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>کد کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text6>
+            <Text3 Ref="34" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>9.8,0.89,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>نام کالا</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text3>
+            <Text7 Ref="35" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>18.8,0.89,0.9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,14</Font>
+              <Guid>eff25a0a3e654b80a04d3f4eed9fa015</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="17" />
+              <Parent isRef="27" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text7>
+          </Components>
+          <Condition>{DataTable1.SubGroup}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand3</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+        </GroupHeaderBand3>
+        <DataBand2 Ref="36" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,8.71,19.72,0.6</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text34 Ref="37" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.6,0,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{Format("{0:#,##0.###}",DataTable1.Column39)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text34>
+            <Text36 Ref="38" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.6,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{Format("{0:#,##0.###}",DataTable1.Column40)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text36>
+            <Text38 Ref="39" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.6,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{Format("{0:#,##0.###}",DataTable1.Column34)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text38>
+            <Text18 Ref="40" type="Text" isKey="true">
+              <Border>Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.81,0,0.9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>24ea1d031a9c4008b76222c326085363</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text4 Ref="41" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>White</Brush>
+              <ClientRectangle>15.6,0,3.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{DataTable1.column01}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text4>
+            <Text2 Ref="42" type="Text" isKey="true">
+              <Border>Left, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.8,0,5.8,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="17" />
+              <Parent isRef="36" />
+              <Text>{DataTable1.column02}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DataTable1</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <GroupFooterBand2 Ref="43" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.11,19.72,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand2</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+        </GroupFooterBand2>
+        <GroupFooterBand3 Ref="44" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,10.91,19.72,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand3</Name>
+          <Page isRef="17" />
+          <Parent isRef="17" />
+        </GroupFooterBand3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>85e4a1b1fde246778d3d9a0a3019b4ac</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0.64,0.64,0.64,0.64</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <TitleBeforeHeader>True</TitleBeforeHeader>
+      <Watermark Ref="45" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="46" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportAuthor isNull="true" />
+  <ReportChanged>3/2/2019 1:00:43 PM</ReportChanged>
+  <ReportCreated>2/3/2019 5:02:55 PM</ReportCreated>
+  <ReportDescription isNull="true" />
+  <ReportFile>E:\SVN\Psale\PSALE\PSALE\PSALE\bin\Debug\GoodList.mrt</ReportFile>
+  <ReportGuid>9ae464f73eae4d1aa3cec24259ad19a3</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

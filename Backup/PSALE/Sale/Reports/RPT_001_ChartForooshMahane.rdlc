@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="PSALE_ConnectionString">
+      <rd:DataSourceID>b282561c-9ecd-4c6c-b740-85d45ca0d5a2</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=.;Initial Catalog=PSALE_XX_XXXX;Integrated Security=True</ConnectString>
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Kala">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Kala</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <rd:ReportID>e0aa19cf-534c-4d52-82d9-3a46a5a5e4df</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Reports_View_005_SaleReportByMahForChart">
+      <Fields>
+        <Field Name="VALUE">
+          <DataField>VALUE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="code">
+          <DataField>code</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>PSALE_ConnectionString</DataSourceName>
+        <CommandText>SELECT        'فروردین' AS code, TedadMah1 AS VALUE
+FROM            View_005_SaleReportByMah
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'اردیبهشت' AS code, TedadMah2
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'خرداد' AS code, TedadMah3
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'تیر' AS code, TedadMah4
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'مرداد' AS code, TedadMah5
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'شهریور' AS code, TedadMah6
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'مهر' AS code, TedadMah7
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'آبان' AS code, TedadMah8
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'آذر' AS code, TedadMah9
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'دی' AS code, TedadMah10
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'بهمن' AS code, TedadMah11
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)
+UNION ALL
+SELECT        'اسفند' AS code, TedadMah12
+FROM            View_005_SaleReportByMah AS View_005_SaleReportByMah_1
+WHERE        (Sal = @Sal) AND (Idkala = @idkala)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataSet_Reports</rd:DataSetName>
+        <rd:TableName>View_005_SaleReportByMahForChart</rd:TableName>
+        <rd:TableAdapterName>View_005_SaleReportByMahForChartTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>6.5in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>4in</Top>
+        <Width>4in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75in</Left>
+        <Value>=Parameters!Kala.Value</Value>
+      </Textbox>
+      <Chart Name="chart1">
+        <Legend>
+          <Visible>true</Visible>
+          <Style>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+          <Position>RightCenter</Position>
+        </Legend>
+        <CategoryAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Visible>true</Visible>
+          </Axis>
+        </CategoryAxis>
+        <DataSetName>DataSet_Reports_View_005_SaleReportByMahForChart</DataSetName>
+        <PlotArea>
+          <Style>
+            <BackgroundColor>LightGrey</BackgroundColor>
+            <BorderStyle>
+              <Default>Solid</Default>
+            </BorderStyle>
+          </Style>
+        </PlotArea>
+        <ThreeDProperties>
+          <Enabled>true</Enabled>
+          <Rotation>40</Rotation>
+          <Inclination>30</Inclination>
+          <WallThickness>50</WallThickness>
+        </ThreeDProperties>
+        <PointWidth>0</PointWidth>
+        <SeriesGroupings>
+          <SeriesGrouping>
+            <DynamicSeries>
+              <Grouping Name="chart1_SeriesGroup1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!code.Value</GroupExpression>
+                </GroupExpressions>
+                <Parent>=Fields!code.Value</Parent>
+              </Grouping>
+              <Label>=Fields!code.Value</Label>
+            </DynamicSeries>
+          </SeriesGrouping>
+          <SeriesGrouping>
+            <StaticSeries>
+              <StaticMember>
+                <Label>ماه</Label>
+              </StaticMember>
+            </StaticSeries>
+          </SeriesGrouping>
+        </SeriesGroupings>
+        <Subtype>Plain</Subtype>
+        <ValueAxis>
+          <Axis>
+            <Title />
+            <MajorGridLines>
+              <ShowGridLines>true</ShowGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MajorGridLines>
+            <MinorGridLines>
+              <Style>
+                <BorderStyle>
+                  <Default>Solid</Default>
+                </BorderStyle>
+              </Style>
+            </MinorGridLines>
+            <MajorTickMarks>Outside</MajorTickMarks>
+            <Min>0</Min>
+            <Margin>true</Margin>
+            <Visible>true</Visible>
+            <Scalar>true</Scalar>
+          </Axis>
+        </ValueAxis>
+        <Type>Column</Type>
+        <Palette>Default</Palette>
+        <ChartData>
+          <ChartSeries>
+            <DataPoints>
+              <DataPoint>
+                <DataValues>
+                  <DataValue>
+                    <Value>=Sum(Fields!VALUE.Value)</Value>
+                  </DataValue>
+                </DataValues>
+                <DataLabel />
+                <Style />
+                <Marker>
+                  <Size>6pt</Size>
+                </Marker>
+              </DataPoint>
+            </DataPoints>
+          </ChartSeries>
+        </ChartData>
+        <Style>
+          <BackgroundColor>White</BackgroundColor>
+        </Style>
+        <Title />
+      </Chart>
+    </ReportItems>
+    <Height>4.25in</Height>
+  </Body>
+  <Language>en-US</Language>
+</Report>

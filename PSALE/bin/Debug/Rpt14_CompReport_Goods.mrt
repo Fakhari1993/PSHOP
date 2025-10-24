@@ -1,0 +1,809 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="2">
+      <DataSet_Report Ref="2" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
+        <Alias>DataSet_Report</Alias>
+        <Name>DataSet_Report</Name>
+        <PathData />
+        <PathSchema />
+      </DataSet_Report>
+      <DataSet01_BasicInfo Ref="3" type="Stimulsoft.Report.Dictionary.StiXmlDatabase" isKey="true">
+        <Alias>DataSet01_BasicInfo</Alias>
+        <Name>DataSet01_BasicInfo</Name>
+        <PathData>D:\PERP-New Package\PACNT\PACNT\_1_BasicMenu\DataSet01_BasicInfo.xsd</PathData>
+        <PathSchema />
+      </DataSet01_BasicInfo>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <Rpt_BuyCompReport_Goods Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Rpt_BuyCompReport_Goods</Alias>
+        <Columns isList="true" count="14">
+          <value>FactorNumber,System.String</value>
+          <value>FactorDate,System.String</value>
+          <value>Person,System.String</value>
+          <value>Kol,System.Double</value>
+          <value>JozPrice,System.Double</value>
+          <value>KolPrice,System.Double</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>CountUnit,System.String</value>
+          <value>DisPer,System.Double</value>
+          <value>DisPrice,System.Double</value>
+          <value>ExPer,System.Double</value>
+          <value>ExPrice,System.Double</value>
+          <value>NetPrice,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_BuyCompReport_Goods</Name>
+        <NameInSource>DataSet_Report.Rpt_BuyCompReport_Goods</NameInSource>
+      </Rpt_BuyCompReport_Goods>
+      <Table_000_OrgInfo Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Table_000_OrgInfo</Alias>
+        <Columns isList="true" count="19">
+          <value>ColumnId,System.Int32</value>
+          <value>Column00,System.Int32</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.String</value>
+          <value>Column04,System.String</value>
+          <value>Column05,System.String</value>
+          <value>Column06,System.String</value>
+          <value>Column07,System.String</value>
+          <value>Column08,System.String</value>
+          <value>Column09,System.String</value>
+          <value>Column10,System.String</value>
+          <value>Column11,System.String</value>
+          <value>Column12,System.String</value>
+          <value>Column13,System.String</value>
+          <value>Column14,System.String</value>
+          <value>Column15,System.Boolean</value>
+          <value>Column16,System.Boolean</value>
+          <value>Column17,System.Object</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_000_OrgInfo</Name>
+        <NameInSource>DataSet01_BasicInfo.Table_000_OrgInfo</NameInSource>
+      </Table_000_OrgInfo>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="3">
+      <value>Formula_x0020_Fields,,_Return,System.Object,if_x0028_Rpt_ExtRedReport.Cancel_x0029__x0020_then_x0020_chr_x0028_80_x0029__x0020_else_x0020_chr_x0028_79_x0029_,True,True</value>
+      <value>ParameterField,Param1,Param1,System.String,,False,False</value>
+      <value>ParameterField,Param2,Param2,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="2">
+    <Page1 Ref="6" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <Section1 Ref="7" type="ReportTitleBand" isKey="true">
+          <Brush>HatchBrush,BackwardDiagonal,DarkGray,White</Brush>
+          <ClientRectangle>0,0.4,28.37,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>Section1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </Section1>
+        <Section2 Ref="8" type="PageHeaderBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,1.2,28.37,3.78</ClientRectangle>
+          <Components isList="true" count="23">
+            <Subreport1 Ref="9" type="SubReport" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>20.46,0.21,7.89,1.92</ClientRectangle>
+              <Components isList="true" count="0" />
+              <Name>Subreport1</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <SubReportPageGuid>ab09eba120404c1cbf9b0c42b93ff8f6</SubReportPageGuid>
+            </Subreport1>
+            <Box1 Ref="10" type="Shape" isKey="true">
+              <BorderColor>128, 128, 192</BorderColor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.05,28.77,2.29</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Box1</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <ShapeType Ref="11" type="Stimulsoft.Report.Components.ShapeTypes.StiRoundedRectangleShapeType" isKey="true">
+                <Round>0.116279073</Round>
+              </ShapeType>
+            </Box1>
+            <Text1 Ref="12" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>11.51,0.64,6.61,1.07</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Zar,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>گزارش جامع خرید بر اساس کالا</Text>
+              <TextBrush>Black</TextBrush>
+            </Text1>
+            <Line3 Ref="13" type="Shape" isKey="true">
+              <BorderColor>128, 128, 192</BorderColor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.38,28.77,0.09</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Line3</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <ShapeType Ref="14" type="Stimulsoft.Report.Components.ShapeTypes.StiHorizontalLineShapeType" isKey="true" />
+            </Line3>
+            <Text19 Ref="15" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>18.97,2.98,2.34,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>کد کالا</Text>
+              <TextBrush>Black</TextBrush>
+            </Text19>
+            <Text9 Ref="16" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>14.92,2.98,4.05,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>نام کالا</Text>
+              <TextBrush>Black</TextBrush>
+            </Text9>
+            <Text14 Ref="17" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>27.8,2.98,0.89,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>ردیف</Text>
+              <TextBrush>Black</TextBrush>
+            </Text14>
+            <Line1 Ref="18" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,2.95,28.72,0.02</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Line1</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <ShapeType Ref="19" type="Stimulsoft.Report.Components.ShapeTypes.StiHorizontalLineShapeType" isKey="true" />
+            </Line1>
+            <Line4 Ref="20" type="Shape" isKey="true">
+              <BorderColor>Black</BorderColor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,3.73,28.72,0.02</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Line4</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <ShapeType Ref="21" type="Stimulsoft.Report.Components.ShapeTypes.StiHorizontalLineShapeType" isKey="true" />
+            </Line4>
+            <Text2 Ref="22" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>13.21,2.98,1.71,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>واحد شمارش</Text>
+              <TextBrush>Black</TextBrush>
+            </Text2>
+            <Text3 Ref="23" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>11.3,2.98,1.92,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>تعداد کل</Text>
+              <TextBrush>Black</TextBrush>
+            </Text3>
+            <Text4 Ref="24" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>8.95,2.98,2.34,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>قیمت واحد</Text>
+              <TextBrush>Black</TextBrush>
+            </Text4>
+            <Text5 Ref="25" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>6.39,2.98,2.56,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>قیمت کل</Text>
+              <TextBrush>Black</TextBrush>
+            </Text5>
+            <Text6 Ref="26" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>4.69,2.98,1.71,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>% تخفیف خطی</Text>
+              <TextBrush>Black</TextBrush>
+            </Text6>
+            <Text7 Ref="27" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>2.98,2.98,1.71,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>% اضافه خطی</Text>
+              <TextBrush>Black</TextBrush>
+            </Text7>
+            <Text8 Ref="28" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>0.02,2.98,2.98,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>خالص خطی</Text>
+              <TextBrush>Black</TextBrush>
+            </Text8>
+            <Text10 Ref="29" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>26.43,2.98,1.49,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>ش فاکتور</Text>
+              <TextBrush>Black</TextBrush>
+            </Text10>
+            <Text11 Ref="30" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>24.51,2.98,1.92,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>تاریخ فاکتور</Text>
+              <TextBrush>Black</TextBrush>
+            </Text11>
+            <Text12 Ref="31" type="Text" isKey="true">
+              <Brush>[221:185:185]</Brush>
+              <ClientRectangle>21.31,2.98,3.2,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>تأمین کننده</Text>
+              <TextBrush>Black</TextBrush>
+            </Text12>
+            <Param11 Ref="32" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.43,0.43,2.98,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Param11</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>{Param1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Param11>
+            <Param21 Ref="33" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.43,1.28,2.98,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Param21</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>{Param2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Param21>
+            <Text24 Ref="34" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>3.41,1.28,1.28,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>تا تاریخ:</Text>
+              <TextBrush>Black</TextBrush>
+            </Text24>
+            <Text23 Ref="35" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>3.41,0.43,1.28,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="6" />
+              <Parent isRef="8" />
+              <Text>از تاریخ: </Text>
+              <TextBrush>Black</TextBrush>
+            </Text23>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Section2</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </Section2>
+        <Section3 Ref="36" type="DataBand" isKey="true">
+          <Brush>White</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,5.78,28.37,0.64</ClientRectangle>
+          <Components isList="true" count="13">
+            <FactorNumber1 Ref="37" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>26.54,0,0.99,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FactorNumber1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.FactorNumber}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </FactorNumber1>
+            <FactorDate1 Ref="38" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>24.72,0,1.63,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>FactorDate1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.FactorDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </FactorDate1>
+            <Person1 Ref="39" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>21.47,0,2.9,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Person1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.Person}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Person1>
+            <Kol1 Ref="40" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>11.3,0,1.84,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Kol1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.Kol}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Kol1>
+            <JozPrice1 Ref="41" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8.95,0,2.26,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>JozPrice1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.JozPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </JozPrice1>
+            <KolPrice1 Ref="42" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.61,0,2.26,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>KolPrice1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.KolPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </KolPrice1>
+            <DisPer1 Ref="43" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>4.69,0,1.62,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>DisPer1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.DisPer}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </DisPer1>
+            <ExPer1 Ref="44" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>3.06,0,1.62,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>ExPer1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.ExPer}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </ExPer1>
+            <NetPrice1 Ref="45" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.21,0,2.69,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>NetPrice1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.NetPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </NetPrice1>
+            <CountUnit1 Ref="46" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>13.27,0,1.63,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>CountUnit1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.CountUnit}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </CountUnit1>
+            <GoodCode1 Ref="47" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>19.09,0,2.05,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>GoodCode1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.GoodCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </GoodCode1>
+            <GoodName1 Ref="48" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>15.13,0,3.76,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>GoodName1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <Text>{Rpt_BuyCompReport_Goods.GoodName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </GoodName1>
+            <RecordNumber1 Ref="49" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>27.71,0,0.96,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>RecordNumber1</Name>
+              <Page isRef="6" />
+              <Parent isRef="36" />
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </RecordNumber1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Rpt_BuyCompReport_Goods</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>Section3</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+          <Sort isList="true" count="0" />
+        </Section3>
+        <ReportSummaryBand1 Ref="50" type="ReportSummaryBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,7.22,28.37,0.8</ClientRectangle>
+          <Components isList="true" count="3">
+            <Text13 Ref="51" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0.2,0.18,2.69,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <Guid>fe9e472576b740f4af6360f56b71a080</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="6" />
+              <Parent isRef="50" />
+              <Text>{SumRunning(Section3,Rpt_BuyCompReport_Goods.NetPrice)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Totals</Type>
+            </Text13>
+            <Text15 Ref="52" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>6.6,-0.02,2.26,0.56</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,11</Font>
+              <Guid>57b1ccba1d4d45e5a3cec53cf814b29d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="6" />
+              <Parent isRef="50" />
+              <Text>{SumRunning(Section3,Rpt_BuyCompReport_Goods.KolPrice)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Totals</Type>
+            </Text15>
+            <Text16 Ref="53" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>9.4,-0.02,2.98,0.74</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,12,Bold</Font>
+              <Guid>1a4e685085f842be80bfa20bb4ec72c2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="6" />
+              <Parent isRef="50" />
+              <Text>جمع</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text16>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportSummaryBand1</Name>
+          <Page isRef="6" />
+          <Parent isRef="6" />
+        </ReportSummaryBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>81c1c453ec434cb8a5c218f4b4fce89c</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0.53,0.8,0.53,0.53</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>21</PageHeight>
+      <PageWidth>29.7</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <TitleBeforeHeader>True</TitleBeforeHeader>
+      <Watermark Ref="54" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Logo Ref="55" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="5">
+        <ReportHeaderSection1 Ref="56" type="ReportTitleBand" isKey="true">
+          <Brush>HatchBrush,BackwardDiagonal,DarkGray,White</Brush>
+          <ClientRectangle>0,0.2,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportHeaderSection1</Name>
+          <Page isRef="55" />
+          <Parent isRef="55" />
+        </ReportHeaderSection1>
+        <ReportHeaderSection2 Ref="57" type="ReportTitleBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,0.6,19,1.68</ClientRectangle>
+          <Components isList="true" count="1">
+            <Column011 Ref="58" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>0,0,5.16,1.68</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Jadid,16,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Column011</Name>
+              <Page isRef="55" />
+              <Parent isRef="57" />
+              <Text>{Table_000_OrgInfo.Column01}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Column011>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>ReportHeaderSection2</Name>
+          <Page isRef="55" />
+          <Parent isRef="55" />
+        </ReportHeaderSection2>
+        <DetailSection1 Ref="59" type="DataBand" isKey="true">
+          <Brush>White</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,2.68,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataSourceName>Table_000_OrgInfo</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DetailSection1</Name>
+          <Page isRef="55" />
+          <Parent isRef="55" />
+          <Sort isList="true" count="0" />
+        </DetailSection1>
+        <ReportFooterSection1 Ref="60" type="FooterBand" isKey="true">
+          <Brush>HatchBrush,BackwardDiagonal,DarkGray,White</Brush>
+          <ClientRectangle>0,3.08,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportFooterSection1</Name>
+          <Page isRef="55" />
+          <Parent isRef="55" />
+        </ReportFooterSection1>
+        <ReportFooterSection2 Ref="61" type="FooterBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,3.48,19,0</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Name>ReportFooterSection2</Name>
+          <Page isRef="55" />
+          <Parent isRef="55" />
+        </ReportFooterSection2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>ab09eba120404c1cbf9b0c42b93ff8f6</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>1,1,1,1</Margins>
+      <Name>Logo</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <TitleBeforeHeader>True</TitleBeforeHeader>
+      <Watermark Ref="62" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Logo>
+  </Pages>
+  <PrinterSettings Ref="63" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportAuthor isNull="true" />
+  <ReportChanged>2/5/2020 10:53:13 AM</ReportChanged>
+  <ReportCreated>2/4/2020 2:03:41 PM</ReportCreated>
+  <ReportDescription isNull="true" />
+  <ReportFile>G:\SVN\Psale\PSALE\PSALE\PSALE\bin\Debug\Rpt14_CompReport_Goods.mrt</ReportFile>
+  <ReportGuid>0effa4194dcc4722a4b8acaaf5292aa1</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

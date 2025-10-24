@@ -1,0 +1,1957 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="45">
+      <Rpt_GoodWay Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Rpt_GoodWay</Alias>
+        <Columns isList="true" count="5">
+          <value>Good,DataColumn1,System.String</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>OrderNumber,DataColumn1,System.Double</value>
+          <value>ExitNumber,DataColumn1,System.Double</value>
+          <value>CustomerName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_GoodWay</Name>
+        <NameInSource>DataSet_Report.Rpt_GoodWay</NameInSource>
+      </Rpt_GoodWay>
+      <Rpt_FinalLastPrice Ref="3" type="DataTableSource" isKey="true">
+        <Alias>Rpt_FinalLastPrice</Alias>
+        <Columns isList="true" count="13">
+          <value>Date,System.String</value>
+          <value>MainGroupName,System.String</value>
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>SalePrice,DataColumn1,System.Decimal</value>
+          <value>BuyPrice,DataColumn1,System.Decimal</value>
+          <value>UserPrice,DataColumn1,System.Decimal</value>
+          <value>Discount,DataColumn1,System.Decimal</value>
+          <value>Extra,DataColumn1,System.Decimal</value>
+          <value>SaleBoxPrice,DataColumn1,System.Decimal</value>
+          <value>SalePackPrice,DataColumn1,System.Decimal</value>
+          <value>NumberInBox,System.Decimal</value>
+          <value>NumberInPack,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_FinalLastPrice</Name>
+        <NameInSource>DataSet_Report.Rpt_FinalLastPrice</NameInSource>
+      </Rpt_FinalLastPrice>
+      <Rpt_Order_Province Ref="4" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Order_Province</Alias>
+        <Columns isList="true" count="5">
+          <value>ProvinceName,DataColumn1,System.String</value>
+          <value>CityName,DataColumn1,System.String</value>
+          <value>CityOrder,DataColumn1,System.Double</value>
+          <value>CityExit,System.Double</value>
+          <value>GoodName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Order_Province</Name>
+        <NameInSource>DataSet_Report.Rpt_Order_Province</NameInSource>
+      </Rpt_Order_Province>
+      <Rpt_CompeleteOrderReport Ref="5" type="DataTableSource" isKey="true">
+        <Alias>Rpt_CompeleteOrderReport</Alias>
+        <Columns isList="true" count="9">
+          <value>MainGroupName,DataColumn1,System.String</value>
+          <value>SecondGroupName,DataColumn1,System.String</value>
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>CustomerCode,DataColumn1,System.String</value>
+          <value>CustomerName,DataColumn1,System.String</value>
+          <value>OrderNumber,DataColumn1,System.Double</value>
+          <value>ExitNumber,DataColumn1,System.Double</value>
+          <value>Diff,DataColumn1,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_CompeleteOrderReport</Name>
+        <NameInSource>DataSet_Report.Rpt_CompeleteOrderReport</NameInSource>
+      </Rpt_CompeleteOrderReport>
+      <Rpt_SendCostReport Ref="6" type="DataTableSource" isKey="true">
+        <Alias>Rpt_SendCostReport</Alias>
+        <Columns isList="true" count="15">
+          <value>OrderNum,DataColumn1,System.Int32</value>
+          <value>ExitNum,DataColumn1,System.Int32</value>
+          <value>DraftNum,DataColumn1,System.Int32</value>
+          <value>FactorNum,DataColumn1,System.Int32</value>
+          <value>DocNum,DataColumn1,System.Int32</value>
+          <value>ByCustomer,DataColumn1,System.Boolean</value>
+          <value>SendCost,DataColumn1,System.Int64</value>
+          <value>CustomerCode,DataColumn1,System.String</value>
+          <value>CustomerName,DataColumn1,System.String</value>
+          <value>ExitDate,DataColumn1,System.String</value>
+          <value>DriverName,DataColumn1,System.String</value>
+          <value>Province,DataColumn1,System.String</value>
+          <value>City,DataColumn1,System.String</value>
+          <value>SendTo,DataColumn1,System.String</value>
+          <value>Address,DataColumn1,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_SendCostReport</Name>
+        <NameInSource>DataSet_Report.Rpt_SendCostReport</NameInSource>
+      </Rpt_SendCostReport>
+      <Rpt_SaleDocument Ref="7" type="DataTableSource" isKey="true">
+        <Alias>Rpt_SaleDocument</Alias>
+        <Columns isList="true" count="26">
+          <value>FactorNum,DataColumn1,System.Int32</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>Customer,DataColumn1,System.String</value>
+          <value>Seller,DataColumn1,System.String</value>
+          <value>PreFactor,DataColumn1,System.Int32</value>
+          <value>DraftNum,DataColumn1,System.Int32</value>
+          <value>DocNum,DataColumn1,System.Int32</value>
+          <value>Cancel,DataColumn1,System.Boolean</value>
+          <value>Return,DataColumn1,System.Boolean</value>
+          <value>ReturnNum,DataColumn1,System.Int32</value>
+          <value>NetPrice,DataColumn1,System.Double</value>
+          <value>VolDis,DataColumn1,System.Double</value>
+          <value>SpecGroupDis,DataColumn1,System.Double</value>
+          <value>SpecCustomer,DataColumn1,System.Double</value>
+          <value>Extra,DataColumn1,System.Double</value>
+          <value>Dis,DataColumn1,System.Double</value>
+          <value>FinalPrice,DataColumn1,System.Double</value>
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>TotalCount,DataColumn1,System.Double</value>
+          <value>TotalPrice,DataColumn1,System.Double</value>
+          <value>LinDis,DataColumn1,System.Double</value>
+          <value>LinExtra,DataColumn1,System.Double</value>
+          <value>LinNet,System.Double</value>
+          <value>Project,DataColumn1,System.String</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_SaleDocument</Name>
+        <NameInSource>DataSet_Report.Rpt_SaleDocument</NameInSource>
+      </Rpt_SaleDocument>
+      <Rpt_SaleDocument_child Ref="8" type="DataTableSource" isKey="true">
+        <Alias>Rpt_SaleDocument_child</Alias>
+        <Columns isList="true" count="4">
+          <value>FactorNumber,DataColumn1,System.Int32</value>
+          <value>Type,DataColumn1,System.Boolean</value>
+          <value>Name,DataColumn1,System.String</value>
+          <value>Price,DataColumn1,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_SaleDocument_child</Name>
+        <NameInSource>DataSet_Report.Rpt_SaleDocument_child</NameInSource>
+      </Rpt_SaleDocument_child>
+      <Rpt_Chart Ref="9" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Chart</Alias>
+        <Columns isList="true" count="2">
+          <value>Name,DataColumn1,System.String</value>
+          <value>Value,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Chart</Name>
+        <NameInSource>DataSet_Report.Rpt_Chart</NameInSource>
+      </Rpt_Chart>
+      <Rpt_Sale_CustomerBase Ref="10" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_CustomerBase</Alias>
+        <Columns isList="true" count="18">
+          <value>FactorNum,DataColumn1,System.Int32</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>Customer,DataColumn1,System.String</value>
+          <value>Seller,DataColumn1,System.String</value>
+          <value>PreFactor,DataColumn1,System.Int32</value>
+          <value>DraftNum,DataColumn1,System.Int32</value>
+          <value>DocNum,DataColumn1,System.Int32</value>
+          <value>Cancel,DataColumn1,System.Boolean</value>
+          <value>Return,DataColumn1,System.Boolean</value>
+          <value>ReturnNum,DataColumn1,System.Int32</value>
+          <value>NetPrice,DataColumn1,System.Double</value>
+          <value>VolDis,DataColumn1,System.Double</value>
+          <value>SpecGroupDis,DataColumn1,System.Double</value>
+          <value>SpecCustomer,DataColumn1,System.Double</value>
+          <value>Extra,DataColumn1,System.Double</value>
+          <value>Dis,DataColumn1,System.Double</value>
+          <value>FinalPrice,DataColumn1,System.Double</value>
+          <value>Description,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_CustomerBase</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_CustomerBase</NameInSource>
+      </Rpt_Sale_CustomerBase>
+      <Rpt_Sale_Goods Ref="11" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_Goods</Alias>
+        <Columns isList="true" count="10">
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>TotalNumber,DataColumn1,System.Decimal</value>
+          <value>Fee,DataColumn1,System.Decimal</value>
+          <value>TotalPrice,DataColumn1,System.Decimal</value>
+          <value>CustomerName,DataColumn1,System.String</value>
+          <value>Factor_TotalNumber,DataColumn1,System.Decimal</value>
+          <value>Factor_TotalPrice,DataColumn1,System.Decimal</value>
+          <value>FactorDate,DataColumn1,System.String</value>
+          <value>FactorNumber,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_Goods</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_Goods</NameInSource>
+      </Rpt_Sale_Goods>
+      <Rpt_Monthly_Numeric Ref="12" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Monthly_Numeric</Alias>
+        <Columns isList="true" count="2">
+          <value>MonthName,System.String</value>
+          <value>Number,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Monthly_Numeric</Name>
+        <NameInSource>DataSet_Report.Rpt_Monthly_Numeric</NameInSource>
+      </Rpt_Monthly_Numeric>
+      <Rpt_Monthly_Numeric_Table Ref="13" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Monthly_Numeric_Table</Alias>
+        <Columns isList="true" count="29">
+          <value>GoodCode,MonthName,System.String</value>
+          <value>GoodName,Number,System.String</value>
+          <value>Far,MonthName,System.Double</value>
+          <value>Ord,Number,System.Double</value>
+          <value>Kho,MonthName,System.Double</value>
+          <value>Tir,Number,System.Double</value>
+          <value>Mor,MonthName,System.Double</value>
+          <value>Sha,Number,System.Double</value>
+          <value>Meh,MonthName,System.Double</value>
+          <value>Aba,Number,System.Double</value>
+          <value>Aza,MonthName,System.Double</value>
+          <value>Dey,Number,System.Double</value>
+          <value>Bah,MonthName,System.Double</value>
+          <value>Esf,Number,System.Double</value>
+          <value>VisitorId,DataColumn1,System.Int32</value>
+          <value>VisitorCode,DataColumn1,System.Int32</value>
+          <value>VisitorName,System.String</value>
+          <value>FarW,System.Decimal</value>
+          <value>OrdW,DataColumn1,System.Decimal</value>
+          <value>KhoW,DataColumn1,System.Decimal</value>
+          <value>TirW,DataColumn1,System.Decimal</value>
+          <value>MorW,DataColumn1,System.Decimal</value>
+          <value>ShaW,DataColumn1,System.Decimal</value>
+          <value>MehW,DataColumn1,System.Decimal</value>
+          <value>AbaW,DataColumn1,System.Decimal</value>
+          <value>AzarW,DataColumn1,System.Decimal</value>
+          <value>DeyW,DataColumn1,System.Decimal</value>
+          <value>BahW,DataColumn1,System.Decimal</value>
+          <value>EsfW,DataColumn1,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Monthly_Numeric_Table</Name>
+        <NameInSource>DataSet_Report.Rpt_Monthly_Numeric_Table</NameInSource>
+      </Rpt_Monthly_Numeric_Table>
+      <Rpt_BuyDocument Ref="14" type="DataTableSource" isKey="true">
+        <Alias>Rpt_BuyDocument</Alias>
+        <Columns isList="true" count="24">
+          <value>FactorNum,DataColumn1,System.Int32</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>Seller,DataColumn1,System.String</value>
+          <value>Buyer,DataColumn1,System.String</value>
+          <value>PreFactor,DataColumn1,System.Int32</value>
+          <value>ReceiptNum,DataColumn1,System.Int32</value>
+          <value>DocNum,DataColumn1,System.Int32</value>
+          <value>Cancel,DataColumn1,System.Boolean</value>
+          <value>Return,DataColumn1,System.Boolean</value>
+          <value>ReturnNum,DataColumn1,System.Int32</value>
+          <value>NetPrice,DataColumn1,System.Decimal</value>
+          <value>Extra,DataColumn1,System.Decimal</value>
+          <value>Dis,DataColumn1,System.Decimal</value>
+          <value>FinalPrice,DataColumn1,System.Decimal</value>
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>TotalCount,DataColumn1,System.Decimal</value>
+          <value>TotalPrice,DataColumn1,System.Decimal</value>
+          <value>LinDis,DataColumn1,System.Decimal</value>
+          <value>LinExtra,DataColumn1,System.Decimal</value>
+          <value>LinNet,System.Decimal</value>
+          <value>Project,DataColumn1,System.String</value>
+          <value>Description,System.String</value>
+          <value>Center,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_BuyDocument</Name>
+        <NameInSource>DataSet_Report.Rpt_BuyDocument</NameInSource>
+      </Rpt_BuyDocument>
+      <Rpt_ExtRedReport Ref="15" type="DataTableSource" isKey="true">
+        <Alias>Rpt_ExtRedReport</Alias>
+        <Columns isList="true" count="9">
+          <value>Number,DataColumn1,System.String</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>Customer,DataColumn1,System.String</value>
+          <value>NetPrice,DataColumn1,System.Decimal</value>
+          <value>Percent,DataColumn1,System.Double</value>
+          <value>Price,DataColumn1,System.Decimal</value>
+          <value>Return,DataColumn1,System.String</value>
+          <value>Cancel,DataColumn1,System.Boolean</value>
+          <value>Name,DataColumn1,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_ExtRedReport</Name>
+        <NameInSource>DataSet_Report.Rpt_ExtRedReport</NameInSource>
+      </Rpt_ExtRedReport>
+      <Rpt_Discounts Ref="16" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Discounts</Alias>
+        <Columns isList="true" count="7">
+          <value>Number,DataColumn1,System.String</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>Customer,DataColumn1,System.String</value>
+          <value>NetPrice,DataColumn1,System.Int64</value>
+          <value>Group,DataColumn1,System.Int64</value>
+          <value>Volume,DataColumn1,System.Int64</value>
+          <value>Special,DataColumn1,System.Int64</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Discounts</Name>
+        <NameInSource>DataSet_Report.Rpt_Discounts</NameInSource>
+      </Rpt_Discounts>
+      <Rpt_Sale_MonthlyNumeric_Customer Ref="17" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Customer</Alias>
+        <Columns isList="true" count="1">
+          <value>CustomerId,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Customer</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_MonthlyNumeric_Customer</NameInSource>
+      </Rpt_Sale_MonthlyNumeric_Customer>
+      <Rpt_Sale_MonthlyNumeric_Customer_Detail Ref="18" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Customer_Detail</Alias>
+        <Columns isList="true" count="53">
+          <value>Year,System.String</value>
+          <value>CustomerId,System.Int32</value>
+          <value>GoodID,System.Int32</value>
+          <value>Far,System.Double</value>
+          <value>FarBox,System.Double</value>
+          <value>FarPack,System.Double</value>
+          <value>FarDetail,System.Double</value>
+          <value>Ord,System.Double</value>
+          <value>OrdBox,System.Double</value>
+          <value>OrdPack,System.Double</value>
+          <value>OrdDetail,System.Double</value>
+          <value>Khordad,System.Double</value>
+          <value>KhordadBox,System.Double</value>
+          <value>KhordadPack,System.Double</value>
+          <value>KhordadDetail,System.Double</value>
+          <value>Tir,System.Double</value>
+          <value>TirBox,System.Double</value>
+          <value>TirPack,System.Double</value>
+          <value>TirDetail,System.Double</value>
+          <value>Mordad,System.Double</value>
+          <value>MordadBox,System.Double</value>
+          <value>MordadPack,System.Double</value>
+          <value>MordadDetail,System.Double</value>
+          <value>Shahr,System.Double</value>
+          <value>ShahrBox,System.Double</value>
+          <value>ShahrPack,System.Double</value>
+          <value>ShahrDetail,System.Double</value>
+          <value>Mehr,System.Double</value>
+          <value>MehrBox,System.Double</value>
+          <value>MehrPack,System.Double</value>
+          <value>MehrDetail,System.Double</value>
+          <value>Aban,System.Double</value>
+          <value>AbanBox,System.Double</value>
+          <value>AbanPack,System.Double</value>
+          <value>AbanDetail,System.Double</value>
+          <value>Azar,System.Double</value>
+          <value>AzarBox,System.Double</value>
+          <value>AzarPack,System.Double</value>
+          <value>AzarDetail,System.Double</value>
+          <value>Dey,System.Double</value>
+          <value>DeyBox,System.Double</value>
+          <value>DeyPack,System.Double</value>
+          <value>DeyDetail,System.Double</value>
+          <value>Bahman,System.Double</value>
+          <value>BahmanBox,System.Double</value>
+          <value>BahmanPack,System.Double</value>
+          <value>BahmanDetail,System.Double</value>
+          <value>Esf,System.Double</value>
+          <value>EsfBox,System.Double</value>
+          <value>EsfPack,System.Double</value>
+          <value>EsfDetail,System.Double</value>
+          <value>GoodName,GoodCode,System.String</value>
+          <value>GoodCode,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Customer_Detail</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_MonthlyNumeric_Customer_Detail</NameInSource>
+      </Rpt_Sale_MonthlyNumeric_Customer_Detail>
+      <Rpt_Sale_Monthly_Value_Customer Ref="19" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_Monthly_Value_Customer</Alias>
+        <Columns isList="true" count="17">
+          <value>CustomerCode,DataColumn1,System.String</value>
+          <value>CustomerName,DataColumn1,System.String</value>
+          <value>Far,DataColumn1,System.Double</value>
+          <value>Ord,DataColumn1,System.Double</value>
+          <value>Kho,DataColumn1,System.Double</value>
+          <value>Tir,DataColumn1,System.Double</value>
+          <value>Mor,DataColumn1,System.Double</value>
+          <value>Sha,DataColumn1,System.Double</value>
+          <value>Meh,DataColumn1,System.Double</value>
+          <value>Aba,DataColumn1,System.Double</value>
+          <value>Aza,DataColumn1,System.Double</value>
+          <value>Dey,DataColumn1,System.Double</value>
+          <value>Bah,DataColumn1,System.Double</value>
+          <value>Esf,DataColumn1,System.Double</value>
+          <value>VisitorCode,System.Int32</value>
+          <value>VisitorName,System.String</value>
+          <value>VisitorID,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_Monthly_Value_Customer</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_Monthly_Value_Customer</NameInSource>
+      </Rpt_Sale_Monthly_Value_Customer>
+      <Rpt_Margin Ref="20" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Margin</Alias>
+        <Columns isList="true" count="15">
+          <value>GoodCode,System.String</value>
+          <value>GoodName,DataColumn2,System.String</value>
+          <value>TotalNumber,System.Decimal</value>
+          <value>TotalDay,System.Double</value>
+          <value>TotalFactor,System.Decimal</value>
+          <value>TotalCurrency,System.Decimal</value>
+          <value>AvgFactor,System.Decimal</value>
+          <value>AvgDay,System.Double</value>
+          <value>AvgCurrency,System.Decimal</value>
+          <value>TotalFee,System.Decimal</value>
+          <value>AvgFee,System.Decimal</value>
+          <value>MarginFactor,System.Decimal</value>
+          <value>MarginDay,System.Double</value>
+          <value>TotalMargin_Factor,System.Decimal</value>
+          <value>TotalMargin_Day,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Margin</Name>
+        <NameInSource>DataSet_Report.Rpt_Margin</NameInSource>
+      </Rpt_Margin>
+      <Rpt_Sale_CustomerGood Ref="21" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_CustomerGood</Alias>
+        <Columns isList="true" count="15">
+          <value>CustomerId,System.Int32</value>
+          <value>CustomerCode,System.Int16</value>
+          <value>CustomerName,System.String</value>
+          <value>GoodId,System.Int32</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>CountUnit,System.String</value>
+          <value>BoxNumber,System.Decimal</value>
+          <value>PackNumber,System.Decimal</value>
+          <value>DetailNumber,System.Decimal</value>
+          <value>TotalNumber,System.Decimal</value>
+          <value>TotalPrice,System.Decimal</value>
+          <value>TotalDiscount,System.Decimal</value>
+          <value>TotalExtra,System.Decimal</value>
+          <value>NetPrice,TotalExtra,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_CustomerGood</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_CustomerGood</NameInSource>
+      </Rpt_Sale_CustomerGood>
+      <Tbl_Vitors Ref="22" type="DataTableSource" isKey="true">
+        <Alias>Tbl_Vitors</Alias>
+        <Columns isList="true" count="3">
+          <value>ColumnId,System.Int32</value>
+          <value>Column01,System.Int16</value>
+          <value>Column02,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Tbl_Vitors</Name>
+        <NameInSource>DataSet_Report.Tbl_Vitors</NameInSource>
+      </Tbl_Vitors>
+      <Rpt_Visitor_Customer Ref="23" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Visitor_Customer</Alias>
+        <Columns isList="true" count="9">
+          <value>Visitros,DataColumn1,System.String</value>
+          <value>CustomerCode,DataColumn1,System.String</value>
+          <value>CustomerName,DataColumn1,System.String</value>
+          <value>ACC_Code,DataColumn1,System.String</value>
+          <value>ACC_Name,DataColumn1,System.String</value>
+          <value>Bed,DataColumn1,System.Int64</value>
+          <value>Bes,DataColumn1,System.Int64</value>
+          <value>Remain,DataColumn1,System.Int64</value>
+          <value>VisitorCode,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Visitor_Customer</Name>
+        <NameInSource>DataSet_Report.Rpt_Visitor_Customer</NameInSource>
+      </Rpt_Visitor_Customer>
+      <Rpt_Sale_MonthlyNumeric_Visitor Ref="24" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Visitor</Alias>
+        <Columns isList="true" count="2">
+          <value>VisitorId,System.Int32</value>
+          <value>Year,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Visitor</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_MonthlyNumeric_Visitor</NameInSource>
+      </Rpt_Sale_MonthlyNumeric_Visitor>
+      <Rpt_Sale_MonthlyNumeric_VisitorDetails Ref="25" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_VisitorDetails</Alias>
+        <Columns isList="true" count="51">
+          <value>Year,System.String</value>
+          <value>VisitorId,System.Int32</value>
+          <value>GoodID,System.Int32</value>
+          <value>Far,System.Decimal</value>
+          <value>FarBox,System.Decimal</value>
+          <value>FarPack,System.Decimal</value>
+          <value>FarDetail,System.Decimal</value>
+          <value>Ord,System.Decimal</value>
+          <value>OrdBox,System.Decimal</value>
+          <value>OrdPack,System.Decimal</value>
+          <value>OrdDetail,System.Decimal</value>
+          <value>Khordad,System.Decimal</value>
+          <value>KhordadBox,System.Decimal</value>
+          <value>KhordadPack,System.Decimal</value>
+          <value>KhordadDetail,System.Decimal</value>
+          <value>Tir,System.Decimal</value>
+          <value>TirBox,System.Decimal</value>
+          <value>TirPack,System.Decimal</value>
+          <value>TirDetail,System.Decimal</value>
+          <value>Mordad,System.Decimal</value>
+          <value>MordadBox,System.Decimal</value>
+          <value>MordadPack,System.Decimal</value>
+          <value>MordadDetail,System.Decimal</value>
+          <value>Shahr,System.Decimal</value>
+          <value>ShahrBox,System.Decimal</value>
+          <value>ShahrPack,System.Decimal</value>
+          <value>ShahrDetail,System.Decimal</value>
+          <value>Mehr,System.Decimal</value>
+          <value>MehrBox,System.Decimal</value>
+          <value>MehrPack,System.Decimal</value>
+          <value>MehrDetail,System.Decimal</value>
+          <value>Aban,System.Decimal</value>
+          <value>AbanBox,System.Decimal</value>
+          <value>AbanPack,System.Decimal</value>
+          <value>AbanDetail,System.Decimal</value>
+          <value>Azar,System.Decimal</value>
+          <value>AzarBox,System.Decimal</value>
+          <value>AzarPack,System.Decimal</value>
+          <value>AzarDetail,System.Decimal</value>
+          <value>Dey,System.Decimal</value>
+          <value>DeyBox,System.Decimal</value>
+          <value>DeyPack,System.Decimal</value>
+          <value>DeyDetail,System.Decimal</value>
+          <value>Bahman,System.Decimal</value>
+          <value>BahmanBox,System.Decimal</value>
+          <value>BahmanPack,System.Decimal</value>
+          <value>BahmanDetail,System.Decimal</value>
+          <value>Esf,System.Decimal</value>
+          <value>EsfBox,System.Decimal</value>
+          <value>EsfPack,System.Decimal</value>
+          <value>EsfDetail,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_VisitorDetails</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_MonthlyNumeric_VisitorDetails</NameInSource>
+      </Rpt_Sale_MonthlyNumeric_VisitorDetails>
+      <Tbl_Customers Ref="26" type="DataTableSource" isKey="true">
+        <Alias>Tbl_Customers</Alias>
+        <Columns isList="true" count="1">
+          <value>column03,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Tbl_Customers</Name>
+        <NameInSource>DataSet_Report.Tbl_Customers</NameInSource>
+      </Tbl_Customers>
+      <Rpt_Sale_Monthly_Value_Visitor_Good Ref="27" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_Monthly_Value_Visitor_Good</Alias>
+        <Columns isList="true" count="15">
+          <value>Year,System.String</value>
+          <value>GoodID,System.Int32</value>
+          <value>Far,System.Decimal</value>
+          <value>Ord,System.Decimal</value>
+          <value>Khordad,System.Decimal</value>
+          <value>Tir,System.Decimal</value>
+          <value>Mordad,System.Decimal</value>
+          <value>Shahr,System.Decimal</value>
+          <value>Mehr,System.Decimal</value>
+          <value>Aban,System.Decimal</value>
+          <value>Azar,System.Decimal</value>
+          <value>Dey,System.Decimal</value>
+          <value>Bahman,System.Decimal</value>
+          <value>Esf,System.Decimal</value>
+          <value>VisitorId,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_Monthly_Value_Visitor_Good</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_Monthly_Value_Visitor_Good</NameInSource>
+      </Rpt_Sale_Monthly_Value_Visitor_Good>
+      <Rpt_Sale_Monthly_Value_Visitor_Customer Ref="28" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_Monthly_Value_Visitor_Customer</Alias>
+        <Columns isList="true" count="15">
+          <value>Year,System.String</value>
+          <value>VisitorId,System.Int32</value>
+          <value>CustomerID,System.Int32</value>
+          <value>Far,System.Decimal</value>
+          <value>Ord,System.Decimal</value>
+          <value>Khordad,System.Decimal</value>
+          <value>Tir,System.Decimal</value>
+          <value>Mordad,System.Decimal</value>
+          <value>Shahr,System.Decimal</value>
+          <value>Mehr,System.Decimal</value>
+          <value>Aban,System.Decimal</value>
+          <value>Azar,System.Decimal</value>
+          <value>Dey,System.Decimal</value>
+          <value>Bahman,System.Decimal</value>
+          <value>Esf,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_Monthly_Value_Visitor_Customer</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_Monthly_Value_Visitor_Customer</NameInSource>
+      </Rpt_Sale_Monthly_Value_Visitor_Customer>
+      <Rpt_Sale_CompReport_Goods Ref="29" type="DataTableSource" isKey="true">
+        <Alias>Rpt_Sale_CompReport_Goods</Alias>
+        <Columns isList="true" count="47">
+          <value>CustomerId,System.Int32</value>
+          <value>CustomerCode,System.Int16</value>
+          <value>CustomerName,System.String</value>
+          <value>Visitor,System.String</value>
+          <value>GoodId,System.Int32</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>CountUnit,System.String</value>
+          <value>BoxNumber,System.Decimal</value>
+          <value>PackNumber,System.Decimal</value>
+          <value>DetailNumber,System.Decimal</value>
+          <value>TotalNumber,System.Decimal</value>
+          <value>TotalPrice,System.Decimal</value>
+          <value>TotalPrice2,System.Decimal</value>
+          <value>DiscountPercent,System.Decimal</value>
+          <value>TotalDiscount,System.Decimal</value>
+          <value>TotalDiscount2,System.Decimal</value>
+          <value>ExtraPercent,System.Decimal</value>
+          <value>TotalExtra,System.Decimal</value>
+          <value>TotalExtra2,System.Decimal</value>
+          <value>NetPrice,System.Decimal</value>
+          <value>NetPrice2,System.Decimal</value>
+          <value>Province,System.String</value>
+          <value>City,System.String</value>
+          <value>State,System.String</value>
+          <value>MainGroup,System.String</value>
+          <value>SubGroup,System.String</value>
+          <value>SaleType,System.String</value>
+          <value>SaleID,System.Int32</value>
+          <value>SaleNumber,System.Int32</value>
+          <value>SaleDate,System.String</value>
+          <value>FactorNetPrice,System.Decimal</value>
+          <value>FactorNetPrice2,System.Decimal</value>
+          <value>VolumeGroup,System.Decimal</value>
+          <value>VolumeGroup2,System.Decimal</value>
+          <value>SpecialGroup,System.Decimal</value>
+          <value>SpecialGroup2,System.Decimal</value>
+          <value>SpecialCustomer,System.Decimal</value>
+          <value>SpecialCustomer2,System.Decimal</value>
+          <value>Extra,System.Decimal</value>
+          <value>Extra2,System.Decimal</value>
+          <value>Reduction,System.Decimal</value>
+          <value>Reduction2,System.Decimal</value>
+          <value>Gift,System.Boolean</value>
+          <value>FactorType,System.String</value>
+          <value>CurType,System.String</value>
+          <value>CurValue,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_CompReport_Goods</Name>
+        <NameInSource>DataSet_Report.Rpt_Sale_CompReport_Goods</NameInSource>
+      </Rpt_Sale_CompReport_Goods>
+      <Rpt_LastBuyPrice Ref="30" type="DataTableSource" isKey="true">
+        <Alias>Rpt_LastBuyPrice</Alias>
+        <Columns isList="true" count="6">
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>Date,DataColumn1,System.String</value>
+          <value>PersonName,DataColumn1,System.String</value>
+          <value>Tel,DataColumn1,System.String</value>
+          <value>Price,DataColumn1,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_LastBuyPrice</Name>
+        <NameInSource>DataSet_Report.Rpt_LastBuyPrice</NameInSource>
+      </Rpt_LastBuyPrice>
+      <Rpt_ReturnFactors_Visitors Ref="31" type="DataTableSource" isKey="true">
+        <Alias>Rpt_ReturnFactors_Visitors</Alias>
+        <Columns isList="true" count="10">
+          <value>ID,DataColumn1,System.Int32</value>
+          <value>Number,DataColumn1,System.Int32</value>
+          <value>Customer,DataColumn1,System.String</value>
+          <value>TotalPrice,DataColumn1,System.Double</value>
+          <value>ExtraPrice,DataColumn1,System.Double</value>
+          <value>RedPrice,DataColumn1,System.Double</value>
+          <value>NetPrice,System.Double</value>
+          <value>Date,System.String</value>
+          <value>SellerID,System.Int32</value>
+          <value>SellerName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_ReturnFactors_Visitors</Name>
+        <NameInSource>DataSet_Report.Rpt_ReturnFactors_Visitors</NameInSource>
+      </Rpt_ReturnFactors_Visitors>
+      <Rpt_BuyCompReport_Goods Ref="32" type="DataTableSource" isKey="true">
+        <Alias>Rpt_BuyCompReport_Goods</Alias>
+        <Columns isList="true" count="14">
+          <value>FactorNumber,DataColumn1,System.String</value>
+          <value>FactorDate,DataColumn1,System.String</value>
+          <value>Person,DataColumn1,System.String</value>
+          <value>Kol,DataColumn1,System.Double</value>
+          <value>JozPrice,DataColumn1,System.Double</value>
+          <value>KolPrice,DataColumn1,System.Double</value>
+          <value>GoodCode,DataColumn1,System.String</value>
+          <value>GoodName,DataColumn1,System.String</value>
+          <value>CountUnit,DataColumn1,System.String</value>
+          <value>DisPer,DataColumn1,System.Double</value>
+          <value>DisPrice,DataColumn1,System.Double</value>
+          <value>ExPer,DataColumn1,System.Double</value>
+          <value>ExPrice,System.Double</value>
+          <value>NetPrice,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_BuyCompReport_Goods</Name>
+        <NameInSource>DataSet_Report.Rpt_BuyCompReport_Goods</NameInSource>
+      </Rpt_BuyCompReport_Goods>
+      <Rpt_GoodReportByVisitors Ref="33" type="DataTableSource" isKey="true">
+        <Alias>Rpt_GoodReportByVisitors</Alias>
+        <Columns isList="true" count="18">
+          <value>Visitor,System.Int32</value>
+          <value>MainGroup,System.String</value>
+          <value>SubGroup,System.String</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>Count,System.Decimal</value>
+          <value>Amount,System.Decimal</value>
+          <value>Avrage,System.Decimal</value>
+          <value>NetAmount,System.Decimal</value>
+          <value>Unit,System.String</value>
+          <value>MCount,System.Decimal</value>
+          <value>MAmount,System.Decimal</value>
+          <value>MNetAmount,System.Decimal</value>
+          <value>MAvrage,System.Decimal</value>
+          <value>Tcount,System.Decimal</value>
+          <value>TAmount,System.Decimal</value>
+          <value>TNetAmount,System.Decimal</value>
+          <value>TAvrage,TNetAmount1,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Rpt_GoodReportByVisitors</Name>
+        <NameInSource>DataSet_Report.Rpt_GoodReportByVisitors</NameInSource>
+      </Rpt_GoodReportByVisitors>
+      <DataTable1 Ref="34" type="DataTableSource" isKey="true">
+        <Alias>DataTable1</Alias>
+        <Columns isList="true" count="11">
+          <value>FactorId,System.Int32</value>
+          <value>FactorDate,System.Int32</value>
+          <value>FactorNo,System.String</value>
+          <value>GoodId,System.Int32</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>TotalFactor,System.Decimal</value>
+          <value>DraftId,System.Int32</value>
+          <value>DraftNo,System.Int32</value>
+          <value>TotalDraft,System.Decimal</value>
+          <value>DifTotal,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable1</Name>
+        <NameInSource>DataSet_Report.DataTable1</NameInSource>
+      </DataTable1>
+      <DataTable2 Ref="35" type="DataTableSource" isKey="true">
+        <Alias>DataTable2</Alias>
+        <Columns isList="true" count="20">
+          <value>name,System.String</value>
+          <value>tyep,System.String</value>
+          <value>postalcode,System.String</value>
+          <value>nationalcode,System.String</value>
+          <value>address,System.String</value>
+          <value>Ecode,System.String</value>
+          <value>ostancode,System.Int16</value>
+          <value>ostanname,System.String</value>
+          <value>citycode,System.Int16</value>
+          <value>cityname,System.String</value>
+          <value>kala,System.String</value>
+          <value>date,System.String</value>
+          <value>desc,System.Decimal</value>
+          <value>Num,System.Int32</value>
+          <value>Totalvalue,System.Decimal</value>
+          <value>discount,System.Decimal</value>
+          <value>tax,System.Decimal</value>
+          <value>taxes,System.Decimal</value>
+          <value>havale,System.Int32</value>
+          <value>sanad,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable2</Name>
+        <NameInSource>DataSet_Report.DataTable2</NameInSource>
+      </DataTable2>
+      <DataTable3 Ref="36" type="DataTableSource" isKey="true">
+        <Alias>DataTable3</Alias>
+        <Columns isList="true" count="20">
+          <value>name,System.String</value>
+          <value>tyep,System.String</value>
+          <value>postalcode,System.String</value>
+          <value>nationalcode,System.String</value>
+          <value>address,System.String</value>
+          <value>Ecode,System.String</value>
+          <value>ostancode,System.Int16</value>
+          <value>ostanname,System.String</value>
+          <value>citycode,System.Int16</value>
+          <value>cityname,System.String</value>
+          <value>kala,System.String</value>
+          <value>date,System.String</value>
+          <value>desc,System.Decimal</value>
+          <value>Num,System.Int32</value>
+          <value>Totalvalue,System.Decimal</value>
+          <value>discount,System.Decimal</value>
+          <value>tax,System.Decimal</value>
+          <value>taxes,System.Decimal</value>
+          <value>havale,System.Int32</value>
+          <value>sanad,System.Int32</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable3</Name>
+        <NameInSource>DataSet_Report.DataTable3</NameInSource>
+      </DataTable3>
+      <Table_034_SaleFactor_Child3 Ref="37" type="DataTableSource" isKey="true">
+        <Alias>Table_034_SaleFactor_Child3</Alias>
+        <Columns isList="true" count="37">
+          <value>ColumnId,System.Int32</value>
+          <value>Column01,System.Int32</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.Int16</value>
+          <value>Column04,System.Int64</value>
+          <value>Column05,System.Int16</value>
+          <value>Column06,System.String</value>
+          <value>Column07,System.Int32</value>
+          <value>Column08,System.Int32</value>
+          <value>Column09,System.String</value>
+          <value>Column10,System.String</value>
+          <value>Column11,System.Int16</value>
+          <value>Column12,System.String</value>
+          <value>Column13,System.String</value>
+          <value>Column14,System.Int16</value>
+          <value>Column15,System.Int32</value>
+          <value>Column16,System.Int16</value>
+          <value>Column17,System.Decimal</value>
+          <value>Column18,System.Decimal</value>
+          <value>Column19,System.Decimal</value>
+          <value>Column20,System.Decimal</value>
+          <value>Column21,System.Decimal</value>
+          <value>Column22,System.Decimal</value>
+          <value>Column23,System.Decimal</value>
+          <value>Column24,System.Decimal</value>
+          <value>Column25,System.Decimal</value>
+          <value>Column26,System.Decimal</value>
+          <value>Column27,System.Decimal</value>
+          <value>Column28,System.Decimal</value>
+          <value>Column29,System.Decimal</value>
+          <value>Column30,System.Int16</value>
+          <value>Column31,System.Boolean</value>
+          <value>Column32,System.Int32</value>
+          <value>Column33,System.String</value>
+          <value>Column34,System.String</value>
+          <value>Column35,System.Decimal</value>
+          <value>Column36,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_034_SaleFactor_Child3</Name>
+        <NameInSource>DataSet_Report.Table_034_SaleFactor_Child3</NameInSource>
+      </Table_034_SaleFactor_Child3>
+      <DataTable4 Ref="38" type="DataTableSource" isKey="true">
+        <Alias>DataTable4</Alias>
+        <Columns isList="true" count="13">
+          <value>Type,System.String</value>
+          <value>Visitor,System.Int32</value>
+          <value>MainGroup,System.String</value>
+          <value>SubGroup,System.String</value>
+          <value>GoodCode,System.String</value>
+          <value>GoodName,System.String</value>
+          <value>Unit,System.String</value>
+          <value>Count,System.Decimal</value>
+          <value>Vahed,System.Decimal</value>
+          <value>Amount,System.Decimal</value>
+          <value>Takhfif,System.Decimal</value>
+          <value>Ezafe,System.Decimal</value>
+          <value>NetAmount,System.Decimal</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable4</Name>
+        <NameInSource>DataSet_Report.DataTable4</NameInSource>
+      </DataTable4>
+      <Table_040_RialAwards Ref="39" type="DataTableSource" isKey="true">
+        <Alias>Table_040_RialAwards</Alias>
+        <Columns isList="true" count="12">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Decimal</value>
+          <value>column05,System.Decimal</value>
+          <value>column06,System.Int32</value>
+          <value>column07,System.Double</value>
+          <value>column08,System.String</value>
+          <value>column09,System.DateTime</value>
+          <value>column10,System.String</value>
+          <value>column11,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_040_RialAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_040_RialAwards</NameInSource>
+      </Table_040_RialAwards>
+      <Table_045_TotalQtyAwards Ref="40" type="DataTableSource" isKey="true">
+        <Alias>Table_045_TotalQtyAwards</Alias>
+        <Columns isList="true" count="12">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Double</value>
+          <value>column05,System.Double</value>
+          <value>column06,System.Int32</value>
+          <value>column07,System.Double</value>
+          <value>column08,System.String</value>
+          <value>column09,System.DateTime</value>
+          <value>column10,System.String</value>
+          <value>column11,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_045_TotalQtyAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_045_TotalQtyAwards</NameInSource>
+      </Table_045_TotalQtyAwards>
+      <table_004_CommodityAndIngredients Ref="41" type="DataTableSource" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <Columns isList="true" count="32">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.String</value>
+          <value>column02,System.String</value>
+          <value>column03,System.Int16</value>
+          <value>column04,System.Int16</value>
+          <value>column05,System.String</value>
+          <value>column06,System.String</value>
+          <value>column07,System.Int16</value>
+          <value>column08,System.Double</value>
+          <value>column09,System.Double</value>
+          <value>column10,System.Double</value>
+          <value>column11,System.Double</value>
+          <value>column12,System.Double</value>
+          <value>column13,System.Int16</value>
+          <value>column14,System.Int32</value>
+          <value>column15,System.String</value>
+          <value>column16,System.Boolean</value>
+          <value>column17,System.Double</value>
+          <value>column18,System.Boolean</value>
+          <value>column19,System.Boolean</value>
+          <value>column20,System.Boolean</value>
+          <value>column21,System.String</value>
+          <value>column22,System.Double</value>
+          <value>column23,System.Double</value>
+          <value>column24,System.Double</value>
+          <value>column25,System.Decimal</value>
+          <value>column26,System.String</value>
+          <value>column27,System.Int32</value>
+          <value>column28,System.Boolean</value>
+          <value>column29,System.Boolean</value>
+          <value>column30,System.Double</value>
+          <value>column31,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>DataSet_05_Awards.table_004_CommodityAndIngredients</NameInSource>
+      </table_004_CommodityAndIngredients>
+      <Table_040_PersonGroups Ref="42" type="DataTableSource" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <Columns isList="true" count="30">
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.Boolean</value>
+          <value>Column04,System.Boolean</value>
+          <value>Column05,System.Boolean</value>
+          <value>Column06,System.Boolean</value>
+          <value>Column07,System.Boolean</value>
+          <value>Column08,System.Boolean</value>
+          <value>Column09,System.Boolean</value>
+          <value>Column10,System.Boolean</value>
+          <value>Column11,System.Boolean</value>
+          <value>Column12,System.Boolean</value>
+          <value>Column13,System.Boolean</value>
+          <value>Column14,System.Boolean</value>
+          <value>Column15,System.Boolean</value>
+          <value>Column16,System.Boolean</value>
+          <value>Column17,System.Boolean</value>
+          <value>Column18,System.Boolean</value>
+          <value>Column19,System.Boolean</value>
+          <value>Column20,System.Boolean</value>
+          <value>Column21,System.Boolean</value>
+          <value>Column22,System.Boolean</value>
+          <value>Column23,System.Boolean</value>
+          <value>Column24,System.Boolean</value>
+          <value>Column25,System.Boolean</value>
+          <value>Column26,System.Boolean</value>
+          <value>Column27,System.Boolean</value>
+          <value>Column28,System.Boolean</value>
+          <value>Column29,System.Boolean</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>DataSet_05_Awards.Table_040_PersonGroups</NameInSource>
+      </Table_040_PersonGroups>
+      <Table_115_VehicleType Ref="43" type="DataTableSource" isKey="true">
+        <Alias>Table_115_VehicleType</Alias>
+        <Columns isList="true" count="9">
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.Double</value>
+          <value>Column03,System.Double</value>
+          <value>Column04,System.Double</value>
+          <value>Column05,System.Double</value>
+          <value>Column06,System.Double</value>
+          <value>Column07,System.Double</value>
+          <value>Column08,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_115_VehicleType</Name>
+        <NameInSource>DataSet_05_Awards.Table_115_VehicleType</NameInSource>
+      </Table_115_VehicleType>
+      <Table_050_VehicleAwards Ref="44" type="DataTableSource" isKey="true">
+        <Alias>Table_050_VehicleAwards</Alias>
+        <Columns isList="true" count="11">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.Int16</value>
+          <value>column02,System.String</value>
+          <value>column03,System.String</value>
+          <value>column04,System.Int16</value>
+          <value>column05,System.Int32</value>
+          <value>column06,System.Double</value>
+          <value>column07,System.String</value>
+          <value>column08,System.DateTime</value>
+          <value>column09,System.String</value>
+          <value>column10,System.DateTime</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_050_VehicleAwards</Name>
+        <NameInSource>DataSet_05_Awards.Table_050_VehicleAwards</NameInSource>
+      </Table_050_VehicleAwards>
+      <DataTable12 Ref="45" type="DataTableSource" isKey="true">
+        <Alias>DataTable1</Alias>
+        <Columns isList="true" count="52">
+          <value>columnid,System.Int32</value>
+          <value>column01,System.String</value>
+          <value>column02,System.String</value>
+          <value>column03,System.Int16</value>
+          <value>column04,System.Int16</value>
+          <value>column05,System.String</value>
+          <value>column06,System.String</value>
+          <value>column07,System.Int16</value>
+          <value>column08,System.Double</value>
+          <value>column09,System.Double</value>
+          <value>column10,System.Double</value>
+          <value>column11,System.Double</value>
+          <value>column12,System.Double</value>
+          <value>column13,System.Int16</value>
+          <value>column14,System.Int32</value>
+          <value>column15,System.String</value>
+          <value>column16,System.Boolean</value>
+          <value>column17,System.Double</value>
+          <value>column18,System.Boolean</value>
+          <value>column19,System.Boolean</value>
+          <value>column20,System.Boolean</value>
+          <value>column21,System.String</value>
+          <value>column22,System.Double</value>
+          <value>column23,System.Double</value>
+          <value>column24,System.Double</value>
+          <value>column25,System.Decimal</value>
+          <value>column26,System.String</value>
+          <value>column27,System.Int32</value>
+          <value>column28,System.Boolean</value>
+          <value>column29,System.Boolean</value>
+          <value>column30,System.Double</value>
+          <value>column31,System.Double</value>
+          <value>Column32,System.Boolean</value>
+          <value>Column33,System.String</value>
+          <value>Column34,System.Decimal</value>
+          <value>Column35,System.Decimal</value>
+          <value>Column36,System.Decimal</value>
+          <value>Column37,System.Decimal</value>
+          <value>Column38,System.Decimal</value>
+          <value>Column39,System.Decimal</value>
+          <value>Column40,System.Decimal</value>
+          <value>Column41,System.Int32</value>
+          <value>Column42,System.Int32</value>
+          <value>Column43,System.Int32</value>
+          <value>Column44,System.String</value>
+          <value>Column45,System.Byte[]</value>
+          <value>Column46,System.String</value>
+          <value>ware,System.String</value>
+          <value>Remain,System.Decimal</value>
+          <value>RealRemain,System.Decimal</value>
+          <value>RemainBaste,System.Double</value>
+          <value>RemainKarton,System.Double</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>DataTable12</Name>
+        <NameInSource>DataSet_05_Awards.DataTable1</NameInSource>
+      </DataTable12>
+      <Table_000_OrgInfo Ref="46" type="DataTableSource" isKey="true">
+        <Alias>Table_000_OrgInfo</Alias>
+        <Columns isList="true" count="20">
+          <value>ColumnId,System.Int16</value>
+          <value>Column00,System.Int16</value>
+          <value>Column01,System.String</value>
+          <value>Column02,System.String</value>
+          <value>Column03,System.String</value>
+          <value>Column04,System.String</value>
+          <value>Column05,System.String</value>
+          <value>Column06,System.String</value>
+          <value>Column07,System.String</value>
+          <value>Column08,System.String</value>
+          <value>Column09,System.String</value>
+          <value>Column10,System.String</value>
+          <value>Column11,System.String</value>
+          <value>Column12,System.String</value>
+          <value>Column13,System.String</value>
+          <value>Column14,System.String</value>
+          <value>Column15,System.Boolean</value>
+          <value>Column16,System.Boolean</value>
+          <value>Column17,System.Byte[]</value>
+          <value>Column18,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Table_000_OrgInfo</Name>
+        <NameInSource>DataSet_05_Awards.Table_000_OrgInfo</NameInSource>
+      </Table_000_OrgInfo>
+    </DataSources>
+    <Relations isList="true" count="11">
+      <Rpt_Sale_MonthlyNumeric_Visitor Ref="47" type="DataRelation" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Visitor</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ChildColumns>
+        <ChildSource isRef="28" />
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Visitor</Name>
+        <NameInSource>FK_Rpt_Sale_MonthlyNumeric_Visitor_Rpt_Sale_Monthly_Value_Visitor_Customer</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ParentColumns>
+        <ParentSource isRef="24" />
+      </Rpt_Sale_MonthlyNumeric_Visitor>
+      <Rpt_Sale_MonthlyNumeric_Visitor Ref="48" type="DataRelation" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Visitor</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ChildColumns>
+        <ChildSource isRef="27" />
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Visitor</Name>
+        <NameInSource>FK_Rpt_Sale_MonthlyNumeric_Visitor_Rpt_Sale_Monthly_Value_Visitor_Good</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ParentColumns>
+        <ParentSource isRef="24" />
+      </Rpt_Sale_MonthlyNumeric_Visitor>
+      <Rpt_Sale_MonthlyNumeric_Visitor Ref="49" type="DataRelation" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Visitor</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ChildColumns>
+        <ChildSource isRef="25" />
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Visitor</Name>
+        <NameInSource>FK_Rpt_Sale_MonthlyNumeric_Visitor_DataTable2</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>VisitorId</value>
+        </ParentColumns>
+        <ParentSource isRef="24" />
+      </Rpt_Sale_MonthlyNumeric_Visitor>
+      <Rpt_Sale_MonthlyNumeric_Customer Ref="50" type="DataRelation" isKey="true">
+        <Alias>Rpt_Sale_MonthlyNumeric_Customer</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>CustomerId</value>
+        </ChildColumns>
+        <ChildSource isRef="18" />
+        <Dictionary isRef="1" />
+        <Name>Rpt_Sale_MonthlyNumeric_Customer</Name>
+        <NameInSource>FK_Rpt_Sale_MonthlyNumeric_Customer_Rpt_Sale_MonthlyNumeric_Customer_Detail</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>CustomerId</value>
+        </ParentColumns>
+        <ParentSource isRef="17" />
+      </Rpt_Sale_MonthlyNumeric_Customer>
+      <table_004_CommodityAndIngredients Ref="51" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column06</value>
+        </ChildColumns>
+        <ChildSource isRef="40" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_045_TotalQtyAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="41" />
+      </table_004_CommodityAndIngredients>
+      <table_004_CommodityAndIngredients Ref="52" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column06</value>
+        </ChildColumns>
+        <ChildSource isRef="39" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_040_RialAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="41" />
+      </table_004_CommodityAndIngredients>
+      <table_004_CommodityAndIngredients Ref="53" type="DataRelation" isKey="true">
+        <Alias>table_004_CommodityAndIngredients</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column05</value>
+        </ChildColumns>
+        <ChildSource isRef="44" />
+        <Dictionary isRef="1" />
+        <Name>table_004_CommodityAndIngredients</Name>
+        <NameInSource>table_004_CommodityAndIngredients_Table_050_VehicleAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>columnid</value>
+        </ParentColumns>
+        <ParentSource isRef="41" />
+      </table_004_CommodityAndIngredients>
+      <Table_040_PersonGroups Ref="54" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="44" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_050_VehicleAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="42" />
+      </Table_040_PersonGroups>
+      <Table_040_PersonGroups Ref="55" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="39" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_040_RialAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="42" />
+      </Table_040_PersonGroups>
+      <Table_040_PersonGroups Ref="56" type="DataRelation" isKey="true">
+        <Alias>Table_040_PersonGroups</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column01</value>
+        </ChildColumns>
+        <ChildSource isRef="40" />
+        <Dictionary isRef="1" />
+        <Name>Table_040_PersonGroups</Name>
+        <NameInSource>Table_040_PersonGroups_Table_045_TotalQtyAwards</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="42" />
+      </Table_040_PersonGroups>
+      <Table_115_VehicleType Ref="57" type="DataRelation" isKey="true">
+        <Alias>Table_115_VehicleType</Alias>
+        <ChildColumns isList="true" count="1">
+          <value>column04</value>
+        </ChildColumns>
+        <ChildSource isRef="41" />
+        <Dictionary isRef="1" />
+        <Name>Table_115_VehicleType</Name>
+        <NameInSource>Table_115_VehicleType_table_004_CommodityAndIngredients</NameInSource>
+        <ParentColumns isList="true" count="1">
+          <value>Column00</value>
+        </ParentColumns>
+        <ParentSource isRef="43" />
+      </Table_115_VehicleType>
+    </Relations>
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>RunningTotal_x0020_Fields,,_RTotal0,System.Int32,Totals.Sum_x0028_Rpt_GoodReportByVisitors_x002C__x0020_Rpt_GoodReportByVisitors.GoodCode_x0029_,False,False</value>
+      <value>ParameterField,Param2,Param2,System.String,,False,False</value>
+      <value>ParameterField,Param1,Param1,System.String,,False,False</value>
+      <value>ParameterField,Param3,Param3,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="58" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <Section2 Ref="59" type="PageHeaderBand" isKey="true">
+          <Brush>White</Brush>
+          <ClientRectangle>0,0.4,19.72,3.51</ClientRectangle>
+          <Components isList="true" count="10">
+            <Box1 Ref="60" type="Shape" isKey="true">
+              <BorderColor>128, 128, 192</BorderColor>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,-0.2,19.6,3.7</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Name>Box1</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <ShapeType Ref="61" type="Stimulsoft.Report.Components.ShapeTypes.StiRectangleShapeType" isKey="true" />
+            </Box1>
+            <Text9 Ref="62" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>3.2,1.28,1.28,0.53</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>تا  تاریخ:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text9>
+            <Param21 Ref="63" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.43,1.28,2.56,0.53</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Param21</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>{Param2}</Text>
+              <TextBrush>Black</TextBrush>
+            </Param21>
+            <Param11 Ref="64" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.43,0.43,2.56,0.53</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Param11</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>{Param1}</Text>
+              <TextBrush>Black</TextBrush>
+            </Param11>
+            <Text10 Ref="65" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>3.2,0.43,1.28,0.53</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>از تاریخ:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text10>
+            <Text1 Ref="66" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>5.2,0.43,8.34,1.07</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Zar,16,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>آمار فروش کالا براساس مسئولین فروش</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text5 Ref="67" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>16.79,2.76,2.77,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Yekan,10</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>مسئولين فروش:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text5>
+            <Param31 Ref="68" type="Text" isKey="true">
+              <Brush>[0:255:255:255]</Brush>
+              <ClientRectangle>0.29,2.76,16.5,0.61</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Mitra,10</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Param31</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>{Param3}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Param31>
+            <Image1 Ref="69" type="Image" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>18.6,0,0.94,1.82</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <DataColumn>Table_000_OrgInfo.Column17</DataColumn>
+              <Guid>0cab7fc9dd4540b8aa8bc206061551e7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Name>Image1</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Stretch>True</Stretch>
+              <UseParentStyles>True</UseParentStyles>
+              <VertAlignment>Center</VertAlignment>
+            </Image1>
+            <Text30 Ref="70" type="Text" isKey="true">
+              <Brush>White</Brush>
+              <ClientRectangle>14.2,0,4.4,1.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,20.25,Bold,Point,False,178</Font>
+              <Guid>9e12d278e9834f388aeb6d3731b60b32</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="58" />
+              <Parent isRef="59" />
+              <Text>{Table_000_OrgInfo.Column01}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>Section2</Name>
+          <Page isRef="58" />
+          <Parent isRef="58" />
+        </Section2>
+        <GroupHeaderBand2 Ref="71" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4.71,19.72,1.6</ClientRectangle>
+          <Components isList="true" count="13">
+            <Text3 Ref="72" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>13.4,0.99,3.39,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>5641a7de47634c018e20e4742d17f206</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>قیمت واحد</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Text17 Ref="73" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0.09,5.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>f1c1105e4b364a2ab5000637dfcc85a1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>{DataTable4.GoodCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text17>
+            <Text19 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.2,0.09,1.4,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>9c33af5a1f974b1095026d3d993a9d4b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>کد کالا:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text19>
+            <Text20 Ref="75" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>11.4,0.09,1.2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>a4d9aad4beba4dd89c715c6a67773a89</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>نام کالا:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.4,0.09,6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>37515f72947e489e9a323020e2388ba6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>{DataTable4.GoodName}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+            </Text21>
+            <Text22 Ref="77" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>18.8,0.99,0.91,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>1d02231faa664000b7f0d5424a1421e1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>ردیف</Text>
+              <TextBrush>White</TextBrush>
+            </Text22>
+            <Text2 Ref="78" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>16.8,0.99,2,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>408beac5f4c84acbad2f8f01e2e1630c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>تعداد</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text4 Ref="79" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>10,0.99,3.71,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>a54a13aaddf74d589f6643c3f260abda</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>قیمت کل</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Text6 Ref="80" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>7,0.99,2.99,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>dcd7850e5e614eff8c5d03ec1361142f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>اضافه خطی</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text6>
+            <Text7 Ref="81" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>4,0.99,3,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>58afc38c69184b8cb7c7d3b24343a38d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>تخفیف خطی</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Text8 Ref="82" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[192:128:128]</Brush>
+              <ClientRectangle>0.09,0.99,3.91,0.64</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Traffic,10,Bold</Font>
+              <Guid>b04fe5d6203440a5b57af81061007b2b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Text>خالص خطی</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <HorizontalLinePrimitive1 Ref="83" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>7,0.99,2.99,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="84" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>4e8dc485af3646ccaaaaee2836b7ab03</Guid>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Size>0</Size>
+              <StartCap Ref="85" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="86" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>7,0.99,2.99,0.0254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="87" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>26fbe5ba36df47bd88f8b6c736a31279</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="58" />
+              <Parent isRef="71" />
+              <Size>0</Size>
+              <StartCap Ref="88" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+          </Components>
+          <Condition>{DataTable4.GoodCode}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="58" />
+          <Parent isRef="58" />
+        </GroupHeaderBand2>
+        <DataBand1 Ref="89" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,7.11,19.72,0.6</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text11 Ref="90" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16.8,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.Count)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="91" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>13.7,0,3.1,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.Vahed)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="92" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0,3.71,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.Amount)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="93" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>7,0,2.99,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.Ezafe)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="94" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.Takhfif)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text16 Ref="95" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.09,0,3.91,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Format("{0:#,##0.###}",DataTable4.NetAmount)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text18 Ref="96" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>18.81,0,0.9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>24ea1d031a9c4008b76222c326085363</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="58" />
+              <Parent isRef="89" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>DataTable4</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="58" />
+          <Parent isRef="58" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <GroupFooterBand1 Ref="97" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,8.51,19.72,1</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text29 Ref="98" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>13.6,0,3.19,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text29>
+            <Text23 Ref="99" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0.09,0,3.91,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>{Format("{0:#,##0.###}",Sum(DataBand1,DataTable4.NetAmount))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="100" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>4,0,3,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>2e15ca7dcf6d4dda897685a071102cd7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>{Format("{0:#,##0.###}",Sum(DataBand1,DataTable4.Takhfif))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text25 Ref="101" type="Text" isKey="true">
+              <Border>All;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>7,0,2.99,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>51203c2580844a8e93bfe9c6083ceb9f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>{Format("{0:#,##0.###}",Sum(DataBand1,DataTable4.Ezafe))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="102" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>10,0,3.71,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>4edef8a35219423f8c2e88c0ec7d0711</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>{Format("{0:#,##0.###}",Sum(DataBand1,DataTable4.Amount))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text27 Ref="103" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>16.8,0,2,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Guid>ba6d02418fc24a37ba4940f853d035fc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>{Format("{0:#,##0.###}",Sum(DataBand1,DataTable4.Count))}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="104" type="Text" isKey="true">
+              <Border>Top, Right, Bottom;Black;1;Solid;False;4;Black</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>18.81,0,0.9,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Nazanin,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="58" />
+              <Parent isRef="97" />
+              <Text>جمع:</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text28>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="58" />
+          <Parent isRef="58" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>85e4a1b1fde246778d3d9a0a3019b4ac</Guid>
+      <LargeHeight>True</LargeHeight>
+      <Margins>0.64,0.64,0.64,0.64</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <TitleBeforeHeader>True</TitleBeforeHeader>
+      <Watermark Ref="105" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="106" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportAuthor isNull="true" />
+  <ReportChanged>3/2/2019 1:03:47 PM</ReportChanged>
+  <ReportCreated>2/3/2019 5:02:55 PM</ReportCreated>
+  <ReportDescription isNull="true" />
+  <ReportFile>E:\SVN\Psale\PSALE\PSALE\PSALE\bin\Debug\Rpt25_GoodReportByVisitors.mrt</ReportFile>
+  <ReportGuid>0dd7b346ff1b4c3c968b48030b1444db</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

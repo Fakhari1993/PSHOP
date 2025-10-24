@@ -1,0 +1,73 @@
+﻿DELETE 
+FROM   Table_065_SanadDetail
+WHERE  Table_065_SanadDetail.column10 LIKE N'%تمام شده فاکتور فروش%'
+       AND Table_065_SanadDetail.Column16 = 26
+       AND ISNULL(
+               (
+                   SELECT tsf.column09
+                   FROM   PSALE_9_1399.dbo.Table_010_SaleFactor AS tsf
+                   WHERE  tsf.column01 = CAST(
+                              SUBSTRING(
+                                  Table_065_SanadDetail.Column10,
+                                  28,
+                                  LEN(Table_065_SanadDetail.Column10)
+                              )AS INT
+                          )
+               ),
+               0
+           ) != Table_065_SanadDetail.Column17
+       AND (
+               (
+                   (
+                       ISNULL(
+                           (
+                               SELECT SUM(tcpd.column16)
+                               FROM   PSALE_9_1399.dbo.Table_010_SaleFactor AS tsf
+                                      JOIN PWHRS_9_1399.dbo.Table_008_Child_PwhrsDraft AS tcpd
+                                           ON  tcpd.column01 = tsf.column09
+                               WHERE  tsf.column01 = CAST(
+                                          SUBSTRING(
+                                              Table_065_SanadDetail.Column10,
+                                              28,
+                                              LEN(Table_065_SanadDetail.Column10)
+                                          )AS INT
+                                      )
+                           ),
+                           0
+                       ) = 0
+                       AND (
+                               SELECT tsf.column10
+                               FROM   PSALE_9_1399.dbo.Table_010_SaleFactor AS tsf
+                               WHERE  tsf.column01 = CAST(
+                                          SUBSTRING(
+                                              Table_065_SanadDetail.Column10,
+                                              28,
+                                              LEN(Table_065_SanadDetail.Column10)
+                                          )AS INT
+                                      )
+                           ) != Table_065_SanadDetail.Column00
+                   )
+               )
+               OR (
+                      SELECT tsf.columnid
+                      FROM   PSALE_9_1399.dbo.Table_010_SaleFactor AS tsf
+                      WHERE  tsf.column01 = CAST(
+                                 SUBSTRING(
+                                     Table_065_SanadDetail.Column10,
+                                     28,
+                                     LEN(Table_065_SanadDetail.Column10)
+                                 )AS INT
+                             )
+                  ) IS NULL
+           )
+
+
+
+
+UPDATE tsd
+SET    Column17 = tsf.column09
+FROM   Table_065_SanadDetail AS tsd
+       JOIN PSALE_9_1399.dbo.Table_010_SaleFactor AS tsf
+            ON  tsf.column01 = CAST(SUBSTRING(tsd.Column10, 28, LEN(tsd.Column10))AS INT)
+            AND tsd.column10 LIKE N'%تمام شده فاکتور فروش%'
+            AND tsd.Column16 = 26

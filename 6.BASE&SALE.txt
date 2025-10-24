@@ -1,0 +1,117 @@
+﻿--پر کردن فیلد پروژه در فاکتور فروش
+
+UPDATE Table_010_SaleFactor
+SET    column44 = CASE 
+                       WHEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_010_SaleFactor.column13
+                            ) IS NOT NULL THEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_010_SaleFactor.column13
+                            )
+                       ELSE (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                            )
+                  END
+WHERE  column44 IS NULL
+
+--- پر کردن فیلد پروژه در فاکتور خرید
+
+UPDATE Table_015_BuyFactor
+SET    Column29 = CASE 
+                       WHEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_015_BuyFactor.column05
+                            ) IS NOT NULL THEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_015_BuyFactor.column05
+                            )
+                       ELSE (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                            )
+                  END
+WHERE  Column29 IS NULL
+
+ -- پر کردن فیلد پروژه در فاکتور مرجوعی خرید
+UPDATE Table_018_MarjooiSale
+SET    Column30 = CASE 
+                       WHEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_018_MarjooiSale.column13
+                            ) IS NOT NULL THEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_018_MarjooiSale.column13
+                            )
+                       ELSE (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                            )
+                  END
+WHERE  Column30 IS NULL
+
+-- پر کردن فیلد پروژه در فاکتور مرجوعی خرید
+UPDATE Table_021_MarjooiBuy
+SET    Column28 = CASE 
+                       WHEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_021_MarjooiBuy.column05
+                            ) IS NOT NULL THEN (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                                       JOIN PBASE_9.dbo.Table_296_StoreUsers su
+                                            ON  st.ColumnId = su.Column00
+                                WHERE  su.Column01 = Table_021_MarjooiBuy.column05
+                            )
+                       ELSE (
+                                SELECT TOP 1 st.Column05
+                                FROM   PBASE_9.dbo.Table_295_StoreInfo st
+                            )
+                  END
+WHERE  Column28 IS NULL
+
+--پر کردن فیلد آی دی بستن صندوق در فاکتور فروش و مروجوعی فروش
+IF EXISTS(
+       SELECT *
+       FROM   Table_96_CloseCash AS tcc
+   )
+BEGIN
+    UPDATE Table_010_SaleFactor
+    SET    Column67 = (
+               SELECT TOP 1 tcc.ColumnId
+               FROM   Table_96_CloseCash AS tcc
+           )
+    WHERE  Column67 IS NULL
+           OR  Column67 = 0
+    
+    
+    UPDATE Table_018_MarjooiSale
+    SET    Column31 = (
+               SELECT TOP 1 tcc.ColumnId
+               FROM   Table_96_CloseCash AS tcc
+           )
+    WHERE  Column31 IS NULL
+           OR  Column31 = 0
+END

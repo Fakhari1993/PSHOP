@@ -1,0 +1,60 @@
+﻿
+IF COL_LENGTH('dbo.Table_018_MarjooiSale', 'Column30') IS NULL
+BEGIN
+    ALTER TABLE Table_018_MarjooiSale ADD Column30 SMALLINT 
+    EXEC sys.sp_addextendedproperty @name = N'MS_Description',
+         @value = N'پروژه',
+         @level0type = N'SCHEMA',
+         @level0name = N'dbo',
+         @level1type = N'TABLE',
+         @level1name = N'Table_018_MarjooiSale',
+         @level2type = N'COLUMN',
+         @level2name = N'Column30'
+END 
+GO
+
+IF COL_LENGTH('dbo.Table_021_MarjooiBuy', 'Column28') IS NULL
+BEGIN
+    ALTER TABLE Table_021_MarjooiBuy ADD Column28 SMALLINT 
+    EXEC sys.sp_addextendedproperty @name = N'MS_Description',
+         @value = N'پروژه',
+         @level0type = N'SCHEMA',
+         @level0name = N'dbo',
+         @level1type = N'TABLE',
+         @level1name = N'Table_021_MarjooiBuy',
+         @level2type = N'COLUMN',
+         @level2name = N'Column28'
+END 
+GO
+
+ 
+
+IF COL_LENGTH('dbo.Table_018_MarjooiSale', 'Column31') IS NULL
+BEGIN
+    ALTER TABLE Table_018_MarjooiSale ADD Column31 INT NOT NULL DEFAULT 0
+    
+    EXEC sys.sp_addextendedproperty @name = N'MS_Description',
+         @value = N'آی دی بستن صندوق کلید خارجی جدولTable_96_CloseCash',
+         @level0type = N'SCHEMA',
+         @level0name = N'dbo',
+         @level1type = N'TABLE',
+         @level1name = N'Table_018_MarjooiSale',
+         @level2type = N'COLUMN',
+         @level2name = N'Column31'
+END
+GO
+
+IF COL_LENGTH('dbo.Table_010_SaleFactor', 'Column67') IS NULL
+BEGIN
+    ALTER TABLE Table_010_SaleFactor ADD Column67 INT NOT NULL DEFAULT 0
+    
+    EXEC sys.sp_addextendedproperty @name = N'MS_Description',
+         @value = N'آی دی بستن صندوق کلید خارجی جدولTable_96_CloseCash',
+         @level0type = N'SCHEMA',
+         @level0name = N'dbo',
+         @level1type = N'TABLE',
+         @level1name = N'Table_010_SaleFactor',
+         @level2type = N'COLUMN',
+         @level2name = N'Column67'
+END
+GO

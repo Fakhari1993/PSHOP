@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Barcode Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Barcode</Alias>
+        <Columns isList="true" count="10">
+          <value>ID,System.String</value>
+          <value>Company,System.String</value>
+          <value>Tel,System.String</value>
+          <value>Web,System.String</value>
+          <value>Shenase,System.String</value>
+          <value>Price,System.String</value>
+          <value>Paramet,System.String</value>
+          <value>Name,System.String</value>
+          <value>SN,System.String</value>
+          <value>Group,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Barcode</Name>
+        <NameInSource>Barcode</NameInSource>
+      </Barcode>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="4">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="4" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4,103.89,32</ClientRectangle>
+          <ColumnGaps>3</ColumnGaps>
+          <Columns>2</Columns>
+          <ColumnWidth>51.5</ColumnWidth>
+          <Components isList="true" count="8">
+            <BarCode1 Ref="5" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="6" type="Stimulsoft.Report.BarCodes.StiCode128cBarCodeType" isKey="true">
+                <Height>0.8</Height>
+                <Module>11</Module>
+              </BarCodeType>
+              <ClientRectangle>8,8,34,14</ClientRectangle>
+              <Code>{Barcode.SN}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8.25,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <Name>BarCode1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </BarCode1>
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>22,2,28,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Company}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,2,18,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,7,Bold</Font>
+              <Guid>b8a8854921de4570b9b171827ac8aa95</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Tel}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>8,22,34,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <Guid>2a85b3127c27424f8b0d0a03a945f2f5</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Name}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text5 Ref="10" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,26,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <Guid>3263fc3987014f48a8843255caa71dc2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>قیمت : {Format("{0:#,##0.###}", Barcode.Price)} ریال</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text4 Ref="11" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>46,6,4,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <Guid>73790e101e5f48e4a8d287433c623de6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Web}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text6 Ref="12" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,6,4,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <Guid>d47b73b96b9b4dc5988e099e933dcf40</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Paramet}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=False, Angle=90, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="13" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>26,26,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,6,Bold</Font>
+              <Guid>48df9b4b5f9c4e18a5741fb589687750</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.Shenase}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Barcode</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>410b199ce0a043c497c932957a900b7d</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>34.8</PageHeight>
+      <PageWidth>103.89</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="14" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+    <Page2 Ref="15" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand2 Ref="16" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4,113,12</ClientRectangle>
+          <ColumnGaps>3</ColumnGaps>
+          <Columns>3</Columns>
+          <ColumnWidth>35.4</ColumnWidth>
+          <Components isList="true" count="3">
+            <BarCode2 Ref="17" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="18" type="Stimulsoft.Report.BarCodes.StiCode128cBarCodeType" isKey="true">
+                <Height>0.5</Height>
+                <Module>9.84</Module>
+              </BarCodeType>
+              <ClientRectangle>1.3,0,32,8</ClientRectangle>
+              <Code>{Barcode.SN}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8.25,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>8681ff23b83f42c79f1b467a9f46aa71</Guid>
+              <Name>BarCode2</Name>
+              <Page isRef="15" />
+              <Parent isRef="16" />
+            </BarCode2>
+            <Text8 Ref="19" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>18,8,15,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,3,Bold</Font>
+              <Guid>3f91b0d7f1b34c8ea3cb89794bf33b75</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="15" />
+              <Parent isRef="16" />
+              <Text>{Barcode.Company}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="20" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>1.3,8,15,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,3,Bold</Font>
+              <Guid>f844465d292e49f683bb685b4a2dca82</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="15" />
+              <Parent isRef="16" />
+              <Text>{Barcode.Tel}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Barcode</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="15" />
+          <Parent isRef="15" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>6e7320013c9c4bee9e0465f90797a6e5</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page2</Name>
+      <PageHeight>15</PageHeight>
+      <PageWidth>113</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="21" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page2>
+    <Page3 Ref="22" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand3 Ref="23" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4,100,8</ClientRectangle>
+          <ColumnGaps>3</ColumnGaps>
+          <Columns>3</Columns>
+          <ColumnWidth>31.3</ColumnWidth>
+          <Components isList="true" count="1">
+            <BarCode3 Ref="24" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="25" type="Stimulsoft.Report.BarCodes.StiCode128cBarCodeType" isKey="true">
+                <Height>0.5</Height>
+                <Module>9.84</Module>
+              </BarCodeType>
+              <ClientRectangle>0,-2,30,8</ClientRectangle>
+              <Code>{Barcode.SN}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8.25,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>57cae8bba7a74c3a905cb6d5bacdff48</Guid>
+              <Name>BarCode3</Name>
+              <Page isRef="22" />
+              <Parent isRef="23" />
+            </BarCode3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Barcode</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand3</Name>
+          <Page isRef="22" />
+          <Parent isRef="22" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>6b4e4629faf948379a731cfcab851acf</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page3</Name>
+      <PageHeight>10</PageHeight>
+      <PageWidth>100</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="26" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page3>
+    <Page4 Ref="27" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand4 Ref="28" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4,100,18</ClientRectangle>
+          <ColumnGaps>2.5</ColumnGaps>
+          <Columns>3</Columns>
+          <ColumnWidth>31.6</ColumnWidth>
+          <Components isList="true" count="3">
+            <BarCode4 Ref="29" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <BackColor>White</BackColor>
+              <BarCodeType Ref="30" type="Stimulsoft.Report.BarCodes.StiCode128cBarCodeType" isKey="true">
+                <Height>0.5</Height>
+                <Module>9.84</Module>
+              </BarCodeType>
+              <ClientRectangle>0,2,28.9,8</ClientRectangle>
+              <Code>{Barcode.SN}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,8.25,Bold,Point,False,0</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>a3887818789742b9a9b0dabadd44ee3e</Guid>
+              <Name>BarCode4</Name>
+              <Page isRef="27" />
+              <Parent isRef="28" />
+            </BarCode4>
+            <Text10 Ref="31" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,12,29,2.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,5,Bold</Font>
+              <Guid>c343ed51565e43d58e99dd103d6d5c7c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="27" />
+              <Parent isRef="28" />
+              <Text>{Barcode.Company}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="32" type="Text" isKey="true">
+              <Brush>EmptyBrush</Brush>
+              <ClientRectangle>0,16.5,29,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>B Titr,5,Bold</Font>
+              <Guid>8b5ab9f5d578479db3854c817ecd5e94</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="27" />
+              <Parent isRef="28" />
+              <Text>{Barcode.Tel}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Barcode</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand4</Name>
+          <Page isRef="27" />
+          <Parent isRef="27" />
+          <Sort isList="true" count="0" />
+        </DataBand4>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>91250fbcfed94a8aa22e0dfc60d4ef85</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page4</Name>
+      <PageHeight>20</PageHeight>
+      <PageWidth>100</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="33" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page4>
+  </Pages>
+  <PrinterSettings Ref="34" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/28/2017 11:47:33 AM</ReportChanged>
+  <ReportCreated>3/1/2016 11:24:44 PM</ReportCreated>
+  <ReportFile>D:\TeamProject0\Parsina-projects\PERP-Module\WHRS\WHRS\PWHRS\PWHRS\bin\Debug\Whrs_Rpt01_Barcode.mrt</ReportFile>
+  <ReportGuid>8cc76632c8874aa4bec8a1732fa3be14</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2013.1.1505</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet_EtelaatePaye_Report" targetNamespace="http://tempuri.org/DataSet_EtelaatePaye_Report.xsd" xmlns:mstns="http://tempuri.org/DataSet_EtelaatePaye_Report.xsd" xmlns="http://tempuri.org/DataSet_EtelaatePaye_Report.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SALE" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SALE (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PSHOP.Properties.Settings.GlobalReference.Default.SALE" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BASE" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BASE (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PSHOP.Properties.Settings.GlobalReference.Default.BASE" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OstanVaShahrTableAdapter" GeneratorDataComponentClassName="OstanVaShahrTableAdapter" Name="OstanVaShahr" UserDataComponentName="OstanVaShahrTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SALE (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PERP_Base.dbo.Table_060_ProvinceInfo.Column01 AS NameOstan, PERP_Base.dbo.Table_060_ProvinceInfo.Column02 AS MarkazOstan, 
+                         PERP_Base.dbo.Table_060_ProvinceInfo.Column03 AS TozihatOstan, PERP_Base.dbo.Table_060_ProvinceInfo.Column04 AS masahat, 
+                         PERP_Base.dbo.Table_060_ProvinceInfo.Column05 AS jameat, PERP_Base.dbo.Table_060_ProvinceInfo.Column06 AS fasele, 
+                         PERP_Base.dbo.Table_065_CityInfo.Column02 AS NameShahr, PERP_Base.dbo.Table_065_CityInfo.Column03 AS PishShomare, 
+                         PERP_Base.dbo.Table_065_CityInfo.Column04 AS PishShomareKeshvar, PERP_Base.dbo.Table_065_CityInfo.Column05 AS fasele, 
+                         PERP_Base.dbo.Table_065_CityInfo.Column06 AS tozihat, PERP_Base.dbo.Table_065_CityInfo.Column07 AS masahat, 
+                         PERP_Base.dbo.Table_065_CityInfo.Column08 AS jameeat, PERP_Base.dbo.Table_065_CityInfo.Column00 AS idostan
+FROM            PERP_Base.dbo.Table_065_CityInfo INNER JOIN
+                         PERP_Base.dbo.Table_060_ProvinceInfo ON PERP_Base.dbo.Table_065_CityInfo.Column00 = PERP_Base.dbo.Table_060_ProvinceInfo.Column00</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NameOstan" DataSetColumn="NameOstan" />
+              <Mapping SourceColumn="MarkazOstan" DataSetColumn="MarkazOstan" />
+              <Mapping SourceColumn="TozihatOstan" DataSetColumn="TozihatOstan" />
+              <Mapping SourceColumn="masahat" DataSetColumn="masahat" />
+              <Mapping SourceColumn="jameat" DataSetColumn="jameat" />
+              <Mapping SourceColumn="fasele" DataSetColumn="fasele" />
+              <Mapping SourceColumn="NameShahr" DataSetColumn="NameShahr" />
+              <Mapping SourceColumn="PishShomare" DataSetColumn="PishShomare" />
+              <Mapping SourceColumn="PishShomareKeshvar" DataSetColumn="PishShomareKeshvar" />
+              <Mapping SourceColumn="fasele1" DataSetColumn="fasele1" />
+              <Mapping SourceColumn="tozihat" DataSetColumn="tozihat" />
+              <Mapping SourceColumn="masahat1" DataSetColumn="masahat1" />
+              <Mapping SourceColumn="jameeat" DataSetColumn="jameeat" />
+              <Mapping SourceColumn="idostan" DataSetColumn="idostan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Table_000_OrgInfoTableAdapter" GeneratorDataComponentClassName="Table_000_OrgInfoTableAdapter" Name="Table_000_OrgInfo" UserDataComponentName="Table_000_OrgInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BASE (Settings)" DbObjectName="PERP_Base.dbo.Table_000_OrgInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [Table_000_OrgInfo] WHERE (([ColumnId] = @Original_ColumnId) AND ([Column00] = @Original_Column00) AND ([Column01] = @Original_Column01) AND ((@IsNull_Column02 = 1 AND [Column02] IS NULL) OR ([Column02] = @Original_Column02)) AND ((@IsNull_Column03 = 1 AND [Column03] IS NULL) OR ([Column03] = @Original_Column03)) AND ((@IsNull_Column04 = 1 AND [Column04] IS NULL) OR ([Column04] = @Original_Column04)) AND ((@IsNull_Column05 = 1 AND [Column05] IS NULL) OR ([Column05] = @Original_Column05)) AND ((@IsNull_Column06 = 1 AND [Column06] IS NULL) OR ([Column06] = @Original_Column06)) AND ((@IsNull_Column07 = 1 AND [Column07] IS NULL) OR ([Column07] = @Original_Column07)) AND ((@IsNull_Column08 = 1 AND [Column08] IS NULL) OR ([Column08] = @Original_Column08)) AND ((@IsNull_Column09 = 1 AND [Column09] IS NULL) OR ([Column09] = @Original_Column09)) AND ([Column10] = @Original_Column10) AND ((@IsNull_Column11 = 1 AND [Column11] IS NULL) OR ([Column11] = @Original_Column11)) AND ((@IsNull_Column12 = 1 AND [Column12] IS NULL) OR ([Column12] = @Original_Column12)) AND ((@IsNull_Column13 = 1 AND [Column13] IS NULL) OR ([Column13] = @Original_Column13)) AND ((@IsNull_Column14 = 1 AND [Column14] IS NULL) OR ([Column14] = @Original_Column14)) AND ([Column15] = @Original_Column15) AND ([Column16] = @Original_Column16))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_ColumnId" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ColumnId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_Column00" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Column00" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column01" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column01" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column02" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column02" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column03" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column03" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column04" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column05" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column05" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column06" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column06" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column07" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column07" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column08" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column08" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column09" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column09" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column10" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column11" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column12" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column12" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column13" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column13" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column14" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column14" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Column15" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column15" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Column16" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column16" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [Table_000_OrgInfo] ([Column00], [Column01], [Column02], [Column03], [Column04], [Column05], [Column06], [Column07], [Column08], [Column09], [Column10], [Column11], [Column12], [Column13], [Column14], [Column15], [Column16], [Column17]) VALUES (@Column00, @Column01, @Column02, @Column03, @Column04, @Column05, @Column06, @Column07, @Column08, @Column09, @Column10, @Column11, @Column12, @Column13, @Column14, @Column15, @Column16, @Column17);
+SELECT ColumnId, Column00, Column01, Column02, Column03, Column04, Column05, Column06, Column07, Column08, Column09, Column10, Column11, Column12, Column13, Column14, Column15, Column16, Column17 FROM Table_000_OrgInfo WHERE (ColumnId = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Column00" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Column00" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column01" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column01" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column02" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column03" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column05" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column06" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column07" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column08" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column09" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column10" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column11" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column12" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column13" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column14" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Column15" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column15" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Column16" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column16" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Column17" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Column17" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Table_000_OrgInfo.*
+FROM            Table_000_OrgInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [Table_000_OrgInfo] SET [Column00] = @Column00, [Column01] = @Column01, [Column02] = @Column02, [Column03] = @Column03, [Column04] = @Column04, [Column05] = @Column05, [Column06] = @Column06, [Column07] = @Column07, [Column08] = @Column08, [Column09] = @Column09, [Column10] = @Column10, [Column11] = @Column11, [Column12] = @Column12, [Column13] = @Column13, [Column14] = @Column14, [Column15] = @Column15, [Column16] = @Column16, [Column17] = @Column17 WHERE (([ColumnId] = @Original_ColumnId) AND ([Column00] = @Original_Column00) AND ([Column01] = @Original_Column01) AND ((@IsNull_Column02 = 1 AND [Column02] IS NULL) OR ([Column02] = @Original_Column02)) AND ((@IsNull_Column03 = 1 AND [Column03] IS NULL) OR ([Column03] = @Original_Column03)) AND ((@IsNull_Column04 = 1 AND [Column04] IS NULL) OR ([Column04] = @Original_Column04)) AND ((@IsNull_Column05 = 1 AND [Column05] IS NULL) OR ([Column05] = @Original_Column05)) AND ((@IsNull_Column06 = 1 AND [Column06] IS NULL) OR ([Column06] = @Original_Column06)) AND ((@IsNull_Column07 = 1 AND [Column07] IS NULL) OR ([Column07] = @Original_Column07)) AND ((@IsNull_Column08 = 1 AND [Column08] IS NULL) OR ([Column08] = @Original_Column08)) AND ((@IsNull_Column09 = 1 AND [Column09] IS NULL) OR ([Column09] = @Original_Column09)) AND ([Column10] = @Original_Column10) AND ((@IsNull_Column11 = 1 AND [Column11] IS NULL) OR ([Column11] = @Original_Column11)) AND ((@IsNull_Column12 = 1 AND [Column12] IS NULL) OR ([Column12] = @Original_Column12)) AND ((@IsNull_Column13 = 1 AND [Column13] IS NULL) OR ([Column13] = @Original_Column13)) AND ((@IsNull_Column14 = 1 AND [Column14] IS NULL) OR ([Column14] = @Original_Column14)) AND ([Column15] = @Original_Column15) AND ([Column16] = @Original_Column16));
+SELECT ColumnId, Column00, Column01, Column02, Column03, Column04, Column05, Column06, Column07, Column08, Column09, Column10, Column11, Column12, Column13, Column14, Column15, Column16, Column17 FROM Table_000_OrgInfo WHERE (ColumnId = @ColumnId)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Column00" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Column00" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column01" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column01" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column02" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column03" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column05" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column06" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column07" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column08" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column09" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column10" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column10" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column11" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column12" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column13" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Column14" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Column15" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column15" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Column16" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column16" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Binary" Direction="Input" ParameterName="@Column17" Precision="0" ProviderType="Image" Scale="0" Size="0" SourceColumn="Column17" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_ColumnId" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="ColumnId" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int16" Direction="Input" ParameterName="@Original_Column00" Precision="0" ProviderType="SmallInt" Scale="0" Size="0" SourceColumn="Column00" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column01" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column01" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column02" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column02" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column02" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column03" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column03" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column03" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column04" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column04" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column04" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column05" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column05" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column05" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column06" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column06" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column06" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column07" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column07" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column07" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column08" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column08" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column08" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column09" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column09" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column09" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column10" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column10" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column11" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column11" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column11" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column12" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column12" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column12" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column13" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column13" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column13" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Column14" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Column14" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Column14" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Column15" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column15" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Column16" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Column16" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="ColumnId" ColumnName="ColumnId" DataSourceName="PERP_Base.dbo.Table_000_OrgInfo" DataTypeServer="smallint" DbType="Int16" Direction="Input" ParameterName="@ColumnId" Precision="0" ProviderType="SmallInt" Scale="0" Size="2" SourceColumn="ColumnId" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ColumnId" DataSetColumn="ColumnId" />
+              <Mapping SourceColumn="Column00" DataSetColumn="Column00" />
+              <Mapping SourceColumn="Column01" DataSetColumn="Column01" />
+              <Mapping SourceColumn="Column02" DataSetColumn="Column02" />
+              <Mapping SourceColumn="Column03" DataSetColumn="Column03" />
+              <Mapping SourceColumn="Column04" DataSetColumn="Column04" />
+              <Mapping SourceColumn="Column05" DataSetColumn="Column05" />
+              <Mapping SourceColumn="Column06" DataSetColumn="Column06" />
+              <Mapping SourceColumn="Column07" DataSetColumn="Column07" />
+              <Mapping SourceColumn="Column08" DataSetColumn="Column08" />
+              <Mapping SourceColumn="Column09" DataSetColumn="Column09" />
+              <Mapping SourceColumn="Column10" DataSetColumn="Column10" />
+              <Mapping SourceColumn="Column11" DataSetColumn="Column11" />
+              <Mapping SourceColumn="Column12" DataSetColumn="Column12" />
+              <Mapping SourceColumn="Column13" DataSetColumn="Column13" />
+              <Mapping SourceColumn="Column14" DataSetColumn="Column14" />
+              <Mapping SourceColumn="Column15" DataSetColumn="Column15" />
+              <Mapping SourceColumn="Column16" DataSetColumn="Column16" />
+              <Mapping SourceColumn="Column17" DataSetColumn="Column17" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PrintMoshtariTableAdapter" GeneratorDataComponentClassName="PrintMoshtariTableAdapter" Name="PrintMoshtari" UserDataComponentName="PrintMoshtariTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SALE (Settings)" DbObjectName="PSALE_1_1391.dbo.Table_001_CustomerAdditionalInformation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Table_001_CustomerAdditionalInformation.column01 AS Id, PERP_Base.dbo.Table_060_ProvinceInfo.Column01 AS Ostan, 
+                         PERP_Base.dbo.Table_065_CityInfo.Column02 AS Shahr, PERP_Base.dbo.Table_045_PersonInfo.Column01 AS CodeShakhs, 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column02 AS Name, PERP_Base.dbo.Table_045_PersonInfo.Column03 AS [Haghigh/Hoghooghi], 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column04 AS Fname, PERP_Base.dbo.Table_045_PersonInfo.Column05 AS Lname, 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column06 AS AdressP, PERP_Base.dbo.Table_045_PersonInfo.Column07 AS TelP, 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column08 AS FaxP, PERP_Base.dbo.Table_045_PersonInfo.Column09 AS [CodeMelli/Eghtesadi], 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column10 AS ZamineFaaliyat, PERP_Base.dbo.Table_045_PersonInfo.Column11 AS Tozihat, 
+                         PERP_Base.dbo.Table_045_PersonInfo.Column13 AS CodePostiP, Table_001_CustomerAdditionalInformation.column04 AS AdressAnbar, 
+                         Table_001_CustomerAdditionalInformation.column05 AS CodePosti, Table_001_CustomerAdditionalInformation.column06 AS Tell, 
+                         Table_001_CustomerAdditionalInformation.column07 AS Fax, Table_001_CustomerAdditionalInformation.column08 AS WebSite, 
+                         Table_001_CustomerAdditionalInformation.column09 AS Mail, Table_001_CustomerAdditionalInformation.column10 AS MetrajAnbar, 
+                         Table_001_CustomerAdditionalInformation.column11 AS TedadAnbar, Table_001_CustomerAdditionalInformation.column12 AS VaziyatTafkik, 
+                         Table_001_CustomerAdditionalInformation.column13 AS TedadKolePersenel, Table_001_CustomerAdditionalInformation.column14 AS TedadPesenelForoosh, 
+                         Table_001_CustomerAdditionalInformation.column15 AS TedadPersenelTozi, Table_001_CustomerAdditionalInformation.column16 AS EtelaateMashinha, 
+                         Table_001_CustomerAdditionalInformation.column17 AS ModirFroosh, Table_001_CustomerAdditionalInformation.column18 AS TelModirForoosh, 
+                         Table_001_CustomerAdditionalInformation.column19 AS ModirMali, Table_001_CustomerAdditionalInformation.column20 AS TellModirMali, 
+                         Table_001_CustomerAdditionalInformation.column21 AS ModirAmel, Table_001_CustomerAdditionalInformation.column22 AS TelModirAmel, 
+                         Table_001_CustomerAdditionalInformation.column23 AS MoshtariyanTahtePooshesh, Table_001_CustomerAdditionalInformation.column24 AS ListeSabadeTozi
+FROM            Table_001_CustomerAdditionalInformation INNER JOIN
+                         PERP_Base.dbo.Table_045_PersonInfo ON Table_001_CustomerAdditionalInformation.column01 = PERP_Base.dbo.Table_045_PersonInfo.ColumnId INNER JOIN
+                         PERP_Base.dbo.Table_060_ProvinceInfo ON Table_001_CustomerAdditionalInformation.column02 = PERP_Base.dbo.Table_060_ProvinceInfo.Column00 INNER JOIN
+                         PERP_Base.dbo.Table_065_CityInfo ON Table_001_CustomerAdditionalInformation.column03 = PERP_Base.dbo.Table_065_CityInfo.Column01</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Ostan" DataSetColumn="Ostan" />
+              <Mapping SourceColumn="Shahr" DataSetColumn="Shahr" />
+              <Mapping SourceColumn="CodeShakhs" DataSetColumn="CodeShakhs" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Haghigh/Hoghooghi" DataSetColumn="Haghigh/Hoghooghi" />
+              <Mapping SourceColumn="Fname" DataSetColumn="Fname" />
+              <Mapping SourceColumn="Lname" DataSetColumn="Lname" />
+              <Mapping SourceColumn="AdressP" DataSetColumn="AdressP" />
+              <Mapping SourceColumn="TelP" DataSetColumn="TelP" />
+              <Mapping SourceColumn="FaxP" DataSetColumn="FaxP" />
+              <Mapping SourceColumn="CodeMelli/Eghtesadi" DataSetColumn="CodeMelli/Eghtesadi" />
+              <Mapping SourceColumn="ZamineFaaliyat" DataSetColumn="ZamineFaaliyat" />
+              <Mapping SourceColumn="Tozihat" DataSetColumn="Tozihat" />
+              <Mapping SourceColumn="CodePostiP" DataSetColumn="CodePostiP" />
+              <Mapping SourceColumn="AdressAnbar" DataSetColumn="AdressAnbar" />
+              <Mapping SourceColumn="CodePosti" DataSetColumn="CodePosti" />
+              <Mapping SourceColumn="Tell" DataSetColumn="Tell" />
+              <Mapping SourceColumn="Fax" DataSetColumn="Fax" />
+              <Mapping SourceColumn="WebSite" DataSetColumn="WebSite" />
+              <Mapping SourceColumn="Mail" DataSetColumn="Mail" />
+              <Mapping SourceColumn="MetrajAnbar" DataSetColumn="MetrajAnbar" />
+              <Mapping SourceColumn="TedadAnbar" DataSetColumn="TedadAnbar" />
+              <Mapping SourceColumn="VaziyatTafkik" DataSetColumn="VaziyatTafkik" />
+              <Mapping SourceColumn="TedadKolePersenel" DataSetColumn="TedadKolePersenel" />
+              <Mapping SourceColumn="TedadPesenelForoosh" DataSetColumn="TedadPesenelForoosh" />
+              <Mapping SourceColumn="TedadPersenelTozi" DataSetColumn="TedadPersenelTozi" />
+              <Mapping SourceColumn="EtelaateMashinha" DataSetColumn="EtelaateMashinha" />
+              <Mapping SourceColumn="ModirFroosh" DataSetColumn="ModirFroosh" />
+              <Mapping SourceColumn="TelModirForoosh" DataSetColumn="TelModirForoosh" />
+              <Mapping SourceColumn="ModirMali" DataSetColumn="ModirMali" />
+              <Mapping SourceColumn="TellModirMali" DataSetColumn="TellModirMali" />
+              <Mapping SourceColumn="ModirAmel" DataSetColumn="ModirAmel" />
+              <Mapping SourceColumn="TelModirAmel" DataSetColumn="TelModirAmel" />
+              <Mapping SourceColumn="MoshtariyanTahtePooshesh" DataSetColumn="MoshtariyanTahtePooshesh" />
+              <Mapping SourceColumn="ListeSabadeTozi" DataSetColumn="ListeSabadeTozi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet_EtelaatePaye_Report" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet_EtelaatePaye_Report" msprop:Generator_UserDSName="DataSet_EtelaatePaye_Report">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OstanVaShahr" msprop:Generator_TableClassName="OstanVaShahrDataTable" msprop:Generator_TableVarName="tableOstanVaShahr" msprop:Generator_TablePropName="OstanVaShahr" msprop:Generator_RowDeletingName="OstanVaShahrRowDeleting" msprop:Generator_RowChangingName="OstanVaShahrRowChanging" msprop:Generator_RowEvHandlerName="OstanVaShahrRowChangeEventHandler" msprop:Generator_RowDeletedName="OstanVaShahrRowDeleted" msprop:Generator_UserTableName="OstanVaShahr" msprop:Generator_RowChangedName="OstanVaShahrRowChanged" msprop:Generator_RowEvArgName="OstanVaShahrRowChangeEvent" msprop:Generator_RowClassName="OstanVaShahrRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NameOstan" msprop:Generator_ColumnVarNameInTable="columnNameOstan" msprop:Generator_ColumnPropNameInRow="NameOstan" msprop:Generator_ColumnPropNameInTable="NameOstanColumn" msprop:Generator_UserColumnName="NameOstan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MarkazOstan" msprop:Generator_ColumnVarNameInTable="columnMarkazOstan" msprop:Generator_ColumnPropNameInRow="MarkazOstan" msprop:Generator_ColumnPropNameInTable="MarkazOstanColumn" msprop:Generator_UserColumnName="MarkazOstan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TozihatOstan" msprop:Generator_ColumnVarNameInTable="columnTozihatOstan" msprop:Generator_ColumnPropNameInRow="TozihatOstan" msprop:Generator_ColumnPropNameInTable="TozihatOstanColumn" msprop:Generator_UserColumnName="TozihatOstan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="masahat" msprop:Generator_ColumnVarNameInTable="columnmasahat" msprop:Generator_ColumnPropNameInRow="masahat" msprop:Generator_ColumnPropNameInTable="masahatColumn" msprop:Generator_UserColumnName="masahat" type="xs:int" minOccurs="0" />
+              <xs:element name="jameat" msprop:Generator_ColumnVarNameInTable="columnjameat" msprop:Generator_ColumnPropNameInRow="jameat" msprop:Generator_ColumnPropNameInTable="jameatColumn" msprop:Generator_UserColumnName="jameat" type="xs:int" minOccurs="0" />
+              <xs:element name="fasele" msprop:Generator_ColumnVarNameInTable="columnfasele" msprop:Generator_ColumnPropNameInRow="fasele" msprop:Generator_ColumnPropNameInTable="faseleColumn" msprop:Generator_UserColumnName="fasele" type="xs:int" minOccurs="0" />
+              <xs:element name="NameShahr" msprop:Generator_ColumnVarNameInTable="columnNameShahr" msprop:Generator_ColumnPropNameInRow="NameShahr" msprop:Generator_ColumnPropNameInTable="NameShahrColumn" msprop:Generator_UserColumnName="NameShahr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PishShomare" msprop:Generator_ColumnVarNameInTable="columnPishShomare" msprop:Generator_ColumnPropNameInRow="PishShomare" msprop:Generator_ColumnPropNameInTable="PishShomareColumn" msprop:Generator_UserColumnName="PishShomare" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PishShomareKeshvar" msprop:Generator_ColumnVarNameInTable="columnPishShomareKeshvar" msprop:Generator_ColumnPropNameInRow="PishShomareKeshvar" msprop:Generator_ColumnPropNameInTable="PishShomareKeshvarColumn" msprop:Generator_UserColumnName="PishShomareKeshvar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fasele1" msprop:Generator_ColumnVarNameInTable="columnfasele1" msprop:Generator_ColumnPropNameInRow="fasele1" msprop:Generator_ColumnPropNameInTable="fasele1Column" msprop:Generator_UserColumnName="fasele1" type="xs:int" />
+              <xs:element name="tozihat" msprop:Generator_ColumnVarNameInTable="columntozihat" msprop:Generator_ColumnPropNameInRow="tozihat" msprop:Generator_ColumnPropNameInTable="tozihatColumn" msprop:Generator_UserColumnName="tozihat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="masahat1" msprop:Generator_ColumnVarNameInTable="columnmasahat1" msprop:Generator_ColumnPropNameInRow="masahat1" msprop:Generator_ColumnPropNameInTable="masahat1Column" msprop:Generator_UserColumnName="masahat1" type="xs:int" minOccurs="0" />
+              <xs:element name="jameeat" msprop:Generator_ColumnVarNameInTable="columnjameeat" msprop:Generator_ColumnPropNameInRow="jameeat" msprop:Generator_ColumnPropNameInTable="jameeatColumn" msprop:Generator_UserColumnName="jameeat" type="xs:int" minOccurs="0" />
+              <xs:element name="idostan" msprop:Generator_ColumnVarNameInTable="columnidostan" msprop:Generator_ColumnPropNameInRow="idostan" msprop:Generator_ColumnPropNameInTable="idostanColumn" msprop:Generator_UserColumnName="idostan" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Table_000_OrgInfo" msprop:Generator_TableClassName="Table_000_OrgInfoDataTable" msprop:Generator_TableVarName="tableTable_000_OrgInfo" msprop:Generator_TablePropName="Table_000_OrgInfo" msprop:Generator_RowDeletingName="Table_000_OrgInfoRowDeleting" msprop:Generator_RowChangingName="Table_000_OrgInfoRowChanging" msprop:Generator_RowEvHandlerName="Table_000_OrgInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="Table_000_OrgInfoRowDeleted" msprop:Generator_UserTableName="Table_000_OrgInfo" msprop:Generator_RowChangedName="Table_000_OrgInfoRowChanged" msprop:Generator_RowEvArgName="Table_000_OrgInfoRowChangeEvent" msprop:Generator_RowClassName="Table_000_OrgInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ColumnId" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnColumnId" msprop:Generator_ColumnPropNameInRow="ColumnId" msprop:Generator_ColumnPropNameInTable="ColumnIdColumn" msprop:Generator_UserColumnName="ColumnId" type="xs:short" />
+              <xs:element name="Column00" msprop:Generator_ColumnVarNameInTable="columnColumn00" msprop:Generator_ColumnPropNameInRow="Column00" msprop:Generator_ColumnPropNameInTable="Column00Column" msprop:Generator_UserColumnName="Column00" type="xs:short" />
+              <xs:element name="Column01" msprop:Generator_ColumnVarNameInTable="columnColumn01" msprop:Generator_ColumnPropNameInRow="Column01" msprop:Generator_ColumnPropNameInTable="Column01Column" msprop:Generator_UserColumnName="Column01">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column02" msprop:Generator_ColumnVarNameInTable="columnColumn02" msprop:Generator_ColumnPropNameInRow="Column02" msprop:Generator_ColumnPropNameInTable="Column02Column" msprop:Generator_UserColumnName="Column02" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column03" msprop:Generator_ColumnVarNameInTable="columnColumn03" msprop:Generator_ColumnPropNameInRow="Column03" msprop:Generator_ColumnPropNameInTable="Column03Column" msprop:Generator_UserColumnName="Column03" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column04" msprop:Generator_ColumnVarNameInTable="columnColumn04" msprop:Generator_ColumnPropNameInRow="Column04" msprop:Generator_ColumnPropNameInTable="Column04Column" msprop:Generator_UserColumnName="Column04" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column05" msprop:Generator_ColumnVarNameInTable="columnColumn05" msprop:Generator_ColumnPropNameInRow="Column05" msprop:Generator_ColumnPropNameInTable="Column05Column" msprop:Generator_UserColumnName="Column05" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column06" msprop:Generator_ColumnVarNameInTable="columnColumn06" msprop:Generator_ColumnPropNameInRow="Column06" msprop:Generator_ColumnPropNameInTable="Column06Column" msprop:Generator_UserColumnName="Column06" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column07" msprop:Generator_ColumnVarNameInTable="columnColumn07" msprop:Generator_ColumnPropNameInRow="Column07" msprop:Generator_ColumnPropNameInTable="Column07Column" msprop:Generator_UserColumnName="Column07" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column08" msprop:Generator_ColumnVarNameInTable="columnColumn08" msprop:Generator_ColumnPropNameInRow="Column08" msprop:Generator_ColumnPropNameInTable="Column08Column" msprop:Generator_UserColumnName="Column08" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column09" msprop:Generator_ColumnVarNameInTable="columnColumn09" msprop:Generator_ColumnPropNameInRow="Column09" msprop:Generator_ColumnPropNameInTable="Column09Column" msprop:Generator_UserColumnName="Column09" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column10" msprop:Generator_ColumnVarNameInTable="columnColumn10" msprop:Generator_ColumnPropNameInRow="Column10" msprop:Generator_ColumnPropNameInTable="Column10Column" msprop:Generator_UserColumnName="Column10">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column11" msprop:Generator_ColumnVarNameInTable="columnColumn11" msprop:Generator_ColumnPropNameInRow="Column11" msprop:Generator_ColumnPropNameInTable="Column11Column" msprop:Generator_UserColumnName="Column11" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column12" msprop:Generator_ColumnVarNameInTable="columnColumn12" msprop:Generator_ColumnPropNameInRow="Column12" msprop:Generator_ColumnPropNameInTable="Column12Column" msprop:Generator_UserColumnName="Column12" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column13" msprop:Generator_ColumnVarNameInTable="columnColumn13" msprop:Generator_ColumnPropNameInRow="Column13" msprop:Generator_ColumnPropNameInTable="Column13Column" msprop:Generator_UserColumnName="Column13" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column14" msprop:Generator_ColumnVarNameInTable="columnColumn14" msprop:Generator_ColumnPropNameInRow="Column14" msprop:Generator_ColumnPropNameInTable="Column14Column" msprop:Generator_UserColumnName="Column14" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Column15" msprop:Generator_ColumnVarNameInTable="columnColumn15" msprop:Generator_ColumnPropNameInRow="Column15" msprop:Generator_ColumnPropNameInTable="Column15Column" msprop:Generator_UserColumnName="Column15" type="xs:boolean" />
+              <xs:element name="Column16" msprop:Generator_ColumnVarNameInTable="columnColumn16" msprop:Generator_ColumnPropNameInRow="Column16" msprop:Generator_ColumnPropNameInTable="Column16Column" msprop:Generator_UserColumnName="Column16" type="xs:boolean" />
+              <xs:element name="Column17" msprop:Generator_ColumnVarNameInTable="columnColumn17" msprop:Generator_ColumnPropNameInRow="Column17" msprop:Generator_ColumnPropNameInTable="Column17Column" msprop:Generator_UserColumnName="Column17" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PrintMoshtari" msprop:Generator_TableClassName="PrintMoshtariDataTable" msprop:Generator_TableVarName="tablePrintMoshtari" msprop:Generator_TablePropName="PrintMoshtari" msprop:Generator_RowDeletingName="PrintMoshtariRowDeleting" msprop:Generator_RowChangingName="PrintMoshtariRowChanging" msprop:Generator_RowEvHandlerName="PrintMoshtariRowChangeEventHandler" msprop:Generator_RowDeletedName="PrintMoshtariRowDeleted" msprop:Generator_UserTableName="PrintMoshtari" msprop:Generator_RowChangedName="PrintMoshtariRowChanged" msprop:Generator_RowEvArgName="PrintMoshtariRowChangeEvent" msprop:Generator_RowClassName="PrintMoshtariRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Ostan" msprop:Generator_ColumnVarNameInTable="columnOstan" msprop:Generator_ColumnPropNameInRow="Ostan" msprop:Generator_ColumnPropNameInTable="OstanColumn" msprop:Generator_UserColumnName="Ostan">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shahr" msprop:Generator_ColumnVarNameInTable="columnShahr" msprop:Generator_ColumnPropNameInRow="Shahr" msprop:Generator_ColumnPropNameInTable="ShahrColumn" msprop:Generator_UserColumnName="Shahr">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodeShakhs" msprop:Generator_ColumnVarNameInTable="columnCodeShakhs" msprop:Generator_ColumnPropNameInRow="CodeShakhs" msprop:Generator_ColumnPropNameInTable="CodeShakhsColumn" msprop:Generator_UserColumnName="CodeShakhs" type="xs:short" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Haghigh_x002F_Hoghooghi" msprop:Generator_ColumnVarNameInTable="_columnHaghigh_Hoghooghi" msprop:Generator_ColumnPropNameInRow="_Haghigh_Hoghooghi" msprop:Generator_ColumnPropNameInTable="_Haghigh_HoghooghiColumn" msprop:Generator_UserColumnName="Haghigh/Hoghooghi" type="xs:boolean" />
+              <xs:element name="Fname" msprop:Generator_ColumnVarNameInTable="columnFname" msprop:Generator_ColumnPropNameInRow="Fname" msprop:Generator_ColumnPropNameInTable="FnameColumn" msprop:Generator_UserColumnName="Fname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lname" msprop:Generator_ColumnVarNameInTable="columnLname" msprop:Generator_ColumnPropNameInRow="Lname" msprop:Generator_ColumnPropNameInTable="LnameColumn" msprop:Generator_UserColumnName="Lname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdressP" msprop:Generator_ColumnVarNameInTable="columnAdressP" msprop:Generator_ColumnPropNameInRow="AdressP" msprop:Generator_ColumnPropNameInTable="AdressPColumn" msprop:Generator_UserColumnName="AdressP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelP" msprop:Generator_ColumnVarNameInTable="columnTelP" msprop:Generator_ColumnPropNameInRow="TelP" msprop:Generator_ColumnPropNameInTable="TelPColumn" msprop:Generator_UserColumnName="TelP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FaxP" msprop:Generator_ColumnVarNameInTable="columnFaxP" msprop:Generator_ColumnPropNameInRow="FaxP" msprop:Generator_ColumnPropNameInTable="FaxPColumn" msprop:Generator_UserColumnName="FaxP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodeMelli_x002F_Eghtesadi" msprop:Generator_ColumnVarNameInTable="_columnCodeMelli_Eghtesadi" msprop:Generator_ColumnPropNameInRow="_CodeMelli_Eghtesadi" msprop:Generator_ColumnPropNameInTable="_CodeMelli_EghtesadiColumn" msprop:Generator_UserColumnName="CodeMelli/Eghtesadi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZamineFaaliyat" msprop:Generator_ColumnVarNameInTable="columnZamineFaaliyat" msprop:Generator_ColumnPropNameInRow="ZamineFaaliyat" msprop:Generator_ColumnPropNameInTable="ZamineFaaliyatColumn" msprop:Generator_UserColumnName="ZamineFaaliyat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tozihat" msprop:Generator_ColumnVarNameInTable="columnTozihat" msprop:Generator_ColumnPropNameInRow="Tozihat" msprop:Generator_ColumnPropNameInTable="TozihatColumn" msprop:Generator_UserColumnName="Tozihat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodePostiP" msprop:Generator_ColumnVarNameInTable="columnCodePostiP" msprop:Generator_ColumnPropNameInRow="CodePostiP" msprop:Generator_ColumnPropNameInTable="CodePostiPColumn" msprop:Generator_UserColumnName="CodePostiP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AdressAnbar" msprop:Generator_ColumnVarNameInTable="columnAdressAnbar" msprop:Generator_ColumnPropNameInRow="AdressAnbar" msprop:Generator_ColumnPropNameInTable="AdressAnbarColumn" msprop:Generator_UserColumnName="AdressAnbar" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodePosti" msprop:Generator_ColumnVarNameInTable="columnCodePosti" msprop:Generator_ColumnPropNameInRow="CodePosti" msprop:Generator_ColumnPropNameInTable="CodePostiColumn" msprop:Generator_UserColumnName="CodePosti" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tell" msprop:Generator_ColumnVarNameInTable="columnTell" msprop:Generator_ColumnPropNameInRow="Tell" msprop:Generator_ColumnPropNameInTable="TellColumn" msprop:Generator_UserColumnName="Tell" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fax" msprop:Generator_ColumnVarNameInTable="columnFax" msprop:Generator_ColumnPropNameInRow="Fax" msprop:Generator_ColumnPropNameInTable="FaxColumn" msprop:Generator_UserColumnName="Fax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="WebSite" msprop:Generator_ColumnVarNameInTable="columnWebSite" msprop:Generator_ColumnPropNameInRow="WebSite" msprop:Generator_ColumnPropNameInTable="WebSiteColumn" msprop:Generator_UserColumnName="WebSite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mail" msprop:Generator_ColumnVarNameInTable="columnMail" msprop:Generator_ColumnPropNameInRow="Mail" msprop:Generator_ColumnPropNameInTable="MailColumn" msprop:Generator_UserColumnName="Mail" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetrajAnbar" msprop:Generator_ColumnVarNameInTable="columnMetrajAnbar" msprop:Generator_ColumnPropNameInRow="MetrajAnbar" msprop:Generator_ColumnPropNameInTable="MetrajAnbarColumn" msprop:Generator_UserColumnName="MetrajAnbar" type="xs:double" />
+              <xs:element name="TedadAnbar" msprop:Generator_ColumnVarNameInTable="columnTedadAnbar" msprop:Generator_ColumnPropNameInRow="TedadAnbar" msprop:Generator_ColumnPropNameInTable="TedadAnbarColumn" msprop:Generator_UserColumnName="TedadAnbar" type="xs:int" />
+              <xs:element name="VaziyatTafkik" msprop:Generator_ColumnVarNameInTable="columnVaziyatTafkik" msprop:Generator_ColumnPropNameInRow="VaziyatTafkik" msprop:Generator_ColumnPropNameInTable="VaziyatTafkikColumn" msprop:Generator_UserColumnName="VaziyatTafkik" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TedadKolePersenel" msprop:Generator_ColumnVarNameInTable="columnTedadKolePersenel" msprop:Generator_ColumnPropNameInRow="TedadKolePersenel" msprop:Generator_ColumnPropNameInTable="TedadKolePersenelColumn" msprop:Generator_UserColumnName="TedadKolePersenel" type="xs:int" />
+              <xs:element name="TedadPesenelForoosh" msprop:Generator_ColumnVarNameInTable="columnTedadPesenelForoosh" msprop:Generator_ColumnPropNameInRow="TedadPesenelForoosh" msprop:Generator_ColumnPropNameInTable="TedadPesenelForooshColumn" msprop:Generator_UserColumnName="TedadPesenelForoosh" type="xs:int" />
+              <xs:element name="TedadPersenelTozi" msprop:Generator_ColumnVarNameInTable="columnTedadPersenelTozi" msprop:Generator_ColumnPropNameInRow="TedadPersenelTozi" msprop:Generator_ColumnPropNameInTable="TedadPersenelToziColumn" msprop:Generator_UserColumnName="TedadPersenelTozi" type="xs:int" />
+              <xs:element name="EtelaateMashinha" msprop:Generator_ColumnVarNameInTable="columnEtelaateMashinha" msprop:Generator_ColumnPropNameInRow="EtelaateMashinha" msprop:Generator_ColumnPropNameInTable="EtelaateMashinhaColumn" msprop:Generator_UserColumnName="EtelaateMashinha" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModirFroosh" msprop:Generator_ColumnVarNameInTable="columnModirFroosh" msprop:Generator_ColumnPropNameInRow="ModirFroosh" msprop:Generator_ColumnPropNameInTable="ModirFrooshColumn" msprop:Generator_UserColumnName="ModirFroosh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelModirForoosh" msprop:Generator_ColumnVarNameInTable="columnTelModirForoosh" msprop:Generator_ColumnPropNameInRow="TelModirForoosh" msprop:Generator_ColumnPropNameInTable="TelModirForooshColumn" msprop:Generator_UserColumnName="TelModirForoosh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModirMali" msprop:Generator_ColumnVarNameInTable="columnModirMali" msprop:Generator_ColumnPropNameInRow="ModirMali" msprop:Generator_ColumnPropNameInTable="ModirMaliColumn" msprop:Generator_UserColumnName="ModirMali" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TellModirMali" msprop:Generator_ColumnVarNameInTable="columnTellModirMali" msprop:Generator_ColumnPropNameInRow="TellModirMali" msprop:Generator_ColumnPropNameInTable="TellModirMaliColumn" msprop:Generator_UserColumnName="TellModirMali" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ModirAmel" msprop:Generator_ColumnVarNameInTable="columnModirAmel" msprop:Generator_ColumnPropNameInRow="ModirAmel" msprop:Generator_ColumnPropNameInTable="ModirAmelColumn" msprop:Generator_UserColumnName="ModirAmel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelModirAmel" msprop:Generator_ColumnVarNameInTable="columnTelModirAmel" msprop:Generator_ColumnPropNameInRow="TelModirAmel" msprop:Generator_ColumnPropNameInTable="TelModirAmelColumn" msprop:Generator_UserColumnName="TelModirAmel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MoshtariyanTahtePooshesh" msprop:Generator_ColumnVarNameInTable="columnMoshtariyanTahtePooshesh" msprop:Generator_ColumnPropNameInRow="MoshtariyanTahtePooshesh" msprop:Generator_ColumnPropNameInTable="MoshtariyanTahtePoosheshColumn" msprop:Generator_UserColumnName="MoshtariyanTahtePooshesh" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ListeSabadeTozi" msprop:Generator_ColumnVarNameInTable="columnListeSabadeTozi" msprop:Generator_ColumnPropNameInRow="ListeSabadeTozi" msprop:Generator_ColumnPropNameInTable="ListeSabadeToziColumn" msprop:Generator_UserColumnName="ListeSabadeTozi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="400" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Rpt_Pricing" msprop:Generator_TableClassName="Rpt_PricingDataTable" msprop:Generator_TableVarName="tableRpt_Pricing" msprop:Generator_TablePropName="Rpt_Pricing" msprop:Generator_RowDeletingName="Rpt_PricingRowDeleting" msprop:Generator_RowChangingName="Rpt_PricingRowChanging" msprop:Generator_RowEvHandlerName="Rpt_PricingRowChangeEventHandler" msprop:Generator_RowDeletedName="Rpt_PricingRowDeleted" msprop:Generator_UserTableName="Rpt_Pricing" msprop:Generator_RowChangedName="Rpt_PricingRowChanged" msprop:Generator_RowEvArgName="Rpt_PricingRowChangeEvent" msprop:Generator_RowClassName="Rpt_PricingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerGroup" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnCustomerGroup" msprop:Generator_ColumnPropNameInRow="CustomerGroup" msprop:Generator_ColumnPropNameInTable="CustomerGroupColumn" msprop:Generator_UserColumnName="CustomerGroup" type="xs:string" minOccurs="0" />
+              <xs:element name="GoodCode" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnGoodCode" msprop:Generator_ColumnPropNameInRow="GoodCode" msprop:Generator_ColumnPropNameInTable="GoodCodeColumn" msprop:Generator_UserColumnName="GoodCode" type="xs:string" minOccurs="0" />
+              <xs:element name="FromDate" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" msprop:Generator_UserColumnName="FromDate" type="xs:string" minOccurs="0" />
+              <xs:element name="ToDate" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" msprop:Generator_UserColumnName="ToDate" type="xs:string" minOccurs="0" />
+              <xs:element name="PackPrice" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnPackPrice" msprop:Generator_ColumnPropNameInRow="PackPrice" msprop:Generator_ColumnPropNameInTable="PackPriceColumn" msprop:Generator_UserColumnName="PackPrice" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="BoxPrice" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnBoxPrice" msprop:Generator_ColumnPropNameInRow="BoxPrice" msprop:Generator_ColumnPropNameInTable="BoxPriceColumn" msprop:Generator_UserColumnName="BoxPrice" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="SinglePrice" msdata:Caption="DataColumn1" msprop:Generator_ColumnVarNameInTable="columnSinglePrice" msprop:Generator_ColumnPropNameInRow="SinglePrice" msprop:Generator_ColumnPropNameInTable="SinglePriceColumn" msprop:Generator_UserColumnName="SinglePrice" type="xs:long" default="0" minOccurs="0" />
+              <xs:element name="GoodName" msprop:Generator_ColumnVarNameInTable="columnGoodName" msprop:Generator_ColumnPropNameInRow="GoodName" msprop:Generator_ColumnPropNameInTable="GoodNameColumn" msprop:Generator_UserColumnName="GoodName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Table_000_OrgInfo" />
+      <xs:field xpath="mstns:ColumnId" />
+    </xs:unique>
+    <xs:unique name="PrintMoshtari_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PrintMoshtari" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
